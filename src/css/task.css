@@ -1,0 +1,269 @@
+.task {
+    max-width: 500px;
+    padding: 5px;
+    margin-bottom: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: relative;
+    transition: all .33s;
+}
+
+.task * {
+    transition: all .33s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.task.unchecked {
+    background: rgb(237, 239, 243);
+}
+
+.task.checked {
+    background: rgb(235, 229, 229);
+}
+
+.task .main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task .checkmark {
+    font-size: 1.25rem;
+}
+
+.task .checkmark input[type="checkbox"] {
+    background: rgb(244, 244, 214);
+    border-radius: 3px;
+    appearance: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 5px;
+    border: 1px solid rgb(199, 167, 167);
+}
+
+.task .checkmark input[type="checkbox"]:checked {
+    background-color: rgb(231, 222, 211);
+    border-color: rgb(107, 75, 75);
+    background-image: url("../images/check-bold.svg");
+    background-size: cover;
+}
+
+.task .label, .task input[type="text"] {
+    font-size: 1rem;
+    text-align: center;
+    padding: 3px;
+    width: 150px;
+    border-radius: 5px;
+    min-height: 45px;
+    display: grid;
+    place-items: center;
+    margin: 0 10px;
+}
+
+.task.unchecked .label, .task input[type="text"] {
+    background: rgb(135, 217, 222);
+    color: rgb(85, 75, 75);
+}
+
+.task.checked .label {
+    background: rgb(148, 170, 177);
+    color: rgb(238, 230, 230);
+    text-decoration: line-through;
+}
+
+.task .extra-wrapper {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+}
+
+.task .expand-contract {
+    appearance: none;
+}
+
+.task .expand-contract, .task .delete {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    background-size: cover;
+}
+
+.task .due-date {
+    margin: 0 10px;
+}
+
+.task button:hover {
+    filter: invert(50%);
+}
+
+.task button:active {
+    transform: scale(.95);
+}
+
+.task .extra-section {
+    width: 100%;
+    background: rgb(255, 227, 227);
+    position: relative;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+    position: absolute;
+}
+
+.task .expand-contract {
+    background-image: url("../images/arrow-expand-all.svg");
+}
+
+.task .expand-contract:checked {
+    background-image: url("../images/arrow-collapse-all.svg");
+}
+
+.task .delete {
+    background-image: url("../images/delete-outline.svg");
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.extra-section .change-date {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.extra-section .change-date label, .extra-section .change-priority p  {
+    color: rgb(73, 62, 62);
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.extra-section .change-priority {
+    margin-top: 20px;
+}
+
+.extra-section .change-priority input[type="checkbox"] {
+    appearance: none;
+    width: 75px;
+    height: 20px;
+}
+
+.extra-section .change-priority .priorities {
+    display: flex;
+}
+
+.extra-section .change-priority .priorities div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.extra-section .change-priority .high-priority input[type="checkbox"] {
+    background: rgb(239, 93, 93, .35);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.extra-section .change-priority .medium-priority input[type="checkbox"] {
+    background: rgb(235, 241, 7, .35);
+}
+
+.extra-section .change-priority .low-priority input[type="checkbox"] {
+    background: rgb(59, 180, 213, .35);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.extra-section .change-priority .high-priority input[type="checkbox"]:checked {
+    background: rgb(239, 93, 93);
+    border-top: 3px solid rgb(154, 28, 28);
+    border-left: 3px solid rgb(154, 28, 28);
+    border-bottom: 3px solid rgb(154, 28, 28);
+}
+
+.extra-section .change-priority .medium-priority input[type="checkbox"]:checked {
+    background: rgb(235 241 7);
+    border-top: 3px solid rgb(176, 182, 12);
+    border-bottom: 3px solid rgb(176, 182, 12);
+}
+
+.extra-section .change-priority .low-priority input[type="checkbox"]:checked {
+    background: rgb(59, 180, 213);
+    border-top: 3px solid rgb(35, 144, 171);
+    border-right: 3px solid rgb(35, 144, 171);
+    border-bottom: 3px solid rgb(35, 144, 171);
+}
+
+.extra-section .notes {
+    padding: 10px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.extra-section .note, .extra-section textarea {
+    background: blanchedalmond;
+    border: 2px solid rgb(215, 205, 205);
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.task .notes .add-note {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    background-image: url("../images/plus-box-outline.svg");
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: none;
+}
+
+.task .priority {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 10px;
+    height: 100%;
+}
+
+.task .priority div {
+    height: 33.3%;
+}
+
+.task .priority .high {
+    background: rgb(239, 93, 93, .15);
+    border-top-right-radius: 5px;
+}
+
+.task .priority .high.active {
+    background: rgb(239, 93, 93);
+}
+
+.task .priority .medium {
+    background: rgb(235, 241, 7, .15);
+}
+
+.task .priority .medium.active {
+    background: rgb(235, 241, 7);
+}
+
+.task .priority .low {
+    background: rgb(59, 180, 213);
+    border-bottom-right-radius: 5px;
+}
+
+@media screen and (max-width: 480px) {
+    .task {
+        width: 350px;
+    }
+
+    .task .checkmark label {
+        display: none;
+    }
+}

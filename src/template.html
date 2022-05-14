@@ -1,20 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO</title>
 </head>
+
 <body>
     <nav>
-
+        <div class="logo">
+            <div class="burger">
+                <input type="checkbox" />
+                <div class="bars"></div>
+            </div>
+            <h1>TODO</h1>
+        </div>
+        <div class="config">
+            <button class="settings"></button>
+            <div class="check-container theme-toggle">
+                <input type="checkbox" id="toggle-switch" /><span></span>
+            </div>
+        </div>
     </nav>
     <aside>
-        
+        <div class="activity">
+            <h2>Activity</h2>
+            <ul>
+                <li>
+                    <button class="today-button">Today</button>
+                </li>
+                <li>
+                    <button class="this-week-button">This Week</button>
+                </li>
+                <li>
+                    <button class="this-month-button">This Month</button>
+                </li>
+                <li>
+                    <button class="this-year-button">This Year</button>
+                </li>
+            </ul>
+        </div>
+        <div class="projects">
+            <!-- limited -->
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <div class="project">
+                        <img src="./project.svg" alt="project symbol">
+                        <h3>Find the remote</h3>
+                        <canvas width="50" height="50"></canvas>
+                    </div>
+                </li>
+                <li>
+                    <div class="project">
+                        <img src="./project.svg" alt="project symbol">
+                        <h3>Finish the game dev course that I spend $200 on.</h3>
+                        <canvas width="50" height="50"></canvas>
+                    </div>
+                </li>
+                <li>
+                    <div class="project">
+                        <img src="./project.svg" alt="project symbol">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                        <canvas width="50" height="50"></canvas>
+                    </div>
+                </li>
+                <li>
+                    <div class="project" id="active-sidebar-element">
+                        <img src="./project.svg" alt="project symbol">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <canvas width="50" height="50"></canvas>
+                    </div>
+                </li>
+            </ul>
+            <button class="add-project"></button>
+        </div>
     </aside>
     <main>
-
+        <div class="info">
+            <div class="graphics">
+                <img src="./logo.png" alt="project logo">
+                <canvas width="200" height="200"></canvas>
+            </div>
+            <div class="details">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus harum error, voluptatibus quas
+                    hic facilis enim molestiae ipsam velit ullam!
+                </p>
+            </div>
+        </div>
+        <div class="tasks">
+            <div class="unchecked-container">
+                <h2>Checklist</h2>
+                <div class="unchecked"></div>
+            </div>
+            <div class="checked-container">
+                <div class="remove-checked">
+                    <h2>Checked</h2>
+                    <div class="remove-all-checked">
+                        <p>Clear all checked</p>
+                        <img src="./shredder.svg" alt="clear all checked">
+                    </div>
+                </div>
+                <div class="checked"></div>
+            </div>
+        </div>
     </main>
 </body>
+
 </html>
