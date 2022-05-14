@@ -252,7 +252,6 @@
 }
 
 .extra-section .note, .extra-section textarea {
-    /* background: var(--note-bg); */
     border: 2px solid rgb(215, 205, 205);
     width: 100%;
     margin-bottom: 30px;

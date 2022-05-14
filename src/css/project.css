@@ -16,6 +16,7 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .project-item .info {
@@ -87,12 +88,61 @@
     display: flex;
 }
 
+.project-item .checked-container .remove-all-checked:hover {
+    background: rgb(212, 131, 128);
+}
+
+.project-item .checked-container .remove-all-checked:active {
+    transform: scale(.975);
+}
+
 .project-item .checked-container .remove-all-checked img {
     filter: invert(100%);
 }
 
 .project-item .checked-container .remove-all-checked p {
     width: 100px;
+}
+
+.project-item .add-task {
+    background-color: rgb(164, 230, 209);
+    background-image: url("../images/plus-box-outline.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: calc(100% + 10px);
+    height: 50px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.project-item .add-task:hover {
+    filter: invert(10%);
+}
+
+.project-item .add-task:active {
+    transform: scale(.975);
+}
+
+.project-item .delete-project {
+    background-color: transparent;
+    background-image: url("../images/delete-outline.svg");
+    background-size: contain;
+    border: 2px solid rgb(40, 36, 36);
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.project-item .delete-project:hover {
+    background-color: rgba(111, 97, 97, 0.25);
+}
+
+.project-item .delete-project:active {
+    transform: scale(.975);
 }
 
 @media screen and (max-width: 700px) {
@@ -117,5 +167,10 @@
     .project-item .info canvas {
         width: 150px;
         height: 150px;
+    }
+
+    .project-item .delete-project {
+       top: 10px;
+       right: 10px; 
     }
 }
