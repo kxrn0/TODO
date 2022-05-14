@@ -28,7 +28,7 @@
     --cog-hover-filter: invert(75%);
     --aside-bg: rgb(21, 38, 82);
     --period-bg: rgb(26, 191, 191);
-    --project-bg: rgb(119, 26, 26);
+    --project-bg: rgb(148, 108, 108);
     --box-shadow:  0 0 5px 2px azure;
 }
 
@@ -106,7 +106,7 @@ aside h2 {
 
 aside .activity button {
     background: var(--period-bg);
-    box-shadow: var(--box-shadow);
+    /* box-shadow: var(--box-shadow); */
     border: none;
     width: 100%;
     text-align: start;
@@ -150,7 +150,7 @@ aside .add-project:active {
 
 aside .project {
     background: var(--project-bg);
-    box-shadow: var(--box-shadow);
+    /* box-shadow: var(--box-shadow); */
     color: azure;
     text-align: center;
     margin: 20px 5px;
@@ -179,94 +179,8 @@ aside .project canvas {
 /* MAIN */
 
 main {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
-}
-
-main .info {
-    text-align: center;
-    display: flex;
-    gap: 20px;
-    align-self: center;
-    align-items: center;
-    margin: 20px;
-}
-
-main .info .details {
-    width: 300px;
-}
-
-main .info .details {
-    background: peachpuff;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-main .info .details h2 {
-    color: rgb(31, 35, 96);
-    font-size: 1.55rem;
-}
-
-main .info .details p {
-    background: rgb(249, 239, 221);
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-}
-
-main .info .graphics {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-main .info .graphics img {
-    border-radius: 30px;
-
-}
-
-main canvas {
-    border: 2px solid red;
-}
-
-main .tasks {
-    display: flex;
-    justify-content: space-around;
-}
-
-/* main .tasks .unchecked-container {
-    background: red;
-}
-
-main .tasks .checked-container {
-    background: blue;
-} */
-
-main .checked-container .remove-all-checked {
-    background: rgb(236, 151, 145);
-    color: azure;
-    padding: 5px;
-    margin: 20px;
-    width: 100px;
-    border-radius: 5px;
-    display: flex;
-}
-
-main .checked-container .remove-all-checked img {
-    filter: invert(100%);
-}
-
-main .checked-container .remove-all-checked p {
-    width: 100px;
-}
-
-@media screen and (max-width: 700px) {
-    main .tasks {
-        flex-direction: column;
-    }
 }
 
 @media screen and (max-width: 480px) {
@@ -285,22 +199,5 @@ main .checked-container .remove-all-checked p {
         position: absolute;
         transform: translateX(-100%);
         z-index: 1;
-    }
-
-    main {
-        padding: 10px;
-    }
-
-    main .info {
-        flex-direction: column;
-    }
-
-    main .info .graphics img {
-        width: 150px;
-    }
-
-    main .info canvas {
-        width: 150px;
-        height: 150px;
     }
 }

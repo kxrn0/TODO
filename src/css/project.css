@@ -1,0 +1,121 @@
+:root.light {
+    --project-name-bg: peachpuff;
+    --project-description-bg: rgb(249, 239, 221);
+    --project-color: rgb(31, 35, 96);
+
+}
+
+:root.dark {
+    --project-name-bg: rgb(55, 57, 107);
+    --project-description-bg: black;
+    --project-color: azure;
+}
+
+.project-item {
+    color: var(--project-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-item .info {
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    align-self: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.project-item .info .details {
+    background: var(--project-name-bg);
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.project-item .info .details h2 {
+    font-size: 1.55rem;
+}
+
+.project-item .info .details p {
+    background: var(--project-description-bg);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.project-item .info .graphics {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-item .info .graphics img {
+    border: 3px solid azure;
+    width: 200px;
+    border-radius: 30px;
+}
+
+.project-item .info .graphics .canvas-container {
+    position: relative;
+}
+
+.project-item .info .graphics .canvas-container p {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    width: 6rem;
+    height: 6rem;
+    top: calc(50% - 3rem);
+    left: calc(50% - 3rem);
+}
+
+.project-item .tasks {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-item .checked-container .remove-all-checked {
+    background: rgb(236, 151, 145);
+    color: azure;
+    padding: 5px;
+    margin: 20px;
+    width: 100px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.project-item .checked-container .remove-all-checked img {
+    filter: invert(100%);
+}
+
+.project-item .checked-container .remove-all-checked p {
+    width: 100px;
+}
+
+@media screen and (max-width: 700px) {
+    .project-item .tasks {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-item {
+        padding: 10px;
+    }
+
+    .project-item .info {
+        flex-direction: column;
+    }
+
+    .project-item .info .graphics img {
+        width: 150px;
+    }
+
+    .project-item .info canvas {
+        width: 150px;
+        height: 150px;
+    }
+}

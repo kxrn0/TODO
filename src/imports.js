@@ -3,6 +3,7 @@ import "./css/based.css";
 import "./css/toggle.css";
 import "./css/burger.css";
 import "./css/task.css";
+import "./css/project.css";
 
 import "./theme.js";
 import "./aside.js"

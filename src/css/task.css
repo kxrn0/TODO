@@ -1,3 +1,33 @@
+:root.light {
+    --unchecked-bg: rgb(237, 239, 243);
+    --checked-bg: rgb(235, 229, 229);
+    --label-unchecked-bg: rgb(135, 217, 222);
+    --label-unchecked-color: rgb(85, 75, 75);
+    --label-checked-bg: rgb(155, 162, 163);
+    --label-checked-color: rgb(238, 230, 230);
+    --unchecked-extra-bg: rgb(255, 227, 227);
+    --checked-extra-bg: rgb(216, 209, 209);
+    --change-label-color: rgb(73, 62, 62);
+    --unchecked-note-bg: blanchedalmond;
+    --checked-note-bg: rgb(232, 227, 220);
+    --control-filter: none;
+}
+
+:root.dark {
+    --unchecked-bg: rgb(29, 64, 133);
+    --checked-bg: rgb(122, 94, 94);
+    --label-unchecked-bg: rgb(19, 3, 44);
+    --label-unchecked-color: rgb(247, 241, 241);
+    --label-checked-bg: rgb(201, 176, 176);
+    --label-checked-color: rgb(34, 4, 4);
+    --unchecked-extra-bg: rgb(88, 88, 173);
+    --checked-extra-bg: rgb(109, 109, 148);
+    --change-label-color: azure;
+    --unchecked-note-bg: rgb(61, 8, 74);
+    --checked-note-bg: rgb(85, 62, 90);
+    --control-filter: invert(100%);
+}
+
 .task {
     max-width: 500px;
     padding: 5px;
@@ -13,12 +43,16 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.task button {
+    filter: var(--control-filter);
+}
+
 .task.unchecked {
-    background: rgb(237, 239, 243);
+    background: var(--unchecked-bg);
 }
 
 .task.checked {
-    background: rgb(235, 229, 229);
+    background: var(--checked-bg);
 }
 
 .task .main-section {
@@ -61,13 +95,13 @@
 }
 
 .task.unchecked .label, .task input[type="text"] {
-    background: rgb(135, 217, 222);
-    color: rgb(85, 75, 75);
+    background: var(--label-unchecked-bg);
+    color: var(--label-unchecked-color);
 }
 
 .task.checked .label {
-    background: rgb(148, 170, 177);
-    color: rgb(238, 230, 230);
+    background: var(--label-checked-bg);
+    color: var(--label-checked-color);
     text-decoration: line-through;
 }
 
@@ -101,9 +135,17 @@
     transform: scale(.95);
 }
 
+.task.unchecked .extra-section {
+    background: var(--unchecked-extra-bg);
+}
+
+.task.checked .extra-section {
+    background: var(--checked-extra-bg);
+}
+
 .task .extra-section {
     width: 100%;
-    background: rgb(255, 227, 227);
+    /* background: var(--extra-bg); */
     position: relative;
     border-radius: 10px;
     padding: 5px;
@@ -113,6 +155,7 @@
 
 .task .expand-contract {
     background-image: url("../images/arrow-expand-all.svg");
+    filter: var(--control-filter);
 }
 
 .task .expand-contract:checked {
@@ -133,7 +176,7 @@
 }
 
 .extra-section .change-date label, .extra-section .change-priority p  {
-    color: rgb(73, 62, 62);
+    color: var(--change-label-color);
     margin-bottom: 10px;
     font-size: 1.25rem;
 }
@@ -200,8 +243,16 @@
     position: relative;
 }
 
+.task.checked .extra-section .note, .extra-section textarea {
+    background: var(--checked-note-bg);
+}
+
+.task.unchecked .extra-section .note, .extra-section textarea {
+    background: var(--unchecked-note-bg);
+}
+
 .extra-section .note, .extra-section textarea {
-    background: blanchedalmond;
+    /* background: var(--note-bg); */
     border: 2px solid rgb(215, 205, 205);
     width: 100%;
     margin-bottom: 30px;
@@ -237,7 +288,7 @@
 }
 
 .task .priority .high {
-    background: rgb(239, 93, 93, .15);
+    background: rgb(239, 93, 93, .25);
     border-top-right-radius: 5px;
 }
 
@@ -246,7 +297,7 @@
 }
 
 .task .priority .medium {
-    background: rgb(235, 241, 7, .15);
+    background: rgb(235, 241, 7, .25);
 }
 
 .task .priority .medium.active {
