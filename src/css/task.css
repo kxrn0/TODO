@@ -63,6 +63,7 @@
 
 .task .checkmark {
     font-size: 1.25rem;
+    display: flex;
 }
 
 .task .checkmark input[type="checkbox"] {
@@ -145,8 +146,6 @@
 
 .task .extra-section {
     width: 100%;
-    /* background: var(--extra-bg); */
-    position: relative;
     border-radius: 10px;
     padding: 5px;
     margin-top: 10px;
@@ -310,7 +309,7 @@
 
 @media screen and (max-width: 480px) {
     .task {
-        width: 350px;
+        width: fit-content;
     }
 
     .task .checkmark label {

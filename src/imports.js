@@ -4,6 +4,7 @@ import "./css/toggle.css";
 import "./css/burger.css";
 import "./css/task.css";
 import "./css/project.css";
+import "./css/period_project.css";
 
 import "./theme.js";
 import "./aside.js"
@@ -22,3 +23,4 @@ import collapse from "./images/arrow-collapse-all.svg";
 import deleteOutline from "./images/delete-outline.svg";
 import plusOutline from "./images/plus-box-outline.svg"
 import shredder from "./images/shredder.svg";
+import chevron from "./images/chevron-right.svg";
