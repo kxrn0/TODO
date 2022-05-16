@@ -21,6 +21,10 @@
     position: relative;
 }
 
+.project-item ul {
+    list-style: none;
+}
+
 .project-item .info {
     text-align: center;
     display: flex;
@@ -86,8 +90,10 @@
     padding: 5px;
     margin: 20px;
     width: 100px;
+    height: 50px;
     border-radius: 5px;
     display: flex;
+    align-items: center;
 }
 
 .project-item .checked-container .remove-all-checked:hover {
@@ -99,6 +105,8 @@
 }
 
 .project-item .checked-container .remove-all-checked img {
+    width: 30px;
+    height: 30px;
     filter: invert(100%);
 }
 
@@ -112,10 +120,12 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    min-width: 300px;
     width: calc(100% + 10px);
     height: 50px;
     margin: 20px 0;
     border-radius: 10px;
+    border: none;
 }
 
 .project-item .add-task:hover {
@@ -148,6 +158,176 @@
     transform: scale(.975);
 }
 
+:root.light {
+    --modal-content-bg: rgb(174, 179, 224);
+    --new-task-notes-bg: rgb(228, 224, 171);
+    --new-note-bg: rgb(249, 255, 232);
+    --create-bg: rgb(87, 233, 102);
+    --create-color: rgb(18, 22, 22);
+    --create-hover: rgb(82, 218, 96);
+    --filter: none;
+}
+
+:root.dark {
+    --modal-content-bg: rgb(0, 45, 128);
+    --new-task-notes-bg: rgb(13, 36, 57);
+    --new-note-bg: rgb(0, 0, 29);
+    --create-bg: rgb(2, 14, 68);
+    --create-color: azure;
+    --create-hover: rgb(1, 1, 20);
+    --filter: invert(100%);
+}
+
+.project-item .modal {
+    background: rgba(66, 43, 43, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.project-item .modal-content {
+    background: var(--modal-content-bg);
+    border-radius: 10px;
+    margin: 100px auto; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.project-item .modal .variables > li {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-item .modal input[type="date"] {
+    width: fit-content;
+}
+
+.project-item .modal input[type="text"] {
+    background: beige;
+    width: 70%;
+    padding: 5px;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.project-item .modal .variables > li > p, .project-item .modal .variables > li > label {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.project-item .modal .choices {
+    display: flex;
+    text-align: center;
+}
+
+.project-item .modal #new-task-high {
+    background: rgb(239, 93, 93, .5);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.project-item .modal #new-task-high:checked {
+    background: rgb(239, 93, 93);
+    border-top: 1px solid azure;
+    border-left: 1px solid azure;
+    border-bottom: 1px solid azure;
+}
+
+.project-item .modal #new-task-medium {
+    background: rgb(235, 241, 7, .5);
+}
+
+.project-item .modal #new-task-medium:checked {
+    background: rgb(235, 241, 7);
+    border-top: 1px solid azure;
+    border-bottom: 1px solid azure;
+}
+
+.project-item .modal #new-task-low {
+    background: rgb(59, 180, 213);
+    border-top: 1px solid azure;
+    border-right: 1px solid azure;
+    border-bottom: 1px solid azure;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px
+}
+
+.project-item .modal .choices input[type="checkbox"] {
+    appearance: none;
+    width: 75px;
+    height: 20px;
+}
+
+.project-item .modal .choices li {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-item .modal .new-task-notes {
+    background: var(--new-task-notes-bg);
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.project-item .modal .new-task-notes .remove-new-task-note {
+    background-color: transparent;
+    background-image: url("../images/delete-outline.svg");
+    background-size: cover;
+    filter: var(--filter);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+
+.project-item .modal .new-task-notes li {
+    background: var(--new-note-bg);
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.project-item .modal .new-task-notes .new-task-add-note {
+    background-color: transparent;
+    border: none;
+    background-image: url("../images/plus-box-outline.svg");
+    background-size: cover;
+    filter: var(--filter);
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.project-item .modal .create {
+    background: var(--create-bg);
+    color: var(--create-color);
+    display: block;
+    padding: 10px;
+    font-size: 1.25rem;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: none;
+}
+
+.project-item .modal .create:hover {
+    background: var(--create-hover);
+}
+
+.project-item .modal .create:active {
+    transform: scale(.99);
+}
+
 @media screen and (max-width: 700px) {
     .project-item .tasks {
         flex-direction: column;
@@ -176,4 +356,12 @@
        top: 10px;
        right: 10px; 
     }
+}
+
+/* ... */
+#shalom {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 100;
 }

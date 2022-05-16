@@ -47,6 +47,14 @@
     right: 20px;
 }
 
+.empty-period button:hover {
+    filter: invert(10%);
+}
+
+.empty-period button:active {
+    transform: scale(.975);
+}
+
 .empty-period img {
     width: 700px;
 }

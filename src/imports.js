@@ -11,9 +11,6 @@ import "./theme.js";
 import "./aside.js"
 import "./test.js";
 
-import "./task.js";
-import "./taskdom.js";
-
 import project from "./images/project.svg";
 import granular from "./images/granular.jpg";
 import plus from "./images/plus.svg";

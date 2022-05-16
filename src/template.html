@@ -32,7 +32,7 @@
                     <button class="today-button">Today</button>
                 </li>
                 <li>
-                    <button class="this-week-button" id="active-sidebar-element">This Week</button>
+                    <button class="this-week-button">This Week</button>
                 </li>
                 <li>
                     <button class="this-month-button">This Month</button>
@@ -68,7 +68,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="project">
+                    <div class="project" id="active-sidebar-element">
                         <img src="./project.svg" alt="project symbol">
                         <h3>Lorem ipsum dolor sit amet.</h3>
                         <canvas width="50" height="50"></canvas>
@@ -120,7 +120,7 @@
             </li>
         </ul> -->
         
-        <!-- <div class="project-item">
+        <div class="project-item">
             <button class="delete-project"></button>
             <div class="info">
                 <div class="graphics">
@@ -141,7 +141,7 @@
                 <div class="unchecked-container">
                     <h2>Checklist</h2>
                     <div class="unchecked">
-                        <div class="add-task"></div>
+                        <button class="add-task"></button>
                     </div>
                 </div>
                 <div class="checked-container">
@@ -156,10 +156,53 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+            <div class="modal">
+                <div class="modal-content">
+                    <form action="" class="crete-new-task">
+                        <ul class="variables">
+                            <li>
+                                <label for="new-task-label">Label</label>
+                                <input type="text" id="new-task-label" name="new-task-label">
+                            </li>
+                            <li>
+                                <label for="new-task-due-date">Due date</label>
+                                <input type="date" id="new-task-due-date" name="new-task-due-date" required>
+                            </li>
+                            <li>
+                                <p>Priority</p>
+                                <ul class="choices">
+                                    <li>
+                                        <input type="checkbox" name="new-task-high" id="new-task-high"><label for="new-task-high">High</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="new-task-medium" id="new-task-medium"><label for="new-task-medium">Medium</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="new-task-low" id="new-task-low"><label for="new-task-low">Low</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>Notes</p>
+                                <ul class="new-task-notes">
+                                    <li>
+                                        <button class="remove-new-task-note" type="button"></button>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, laborum.</p>
+                                    </li>
+                                    <button class="new-task-add-note" type="button"></button>
+                                </ul>
+                            </li>
+                        </ul>
+                        <button type="submit" class="create">Create</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <!-- <script>
+    <button id="shalom">shalom</button>
+
+    <script>
         const canvas = document.querySelector("main canvas");
         const context = canvas.getContext("2d");
 
@@ -175,7 +218,17 @@
         context.arc(canvas.width / 2, canvas.height / 2, canvas.width / 2 - 5, - Math.PI / 2, 1.44 - Math.PI / 2);
         context.stroke();
         console.log("shalom");
-    </script> -->
+
+        //--------------------------------------------------------------------
+        const shalom = document.getElementById("shalom");
+
+        shalom.addEventListener("click", () => {
+            let root = document.documentElement;
+
+            root.classList.toggle("dark");
+            root.classList.toggle("light");
+        });
+    </script>
 </body>
 
 </html>
