@@ -1,0 +1,72 @@
+:root.light {
+    --empty-color: rgb(149, 217, 246);
+    --color: rgb(95, 75, 75);
+}
+
+:root.dark {
+    --empty-color: rgb(0, 10, 126);
+    --color: azure;
+}
+
+.empty-period {
+    background: var(--empty-color);
+    color: var(--color);
+    margin: 50px auto;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.empty-period .empty-container {
+    position: relative;
+}
+
+.empty-period h2 {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.empty-period img {
+    border-radius: 20px;
+}
+
+.empty-period button {
+    background-color: rgba(249, 243, 243, 0.75);
+    background-image: url("../images/reload.svg");
+    background-size: cover;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.empty-period img {
+    width: 700px;
+}
+
+@media screen and (max-width: 800px) {
+    .empty-period img {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .empty-period {
+        max-width: 350px;
+    }
+
+    .empty-period img {
+        width: 300px;
+    }
+
+    .empty-period h2 {
+        width: 100%;
+    }
+}

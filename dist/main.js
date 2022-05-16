@@ -30,7 +30,7 @@ var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_g
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "*,\n*::before,\n*::after {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    transition: all .33s;\n    font-family: Arial, Helvetica, sans-serif;\n}\n\n:root.light {\n    --nav-bg: rgb(136, 188, 226);\n    --body-bg: rgb(255, 255, 255);\n    --color: rgb(31, 20, 20);\n    --cog-filter: none;\n    --cog-hover-filter: invert(25%);\n    --aside-bg: rgb(119, 154, 202);\n    --period-bg: rgb(192, 193, 255);\n    --project-bg: rgb(229, 97, 97);\n}\n\n:root.dark {\n    --nav-bg: rgb(8, 15, 33);\n    --body-bg: rgb(67, 18, 65);\n    --color: azure;\n    --cog-filter: invert(100%);\n    --cog-hover-filter: invert(75%);\n    --aside-bg: rgb(21, 38, 82);\n    --period-bg: rgb(26, 191, 191);\n    --project-bg: rgb(148, 108, 108);\n}\n\nbody {\n    background: var(--body-bg);\n    display: grid;\n    grid-template-columns: 1fr 3fr;\n    grid-template-rows: auto auto;\n}\n\n/* NAV */\n\nnav {\n    background: var(--nav-bg);\n    color: var(--color);\n    padding: 10px 20px;\n    display: flex;\n    justify-content: space-between;\n    grid-row: 1 / 2;\n    grid-column: 1 / 3;\n}\n\nnav>div {\n    display: flex;\n    align-items: center;\n}\n\nnav .logo h1 {\n    margin-left: 20px;\n}\n\nnav .config .settings {\n    margin-right: 20px;\n    width: 30px;\n    height: 30px;\n    background-color: transparent;\n    border: none;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-size: cover;\n    filter: var(--cog-filter);\n}\n\nnav .config .settings:hover {\n    filter: var(--cog-hover-filter);\n}\n\nnav .config .settings:hover {\n    transform: rotate(90deg);\n}\n\nnav .logo .burger {\n    display: none;\n}\n\n/* ASIDE */\n\naside {\n    background: var(--aside-bg);\n    color: var(--color);\n    position: relative; \n    padding: 20px;\n    grid-row: 2 / 3;\n    grid-column: 1 / 2;\n}\n\naside ul {\n    list-style: none;\n}\n\naside h2 {\n    font-size: 2rem;\n    margin: 20px 0;\n}\n\naside .activity button {\n    background: var(--period-bg);\n    border: none;\n    width: 100%;\n    text-align: start;\n    border-radius: 5px;\n    margin: 0 20px 20px 0;\n    padding: 10px;\n    font-size: 1.25rem;\n}\n\naside #active-sidebar-element {\n    border: 3px solid yellow;\n    color: azure;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n    background-size: cover;\n}\n\naside .projects:last-child {\n    margin-bottom: 75px;\n}\n\naside .add-project {\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\n    background-size: cover;\n    background-color: rgb(251, 251, 252);\n    filter: invert(32%) sepia(96%) saturate(558%) hue-rotate(182deg) brightness(94%) contrast(200%);\n    border-radius: 10px;\n    border: none;\n    width: 50px;\n    height: 50px;\n    position: absolute;\n    right: calc(50% - 25px);\n}\n\naside .add-project:hover {\n    filter: invert(32%) sepia(96%) saturate(558%) hue-rotate(182deg) brightness(94%) contrast(150%);\n}\n\naside .add-project:active {\n    transform: scale(.975);\n}\n\naside .project {\n    background: var(--project-bg);\n    color: azure;\n    text-align: center;\n    margin: 20px 5px;\n    padding: 10px;\n    border-radius: 5px;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\naside .project h3 {\n    margin: 0 10px;\n}\n\naside .project img {\n    filter: invert(100%);\n    width: 30px;\n    height: 30px;\n}\n\naside .project canvas {\n    border: 2px solid yellow;\n    border-radius: 50%;\n}\n\n/* MAIN */\n\nmain {\n    grid-row: 2 / 3;\n    grid-column: 2 / 3;\n}\n\n@media screen and (max-width: 480px) {\n    body {\n        display: block;\n        position: relative;\n    }\n\n    nav .logo .burger {\n        display: flex;\n    }\n\n    aside {\n        width: 90%;\n        height: 100%;\n        position: absolute;\n        transform: translateX(-100%);\n        z-index: 1;\n    }\n}", "",{"version":3,"sources":["webpack://./src/css/based.css"],"names":[],"mappings":"AAAA;;;IAGI,SAAS;IACT,UAAU;IACV,sBAAsB;IACtB,oBAAoB;IACpB,yCAAyC;AAC7C;;AAEA;IACI,4BAA4B;IAC5B,6BAA6B;IAC7B,wBAAwB;IACxB,kBAAkB;IAClB,+BAA+B;IAC/B,8BAA8B;IAC9B,+BAA+B;IAC/B,8BAA8B;AAClC;;AAEA;IACI,wBAAwB;IACxB,0BAA0B;IAC1B,cAAc;IACd,0BAA0B;IAC1B,+BAA+B;IAC/B,2BAA2B;IAC3B,8BAA8B;IAC9B,gCAAgC;AACpC;;AAEA;IACI,0BAA0B;IAC1B,aAAa;IACb,8BAA8B;IAC9B,6BAA6B;AACjC;;AAEA,QAAQ;;AAER;IACI,yBAAyB;IACzB,mBAAmB;IACnB,kBAAkB;IAClB,aAAa;IACb,8BAA8B;IAC9B,eAAe;IACf,kBAAkB;AACtB;;AAEA;IACI,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI,iBAAiB;AACrB;;AAEA;IACI,kBAAkB;IAClB,WAAW;IACX,YAAY;IACZ,6BAA6B;IAC7B,YAAY;IACZ,yDAAkD;IAClD,sBAAsB;IACtB,yBAAyB;AAC7B;;AAEA;IACI,+BAA+B;AACnC;;AAEA;IACI,wBAAwB;AAC5B;;AAEA;IACI,aAAa;AACjB;;AAEA,UAAU;;AAEV;IACI,2BAA2B;IAC3B,mBAAmB;IACnB,kBAAkB;IAClB,aAAa;IACb,eAAe;IACf,kBAAkB;AACtB;;AAEA;IACI,gBAAgB;AACpB;;AAEA;IACI,eAAe;IACf,cAAc;AAClB;;AAEA;IACI,4BAA4B;IAC5B,YAAY;IACZ,WAAW;IACX,iBAAiB;IACjB,kBAAkB;IAClB,qBAAqB;IACrB,aAAa;IACb,kBAAkB;AACtB;;AAEA;IACI,wBAAwB;IACxB,YAAY;IACZ,yDAA+C;IAC/C,sBAAsB;AAC1B;;AAEA;IACI,mBAAmB;AACvB;;AAEA;IACI,yDAAuD;IACvD,sBAAsB;IACtB,oCAAoC;IACpC,+FAA+F;IAC/F,mBAAmB;IACnB,YAAY;IACZ,WAAW;IACX,YAAY;IACZ,kBAAkB;IAClB,uBAAuB;AAC3B;;AAEA;IACI,+FAA+F;AACnG;;AAEA;IACI,sBAAsB;AAC1B;;AAEA;IACI,6BAA6B;IAC7B,YAAY;IACZ,kBAAkB;IAClB,gBAAgB;IAChB,aAAa;IACb,kBAAkB;IAClB,aAAa;IACb,8BAA8B;IAC9B,mBAAmB;AACvB;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI,oBAAoB;IACpB,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,wBAAwB;IACxB,kBAAkB;AACtB;;AAEA,SAAS;;AAET;IACI,eAAe;IACf,kBAAkB;AACtB;;AAEA;IACI;QACI,cAAc;QACd,kBAAkB;IACtB;;IAEA;QACI,aAAa;IACjB;;IAEA;QACI,UAAU;QACV,YAAY;QACZ,kBAAkB;QAClB,4BAA4B;QAC5B,UAAU;IACd;AACJ","sourcesContent":["*,\n*::before,\n*::after {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    transition: all .33s;\n    font-family: Arial, Helvetica, sans-serif;\n}\n\n:root.light {\n    --nav-bg: rgb(136, 188, 226);\n    --body-bg: rgb(255, 255, 255);\n    --color: rgb(31, 20, 20);\n    --cog-filter: none;\n    --cog-hover-filter: invert(25%);\n    --aside-bg: rgb(119, 154, 202);\n    --period-bg: rgb(192, 193, 255);\n    --project-bg: rgb(229, 97, 97);\n}\n\n:root.dark {\n    --nav-bg: rgb(8, 15, 33);\n    --body-bg: rgb(67, 18, 65);\n    --color: azure;\n    --cog-filter: invert(100%);\n    --cog-hover-filter: invert(75%);\n    --aside-bg: rgb(21, 38, 82);\n    --period-bg: rgb(26, 191, 191);\n    --project-bg: rgb(148, 108, 108);\n}\n\nbody {\n    background: var(--body-bg);\n    display: grid;\n    grid-template-columns: 1fr 3fr;\n    grid-template-rows: auto auto;\n}\n\n/* NAV */\n\nnav {\n    background: var(--nav-bg);\n    color: var(--color);\n    padding: 10px 20px;\n    display: flex;\n    justify-content: space-between;\n    grid-row: 1 / 2;\n    grid-column: 1 / 3;\n}\n\nnav>div {\n    display: flex;\n    align-items: center;\n}\n\nnav .logo h1 {\n    margin-left: 20px;\n}\n\nnav .config .settings {\n    margin-right: 20px;\n    width: 30px;\n    height: 30px;\n    background-color: transparent;\n    border: none;\n    background-image: url(\"../images/cog-outline.svg\");\n    background-size: cover;\n    filter: var(--cog-filter);\n}\n\nnav .config .settings:hover {\n    filter: var(--cog-hover-filter);\n}\n\nnav .config .settings:hover {\n    transform: rotate(90deg);\n}\n\nnav .logo .burger {\n    display: none;\n}\n\n/* ASIDE */\n\naside {\n    background: var(--aside-bg);\n    color: var(--color);\n    position: relative; \n    padding: 20px;\n    grid-row: 2 / 3;\n    grid-column: 1 / 2;\n}\n\naside ul {\n    list-style: none;\n}\n\naside h2 {\n    font-size: 2rem;\n    margin: 20px 0;\n}\n\naside .activity button {\n    background: var(--period-bg);\n    border: none;\n    width: 100%;\n    text-align: start;\n    border-radius: 5px;\n    margin: 0 20px 20px 0;\n    padding: 10px;\n    font-size: 1.25rem;\n}\n\naside #active-sidebar-element {\n    border: 3px solid yellow;\n    color: azure;\n    background-image: url(\"../images/granular.jpg\");\n    background-size: cover;\n}\n\naside .projects:last-child {\n    margin-bottom: 75px;\n}\n\naside .add-project {\n    background-image: url(\"../images/plus-box-outline.svg\");\n    background-size: cover;\n    background-color: rgb(251, 251, 252);\n    filter: invert(32%) sepia(96%) saturate(558%) hue-rotate(182deg) brightness(94%) contrast(200%);\n    border-radius: 10px;\n    border: none;\n    width: 50px;\n    height: 50px;\n    position: absolute;\n    right: calc(50% - 25px);\n}\n\naside .add-project:hover {\n    filter: invert(32%) sepia(96%) saturate(558%) hue-rotate(182deg) brightness(94%) contrast(150%);\n}\n\naside .add-project:active {\n    transform: scale(.975);\n}\n\naside .project {\n    background: var(--project-bg);\n    color: azure;\n    text-align: center;\n    margin: 20px 5px;\n    padding: 10px;\n    border-radius: 5px;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\naside .project h3 {\n    margin: 0 10px;\n}\n\naside .project img {\n    filter: invert(100%);\n    width: 30px;\n    height: 30px;\n}\n\naside .project canvas {\n    border: 2px solid yellow;\n    border-radius: 50%;\n}\n\n/* MAIN */\n\nmain {\n    grid-row: 2 / 3;\n    grid-column: 2 / 3;\n}\n\n@media screen and (max-width: 480px) {\n    body {\n        display: block;\n        position: relative;\n    }\n\n    nav .logo .burger {\n        display: flex;\n    }\n\n    aside {\n        width: 90%;\n        height: 100%;\n        position: absolute;\n        transform: translateX(-100%);\n        z-index: 1;\n    }\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "*,\n*::before,\n*::after {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    transition: all .33s;\n    font-family: Arial, Helvetica, sans-serif;\n}\n\n:root.light {\n    --nav-bg: rgb(136, 188, 226);\n    --body-bg: rgb(255, 255, 255);\n    --color: rgb(31, 20, 20);\n    --cog-filter: none;\n    --cog-hover-filter: invert(25%);\n    --aside-bg: rgb(119, 154, 202);\n    --period-bg: rgb(192, 193, 255);\n    --project-bg: rgb(229, 97, 97);\n}\n\n:root.dark {\n    --nav-bg: rgb(8, 15, 33);\n    --body-bg: rgb(67, 18, 65);\n    --color: azure;\n    --cog-filter: invert(100%);\n    --cog-hover-filter: invert(75%);\n    --aside-bg: rgb(21, 38, 82);\n    --period-bg: rgb(26, 191, 191);\n    --project-bg: rgb(148, 108, 108);\n}\n\nbody {\n    background: var(--body-bg);\n    display: grid;\n    grid-template-columns: 1fr 3fr;\n    grid-template-rows: auto auto;\n}\n\n/* NAV */\n\nnav {\n    background: var(--nav-bg);\n    color: var(--color);\n    padding: 10px 20px;\n    display: flex;\n    justify-content: space-between;\n    grid-row: 1 / 2;\n    grid-column: 1 / 3;\n}\n\nnav>div {\n    display: flex;\n    align-items: center;\n}\n\nnav .logo h1 {\n    margin-left: 20px;\n}\n\nnav .config .settings {\n    margin-right: 20px;\n    width: 30px;\n    height: 30px;\n    background-color: transparent;\n    border: none;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-size: cover;\n    filter: var(--cog-filter);\n}\n\nnav .config .settings:hover {\n    filter: var(--cog-hover-filter);\n}\n\nnav .config .settings:hover {\n    transform: rotate(90deg);\n}\n\nnav .logo .burger {\n    display: none;\n}\n\n/* ASIDE */\n\naside {\n    background: var(--aside-bg);\n    color: var(--color);\n    position: relative; \n    padding: 20px;\n    grid-row: 2 / 3;\n    grid-column: 1 / 2;\n}\n\naside ul {\n    list-style: none;\n}\n\naside h2 {\n    font-size: 2rem;\n    margin: 20px 0;\n}\n\naside .activity button {\n    background: var(--period-bg);\n    border: none;\n    width: 100%;\n    text-align: start;\n    border-radius: 5px;\n    margin: 0 20px 20px 0;\n    padding: 10px;\n    font-size: 1.25rem;\n}\n\naside #active-sidebar-element {\n    border: 3px solid yellow;\n    color: azure;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n    background-size: cover;\n}\n\naside .projects:last-child {\n    margin-bottom: 75px;\n}\n\naside .add-project {\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center;\n    background-color: rgb(251, 251, 252);\n    filter: invert(32%) sepia(96%) saturate(558%) hue-rotate(182deg) brightness(94%) contrast(200%);\n    border-radius: 10px;\n    width: 100%;\n    height: 75px;\n}\n\naside .add-project:hover {\n    filter: invert(32%) sepia(96%) saturate(558%) hue-rotate(182deg) brightness(94%) contrast(150%);\n}\n\naside .add-project:active {\n    transform: scale(.975);\n}\n\naside .project {\n    background: var(--project-bg);\n    color: azure;\n    text-align: center;\n    margin: 20px 5px;\n    padding: 10px;\n    border-radius: 5px;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\naside .project h3 {\n    margin: 0 10px;\n}\n\naside .project img {\n    filter: invert(100%);\n    width: 30px;\n    height: 30px;\n}\n\naside .project canvas {\n    border: 2px solid yellow;\n    border-radius: 50%;\n}\n\n/* MAIN */\n\nmain {\n    grid-row: 2 / 3;\n    grid-column: 2 / 3;\n}\n\n@media screen and (max-width: 480px) {\n    body {\n        display: block;\n        position: relative;\n    }\n\n    nav .logo .burger {\n        display: flex;\n    }\n\n    aside {\n        width: 90%;\n        height: 100%;\n        position: absolute;\n        transform: translateX(-100%);\n        z-index: 1;\n    }\n}", "",{"version":3,"sources":["webpack://./src/css/based.css"],"names":[],"mappings":"AAAA;;;IAGI,SAAS;IACT,UAAU;IACV,sBAAsB;IACtB,oBAAoB;IACpB,yCAAyC;AAC7C;;AAEA;IACI,4BAA4B;IAC5B,6BAA6B;IAC7B,wBAAwB;IACxB,kBAAkB;IAClB,+BAA+B;IAC/B,8BAA8B;IAC9B,+BAA+B;IAC/B,8BAA8B;AAClC;;AAEA;IACI,wBAAwB;IACxB,0BAA0B;IAC1B,cAAc;IACd,0BAA0B;IAC1B,+BAA+B;IAC/B,2BAA2B;IAC3B,8BAA8B;IAC9B,gCAAgC;AACpC;;AAEA;IACI,0BAA0B;IAC1B,aAAa;IACb,8BAA8B;IAC9B,6BAA6B;AACjC;;AAEA,QAAQ;;AAER;IACI,yBAAyB;IACzB,mBAAmB;IACnB,kBAAkB;IAClB,aAAa;IACb,8BAA8B;IAC9B,eAAe;IACf,kBAAkB;AACtB;;AAEA;IACI,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI,iBAAiB;AACrB;;AAEA;IACI,kBAAkB;IAClB,WAAW;IACX,YAAY;IACZ,6BAA6B;IAC7B,YAAY;IACZ,yDAAkD;IAClD,sBAAsB;IACtB,yBAAyB;AAC7B;;AAEA;IACI,+BAA+B;AACnC;;AAEA;IACI,wBAAwB;AAC5B;;AAEA;IACI,aAAa;AACjB;;AAEA,UAAU;;AAEV;IACI,2BAA2B;IAC3B,mBAAmB;IACnB,kBAAkB;IAClB,aAAa;IACb,eAAe;IACf,kBAAkB;AACtB;;AAEA;IACI,gBAAgB;AACpB;;AAEA;IACI,eAAe;IACf,cAAc;AAClB;;AAEA;IACI,4BAA4B;IAC5B,YAAY;IACZ,WAAW;IACX,iBAAiB;IACjB,kBAAkB;IAClB,qBAAqB;IACrB,aAAa;IACb,kBAAkB;AACtB;;AAEA;IACI,wBAAwB;IACxB,YAAY;IACZ,yDAA+C;IAC/C,sBAAsB;AAC1B;;AAEA;IACI,mBAAmB;AACvB;;AAEA;IACI,yDAAuD;IACvD,wBAAwB;IACxB,4BAA4B;IAC5B,2BAA2B;IAC3B,oCAAoC;IACpC,+FAA+F;IAC/F,mBAAmB;IACnB,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,+FAA+F;AACnG;;AAEA;IACI,sBAAsB;AAC1B;;AAEA;IACI,6BAA6B;IAC7B,YAAY;IACZ,kBAAkB;IAClB,gBAAgB;IAChB,aAAa;IACb,kBAAkB;IAClB,aAAa;IACb,8BAA8B;IAC9B,mBAAmB;AACvB;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI,oBAAoB;IACpB,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,wBAAwB;IACxB,kBAAkB;AACtB;;AAEA,SAAS;;AAET;IACI,eAAe;IACf,kBAAkB;AACtB;;AAEA;IACI;QACI,cAAc;QACd,kBAAkB;IACtB;;IAEA;QACI,aAAa;IACjB;;IAEA;QACI,UAAU;QACV,YAAY;QACZ,kBAAkB;QAClB,4BAA4B;QAC5B,UAAU;IACd;AACJ","sourcesContent":["*,\n*::before,\n*::after {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    transition: all .33s;\n    font-family: Arial, Helvetica, sans-serif;\n}\n\n:root.light {\n    --nav-bg: rgb(136, 188, 226);\n    --body-bg: rgb(255, 255, 255);\n    --color: rgb(31, 20, 20);\n    --cog-filter: none;\n    --cog-hover-filter: invert(25%);\n    --aside-bg: rgb(119, 154, 202);\n    --period-bg: rgb(192, 193, 255);\n    --project-bg: rgb(229, 97, 97);\n}\n\n:root.dark {\n    --nav-bg: rgb(8, 15, 33);\n    --body-bg: rgb(67, 18, 65);\n    --color: azure;\n    --cog-filter: invert(100%);\n    --cog-hover-filter: invert(75%);\n    --aside-bg: rgb(21, 38, 82);\n    --period-bg: rgb(26, 191, 191);\n    --project-bg: rgb(148, 108, 108);\n}\n\nbody {\n    background: var(--body-bg);\n    display: grid;\n    grid-template-columns: 1fr 3fr;\n    grid-template-rows: auto auto;\n}\n\n/* NAV */\n\nnav {\n    background: var(--nav-bg);\n    color: var(--color);\n    padding: 10px 20px;\n    display: flex;\n    justify-content: space-between;\n    grid-row: 1 / 2;\n    grid-column: 1 / 3;\n}\n\nnav>div {\n    display: flex;\n    align-items: center;\n}\n\nnav .logo h1 {\n    margin-left: 20px;\n}\n\nnav .config .settings {\n    margin-right: 20px;\n    width: 30px;\n    height: 30px;\n    background-color: transparent;\n    border: none;\n    background-image: url(\"../images/cog-outline.svg\");\n    background-size: cover;\n    filter: var(--cog-filter);\n}\n\nnav .config .settings:hover {\n    filter: var(--cog-hover-filter);\n}\n\nnav .config .settings:hover {\n    transform: rotate(90deg);\n}\n\nnav .logo .burger {\n    display: none;\n}\n\n/* ASIDE */\n\naside {\n    background: var(--aside-bg);\n    color: var(--color);\n    position: relative; \n    padding: 20px;\n    grid-row: 2 / 3;\n    grid-column: 1 / 2;\n}\n\naside ul {\n    list-style: none;\n}\n\naside h2 {\n    font-size: 2rem;\n    margin: 20px 0;\n}\n\naside .activity button {\n    background: var(--period-bg);\n    border: none;\n    width: 100%;\n    text-align: start;\n    border-radius: 5px;\n    margin: 0 20px 20px 0;\n    padding: 10px;\n    font-size: 1.25rem;\n}\n\naside #active-sidebar-element {\n    border: 3px solid yellow;\n    color: azure;\n    background-image: url(\"../images/granular.jpg\");\n    background-size: cover;\n}\n\naside .projects:last-child {\n    margin-bottom: 75px;\n}\n\naside .add-project {\n    background-image: url(\"../images/plus-box-outline.svg\");\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center;\n    background-color: rgb(251, 251, 252);\n    filter: invert(32%) sepia(96%) saturate(558%) hue-rotate(182deg) brightness(94%) contrast(200%);\n    border-radius: 10px;\n    width: 100%;\n    height: 75px;\n}\n\naside .add-project:hover {\n    filter: invert(32%) sepia(96%) saturate(558%) hue-rotate(182deg) brightness(94%) contrast(150%);\n}\n\naside .add-project:active {\n    transform: scale(.975);\n}\n\naside .project {\n    background: var(--project-bg);\n    color: azure;\n    text-align: center;\n    margin: 20px 5px;\n    padding: 10px;\n    border-radius: 5px;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\naside .project h3 {\n    margin: 0 10px;\n}\n\naside .project img {\n    filter: invert(100%);\n    width: 30px;\n    height: 30px;\n}\n\naside .project canvas {\n    border: 2px solid yellow;\n    border-radius: 50%;\n}\n\n/* MAIN */\n\nmain {\n    grid-row: 2 / 3;\n    grid-column: 2 / 3;\n}\n\n@media screen and (max-width: 480px) {\n    body {\n        display: block;\n        position: relative;\n    }\n\n    nav .logo .burger {\n        display: flex;\n    }\n\n    aside {\n        width: 90%;\n        height: 100%;\n        position: absolute;\n        transform: translateX(-100%);\n        z-index: 1;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -58,6 +58,38 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, ":root.light {\n  --burger-bg: rgb(112, 30, 8);\n}\n\n:root.dark {\n  --burger-bg: rgb(247, 247, 188);\n}\n\n.burger {\n    width: 30px;\n    height: 30px;\n    position: relative;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n  \n  .burger input[type=\"checkbox\"] {\n    position: absolute;\n    top: 0;\n    left: 0;\n    appearance: none;\n    width: 100%;\n    height: 100%;\n  }\n  \n  .burger .bars {\n    width: 100%;\n    height: 3px;\n    background: var(--burger-bg);\n    z-index: 1;\n    border-radius: 5px;\n    pointer-events: none;\n    transition: all 0.33s ease-in-out;\n  }\n  \n  .burger .bars::before,\n  .burger .bars::after {\n    background: var(--burger-bg);\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 3px;\n    border-radius: 5px;\n    transition: all 0.33s ease-in-out;\n  }\n  \n  .burger .bars::before {\n    transform: translateY(-10px);\n  }\n  \n  .burger .bars::after {\n    transform: translateY(10px);\n  }\n  \n  .burger input[type=\"checkbox\"]:checked + .bars {\n    width: 0;\n    left: 50%;\n  }\n  \n  .burger input[type=\"checkbox\"]:checked + .bars::before {\n    transform: rotate(45deg) translate(-10px, 10px);\n  }\n  \n  .burger input[type=\"checkbox\"]:checked + .bars::after {\n    transform: rotate(-45deg) translate(-10px, -10px);\n  }\n  ", "",{"version":3,"sources":["webpack://./src/css/burger.css"],"names":[],"mappings":"AAAA;EACE,4BAA4B;AAC9B;;AAEA;EACE,+BAA+B;AACjC;;AAEA;IACI,WAAW;IACX,YAAY;IACZ,kBAAkB;IAClB,aAAa;IACb,mBAAmB;IACnB,uBAAuB;EACzB;;EAEA;IACE,kBAAkB;IAClB,MAAM;IACN,OAAO;IACP,gBAAgB;IAChB,WAAW;IACX,YAAY;EACd;;EAEA;IACE,WAAW;IACX,WAAW;IACX,4BAA4B;IAC5B,UAAU;IACV,kBAAkB;IAClB,oBAAoB;IACpB,iCAAiC;EACnC;;EAEA;;IAEE,4BAA4B;IAC5B,WAAW;IACX,kBAAkB;IAClB,WAAW;IACX,WAAW;IACX,kBAAkB;IAClB,iCAAiC;EACnC;;EAEA;IACE,4BAA4B;EAC9B;;EAEA;IACE,2BAA2B;EAC7B;;EAEA;IACE,QAAQ;IACR,SAAS;EACX;;EAEA;IACE,+CAA+C;EACjD;;EAEA;IACE,iDAAiD;EACnD","sourcesContent":[":root.light {\n  --burger-bg: rgb(112, 30, 8);\n}\n\n:root.dark {\n  --burger-bg: rgb(247, 247, 188);\n}\n\n.burger {\n    width: 30px;\n    height: 30px;\n    position: relative;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n  \n  .burger input[type=\"checkbox\"] {\n    position: absolute;\n    top: 0;\n    left: 0;\n    appearance: none;\n    width: 100%;\n    height: 100%;\n  }\n  \n  .burger .bars {\n    width: 100%;\n    height: 3px;\n    background: var(--burger-bg);\n    z-index: 1;\n    border-radius: 5px;\n    pointer-events: none;\n    transition: all 0.33s ease-in-out;\n  }\n  \n  .burger .bars::before,\n  .burger .bars::after {\n    background: var(--burger-bg);\n    content: \"\";\n    position: absolute;\n    width: 100%;\n    height: 3px;\n    border-radius: 5px;\n    transition: all 0.33s ease-in-out;\n  }\n  \n  .burger .bars::before {\n    transform: translateY(-10px);\n  }\n  \n  .burger .bars::after {\n    transform: translateY(10px);\n  }\n  \n  .burger input[type=\"checkbox\"]:checked + .bars {\n    width: 0;\n    left: 50%;\n  }\n  \n  .burger input[type=\"checkbox\"]:checked + .bars::before {\n    transform: rotate(45deg) translate(-10px, 10px);\n  }\n  \n  .burger input[type=\"checkbox\"]:checked + .bars::after {\n    transform: rotate(-45deg) translate(-10px, -10px);\n  }\n  "],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/empty.css":
+/*!*****************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/empty.css ***!
+  \*****************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
+// Imports
+
+
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../images/reload.svg */ "./src/images/reload.svg"), __webpack_require__.b);
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ":root.light {\n    --empty-color: rgb(149, 217, 246);\n    --color: rgb(95, 75, 75);\n}\n\n:root.dark {\n    --empty-color: rgb(0, 10, 126);\n    --color: azure;\n}\n\n.empty-period {\n    background: var(--empty-color);\n    color: var(--color);\n    margin: 50px auto;\n    width: fit-content;\n    border-radius: 20px;\n    padding: 20px;\n    position: relative;\n    display: grid;\n    place-items: center;\n}\n\n.empty-period .empty-container {\n    position: relative;\n}\n\n.empty-period h2 {\n    width: 50%;\n    text-align: center;\n    margin-bottom: 20px;\n}\n\n.empty-period img {\n    border-radius: 20px;\n}\n\n.empty-period button {\n    background-color: rgba(249, 243, 243, 0.75);\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-size: cover;\n    border: none;\n    width: 30px;\n    height: 30px;\n    border-radius: 100%;\n    position: absolute;\n    bottom: 20px;\n    right: 20px;\n}\n\n.empty-period img {\n    width: 700px;\n}\n\n@media screen and (max-width: 800px) {\n    .empty-period img {\n        width: 500px;\n    }\n}\n\n@media screen and (max-width: 480px) {\n    .empty-period {\n        max-width: 350px;\n    }\n\n    .empty-period img {\n        width: 300px;\n    }\n\n    .empty-period h2 {\n        width: 100%;\n    }\n}", "",{"version":3,"sources":["webpack://./src/css/empty.css"],"names":[],"mappings":"AAAA;IACI,iCAAiC;IACjC,wBAAwB;AAC5B;;AAEA;IACI,8BAA8B;IAC9B,cAAc;AAClB;;AAEA;IACI,8BAA8B;IAC9B,mBAAmB;IACnB,iBAAiB;IACjB,kBAAkB;IAClB,mBAAmB;IACnB,aAAa;IACb,kBAAkB;IAClB,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,UAAU;IACV,kBAAkB;IAClB,mBAAmB;AACvB;;AAEA;IACI,mBAAmB;AACvB;;AAEA;IACI,2CAA2C;IAC3C,yDAA6C;IAC7C,sBAAsB;IACtB,YAAY;IACZ,WAAW;IACX,YAAY;IACZ,mBAAmB;IACnB,kBAAkB;IAClB,YAAY;IACZ,WAAW;AACf;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI;QACI,YAAY;IAChB;AACJ;;AAEA;IACI;QACI,gBAAgB;IACpB;;IAEA;QACI,YAAY;IAChB;;IAEA;QACI,WAAW;IACf;AACJ","sourcesContent":[":root.light {\n    --empty-color: rgb(149, 217, 246);\n    --color: rgb(95, 75, 75);\n}\n\n:root.dark {\n    --empty-color: rgb(0, 10, 126);\n    --color: azure;\n}\n\n.empty-period {\n    background: var(--empty-color);\n    color: var(--color);\n    margin: 50px auto;\n    width: fit-content;\n    border-radius: 20px;\n    padding: 20px;\n    position: relative;\n    display: grid;\n    place-items: center;\n}\n\n.empty-period .empty-container {\n    position: relative;\n}\n\n.empty-period h2 {\n    width: 50%;\n    text-align: center;\n    margin-bottom: 20px;\n}\n\n.empty-period img {\n    border-radius: 20px;\n}\n\n.empty-period button {\n    background-color: rgba(249, 243, 243, 0.75);\n    background-image: url(\"../images/reload.svg\");\n    background-size: cover;\n    border: none;\n    width: 30px;\n    height: 30px;\n    border-radius: 100%;\n    position: absolute;\n    bottom: 20px;\n    right: 20px;\n}\n\n.empty-period img {\n    width: 700px;\n}\n\n@media screen and (max-width: 800px) {\n    .empty-period img {\n        width: 500px;\n    }\n}\n\n@media screen and (max-width: 480px) {\n    .empty-period {\n        max-width: 350px;\n    }\n\n    .empty-period img {\n        width: 300px;\n    }\n\n    .empty-period h2 {\n        width: 100%;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -150,7 +182,7 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root.light {\n    --project-name-bg: peachpuff;\n    --project-description-bg: rgb(249, 239, 221);\n    --project-color: rgb(31, 35, 96);\n\n}\n\n:root.dark {\n    --project-name-bg: rgb(55, 57, 107);\n    --project-description-bg: black;\n    --project-color: azure;\n}\n\n.project-item {\n    color: var(--project-color);\n    padding: 20px;\n    display: flex;\n    flex-direction: column;\n    position: relative;\n}\n\n.project-item .info {\n    text-align: center;\n    display: flex;\n    gap: 20px;\n    align-self: center;\n    align-items: center;\n    margin: 20px;\n}\n\n.project-item .info .details {\n    background: var(--project-name-bg);\n    padding: 10px;\n    border-radius: 10px;\n    width: 300px;\n}\n\n.project-item .info .details h2 {\n    font-size: 1.55rem;\n}\n\n.project-item .info .details p {\n    background: var(--project-description-bg);\n    border-radius: 10px;\n    padding: 10px;\n    margin: 10px;\n}\n\n.project-item .info .graphics {\n    display: flex;\n    align-items: center;\n    gap: 20px;\n}\n\n.project-item .info .graphics img {\n    border: 3px solid azure;\n    width: 200px;\n    border-radius: 30px;\n}\n\n.project-item .info .graphics .canvas-container {\n    position: relative;\n}\n\n.project-item .info .graphics .canvas-container p {\n    position: absolute;\n    display: grid;\n    place-items: center;\n    font-size: 2rem;\n    width: 6rem;\n    height: 6rem;\n    top: calc(50% - 3rem);\n    left: calc(50% - 3rem);\n}\n\n.project-item .tasks {\n    display: flex;\n    justify-content: space-around;\n}\n\n.project-item .checked-container .remove-all-checked {\n    background: rgb(236, 151, 145);\n    color: azure;\n    padding: 5px;\n    margin: 20px;\n    width: 100px;\n    border-radius: 5px;\n    display: flex;\n}\n\n.project-item .checked-container .remove-all-checked:hover {\n    background: rgb(212, 131, 128);\n}\n\n.project-item .checked-container .remove-all-checked:active {\n    transform: scale(.975);\n}\n\n.project-item .checked-container .remove-all-checked img {\n    filter: invert(100%);\n}\n\n.project-item .checked-container .remove-all-checked p {\n    width: 100px;\n}\n\n.project-item .add-task {\n    background-color: rgb(164, 230, 209);\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center;\n    width: calc(100% + 10px);\n    height: 50px;\n    margin: 20px 0;\n    border-radius: 10px;\n}\n\n.project-item .add-task:hover {\n    filter: invert(10%);\n}\n\n.project-item .add-task:active {\n    transform: scale(.975);\n}\n\n.project-item .delete-project {\n    background-color: transparent;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n    background-size: contain;\n    border: 2px solid rgb(40, 36, 36);\n    border-radius: 5px;\n    position: absolute;\n    top: 20px;\n    right: 20px;\n    width: 30px;\n    height: 30px;\n}\n\n.project-item .delete-project:hover {\n    background-color: rgba(111, 97, 97, 0.25);\n}\n\n.project-item .delete-project:active {\n    transform: scale(.975);\n}\n\n@media screen and (max-width: 700px) {\n    .project-item .tasks {\n        flex-direction: column;\n    }\n}\n\n@media screen and (max-width: 480px) {\n    .project-item {\n        padding: 10px;\n    }\n\n    .project-item .info {\n        flex-direction: column;\n    }\n\n    .project-item .info .graphics img {\n        width: 150px;\n    }\n\n    .project-item .info canvas {\n        width: 150px;\n        height: 150px;\n    }\n\n    .project-item .delete-project {\n       top: 10px;\n       right: 10px; \n    }\n}", "",{"version":3,"sources":["webpack://./src/css/project.css"],"names":[],"mappings":"AAAA;IACI,4BAA4B;IAC5B,4CAA4C;IAC5C,gCAAgC;;AAEpC;;AAEA;IACI,mCAAmC;IACnC,+BAA+B;IAC/B,sBAAsB;AAC1B;;AAEA;IACI,2BAA2B;IAC3B,aAAa;IACb,aAAa;IACb,sBAAsB;IACtB,kBAAkB;AACtB;;AAEA;IACI,kBAAkB;IAClB,aAAa;IACb,SAAS;IACT,kBAAkB;IAClB,mBAAmB;IACnB,YAAY;AAChB;;AAEA;IACI,kCAAkC;IAClC,aAAa;IACb,mBAAmB;IACnB,YAAY;AAChB;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,yCAAyC;IACzC,mBAAmB;IACnB,aAAa;IACb,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,SAAS;AACb;;AAEA;IACI,uBAAuB;IACvB,YAAY;IACZ,mBAAmB;AACvB;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,kBAAkB;IAClB,aAAa;IACb,mBAAmB;IACnB,eAAe;IACf,WAAW;IACX,YAAY;IACZ,qBAAqB;IACrB,sBAAsB;AAC1B;;AAEA;IACI,aAAa;IACb,6BAA6B;AACjC;;AAEA;IACI,8BAA8B;IAC9B,YAAY;IACZ,YAAY;IACZ,YAAY;IACZ,YAAY;IACZ,kBAAkB;IAClB,aAAa;AACjB;;AAEA;IACI,8BAA8B;AAClC;;AAEA;IACI,sBAAsB;AAC1B;;AAEA;IACI,oBAAoB;AACxB;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,oCAAoC;IACpC,yDAAuD;IACvD,wBAAwB;IACxB,4BAA4B;IAC5B,2BAA2B;IAC3B,wBAAwB;IACxB,YAAY;IACZ,cAAc;IACd,mBAAmB;AACvB;;AAEA;IACI,mBAAmB;AACvB;;AAEA;IACI,sBAAsB;AAC1B;;AAEA;IACI,6BAA6B;IAC7B,yDAAqD;IACrD,wBAAwB;IACxB,iCAAiC;IACjC,kBAAkB;IAClB,kBAAkB;IAClB,SAAS;IACT,WAAW;IACX,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,yCAAyC;AAC7C;;AAEA;IACI,sBAAsB;AAC1B;;AAEA;IACI;QACI,sBAAsB;IAC1B;AACJ;;AAEA;IACI;QACI,aAAa;IACjB;;IAEA;QACI,sBAAsB;IAC1B;;IAEA;QACI,YAAY;IAChB;;IAEA;QACI,YAAY;QACZ,aAAa;IACjB;;IAEA;OACG,SAAS;OACT,WAAW;IACd;AACJ","sourcesContent":[":root.light {\n    --project-name-bg: peachpuff;\n    --project-description-bg: rgb(249, 239, 221);\n    --project-color: rgb(31, 35, 96);\n\n}\n\n:root.dark {\n    --project-name-bg: rgb(55, 57, 107);\n    --project-description-bg: black;\n    --project-color: azure;\n}\n\n.project-item {\n    color: var(--project-color);\n    padding: 20px;\n    display: flex;\n    flex-direction: column;\n    position: relative;\n}\n\n.project-item .info {\n    text-align: center;\n    display: flex;\n    gap: 20px;\n    align-self: center;\n    align-items: center;\n    margin: 20px;\n}\n\n.project-item .info .details {\n    background: var(--project-name-bg);\n    padding: 10px;\n    border-radius: 10px;\n    width: 300px;\n}\n\n.project-item .info .details h2 {\n    font-size: 1.55rem;\n}\n\n.project-item .info .details p {\n    background: var(--project-description-bg);\n    border-radius: 10px;\n    padding: 10px;\n    margin: 10px;\n}\n\n.project-item .info .graphics {\n    display: flex;\n    align-items: center;\n    gap: 20px;\n}\n\n.project-item .info .graphics img {\n    border: 3px solid azure;\n    width: 200px;\n    border-radius: 30px;\n}\n\n.project-item .info .graphics .canvas-container {\n    position: relative;\n}\n\n.project-item .info .graphics .canvas-container p {\n    position: absolute;\n    display: grid;\n    place-items: center;\n    font-size: 2rem;\n    width: 6rem;\n    height: 6rem;\n    top: calc(50% - 3rem);\n    left: calc(50% - 3rem);\n}\n\n.project-item .tasks {\n    display: flex;\n    justify-content: space-around;\n}\n\n.project-item .checked-container .remove-all-checked {\n    background: rgb(236, 151, 145);\n    color: azure;\n    padding: 5px;\n    margin: 20px;\n    width: 100px;\n    border-radius: 5px;\n    display: flex;\n}\n\n.project-item .checked-container .remove-all-checked:hover {\n    background: rgb(212, 131, 128);\n}\n\n.project-item .checked-container .remove-all-checked:active {\n    transform: scale(.975);\n}\n\n.project-item .checked-container .remove-all-checked img {\n    filter: invert(100%);\n}\n\n.project-item .checked-container .remove-all-checked p {\n    width: 100px;\n}\n\n.project-item .add-task {\n    background-color: rgb(164, 230, 209);\n    background-image: url(\"../images/plus-box-outline.svg\");\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center;\n    width: calc(100% + 10px);\n    height: 50px;\n    margin: 20px 0;\n    border-radius: 10px;\n}\n\n.project-item .add-task:hover {\n    filter: invert(10%);\n}\n\n.project-item .add-task:active {\n    transform: scale(.975);\n}\n\n.project-item .delete-project {\n    background-color: transparent;\n    background-image: url(\"../images/delete-outline.svg\");\n    background-size: contain;\n    border: 2px solid rgb(40, 36, 36);\n    border-radius: 5px;\n    position: absolute;\n    top: 20px;\n    right: 20px;\n    width: 30px;\n    height: 30px;\n}\n\n.project-item .delete-project:hover {\n    background-color: rgba(111, 97, 97, 0.25);\n}\n\n.project-item .delete-project:active {\n    transform: scale(.975);\n}\n\n@media screen and (max-width: 700px) {\n    .project-item .tasks {\n        flex-direction: column;\n    }\n}\n\n@media screen and (max-width: 480px) {\n    .project-item {\n        padding: 10px;\n    }\n\n    .project-item .info {\n        flex-direction: column;\n    }\n\n    .project-item .info .graphics img {\n        width: 150px;\n    }\n\n    .project-item .info canvas {\n        width: 150px;\n        height: 150px;\n    }\n\n    .project-item .delete-project {\n       top: 10px;\n       right: 10px; \n    }\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root.light {\n    --project-name-bg: peachpuff;\n    --project-description-bg: rgb(249, 239, 221);\n    --project-color: rgb(31, 35, 96);\n    --button-filter: none;\n\n}\n\n:root.dark {\n    --project-name-bg: rgb(55, 57, 107);\n    --project-description-bg: black;\n    --project-color: azure;\n    --button-filter: invert(100%);\n}\n\n.project-item {\n    color: var(--project-color);\n    padding: 20px;\n    display: flex;\n    flex-direction: column;\n    position: relative;\n}\n\n.project-item .info {\n    text-align: center;\n    display: flex;\n    gap: 20px;\n    align-self: center;\n    align-items: center;\n    margin: 20px;\n}\n\n.project-item .info .details {\n    background: var(--project-name-bg);\n    padding: 10px;\n    border-radius: 10px;\n    width: 300px;\n}\n\n.project-item .info .details h2 {\n    font-size: 1.55rem;\n}\n\n.project-item .info .details p {\n    background: var(--project-description-bg);\n    border-radius: 10px;\n    padding: 10px;\n    margin: 10px;\n}\n\n.project-item .info .graphics {\n    display: flex;\n    align-items: center;\n    gap: 20px;\n}\n\n.project-item .info .graphics img {\n    border: 3px solid azure;\n    width: 200px;\n    border-radius: 30px;\n}\n\n.project-item .info .graphics .canvas-container {\n    position: relative;\n}\n\n.project-item .info .graphics .canvas-container p {\n    position: absolute;\n    display: grid;\n    place-items: center;\n    font-size: 2rem;\n    width: 6rem;\n    height: 6rem;\n    top: calc(50% - 3rem);\n    left: calc(50% - 3rem);\n}\n\n.project-item .tasks {\n    display: flex;\n    justify-content: space-around;\n}\n\n.project-item .checked-container .remove-all-checked {\n    background: rgb(236, 151, 145);\n    color: azure;\n    padding: 5px;\n    margin: 20px;\n    width: 100px;\n    border-radius: 5px;\n    display: flex;\n}\n\n.project-item .checked-container .remove-all-checked:hover {\n    background: rgb(212, 131, 128);\n}\n\n.project-item .checked-container .remove-all-checked:active {\n    transform: scale(.975);\n}\n\n.project-item .checked-container .remove-all-checked img {\n    filter: invert(100%);\n}\n\n.project-item .checked-container .remove-all-checked p {\n    width: 100px;\n}\n\n.project-item .add-task {\n    background-color: rgb(164, 230, 209);\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center;\n    width: calc(100% + 10px);\n    height: 50px;\n    margin: 20px 0;\n    border-radius: 10px;\n}\n\n.project-item .add-task:hover {\n    filter: invert(10%);\n}\n\n.project-item .add-task:active {\n    transform: scale(.975);\n}\n\n.project-item .delete-project {\n    background-color: transparent;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n    background-size: contain;\n    border: 2px solid rgb(40, 36, 36);\n    border-radius: 5px;\n    position: absolute;\n    top: 20px;\n    right: 20px;\n    width: 30px;\n    height: 30px;\n    filter: var(--button-filter);\n}\n\n.project-item .delete-project:hover {\n    background-color: rgba(111, 97, 97, 0.25);\n}\n\n.project-item .delete-project:active {\n    transform: scale(.975);\n}\n\n@media screen and (max-width: 700px) {\n    .project-item .tasks {\n        flex-direction: column;\n    }\n}\n\n@media screen and (max-width: 480px) {\n    .project-item {\n        padding: 10px;\n    }\n\n    .project-item .info {\n        flex-direction: column;\n    }\n\n    .project-item .info .graphics img {\n        width: 150px;\n    }\n\n    .project-item .info canvas {\n        width: 150px;\n        height: 150px;\n    }\n\n    .project-item .delete-project {\n       top: 10px;\n       right: 10px; \n    }\n}", "",{"version":3,"sources":["webpack://./src/css/project.css"],"names":[],"mappings":"AAAA;IACI,4BAA4B;IAC5B,4CAA4C;IAC5C,gCAAgC;IAChC,qBAAqB;;AAEzB;;AAEA;IACI,mCAAmC;IACnC,+BAA+B;IAC/B,sBAAsB;IACtB,6BAA6B;AACjC;;AAEA;IACI,2BAA2B;IAC3B,aAAa;IACb,aAAa;IACb,sBAAsB;IACtB,kBAAkB;AACtB;;AAEA;IACI,kBAAkB;IAClB,aAAa;IACb,SAAS;IACT,kBAAkB;IAClB,mBAAmB;IACnB,YAAY;AAChB;;AAEA;IACI,kCAAkC;IAClC,aAAa;IACb,mBAAmB;IACnB,YAAY;AAChB;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,yCAAyC;IACzC,mBAAmB;IACnB,aAAa;IACb,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,SAAS;AACb;;AAEA;IACI,uBAAuB;IACvB,YAAY;IACZ,mBAAmB;AACvB;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,kBAAkB;IAClB,aAAa;IACb,mBAAmB;IACnB,eAAe;IACf,WAAW;IACX,YAAY;IACZ,qBAAqB;IACrB,sBAAsB;AAC1B;;AAEA;IACI,aAAa;IACb,6BAA6B;AACjC;;AAEA;IACI,8BAA8B;IAC9B,YAAY;IACZ,YAAY;IACZ,YAAY;IACZ,YAAY;IACZ,kBAAkB;IAClB,aAAa;AACjB;;AAEA;IACI,8BAA8B;AAClC;;AAEA;IACI,sBAAsB;AAC1B;;AAEA;IACI,oBAAoB;AACxB;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,oCAAoC;IACpC,yDAAuD;IACvD,wBAAwB;IACxB,4BAA4B;IAC5B,2BAA2B;IAC3B,wBAAwB;IACxB,YAAY;IACZ,cAAc;IACd,mBAAmB;AACvB;;AAEA;IACI,mBAAmB;AACvB;;AAEA;IACI,sBAAsB;AAC1B;;AAEA;IACI,6BAA6B;IAC7B,yDAAqD;IACrD,wBAAwB;IACxB,iCAAiC;IACjC,kBAAkB;IAClB,kBAAkB;IAClB,SAAS;IACT,WAAW;IACX,WAAW;IACX,YAAY;IACZ,4BAA4B;AAChC;;AAEA;IACI,yCAAyC;AAC7C;;AAEA;IACI,sBAAsB;AAC1B;;AAEA;IACI;QACI,sBAAsB;IAC1B;AACJ;;AAEA;IACI;QACI,aAAa;IACjB;;IAEA;QACI,sBAAsB;IAC1B;;IAEA;QACI,YAAY;IAChB;;IAEA;QACI,YAAY;QACZ,aAAa;IACjB;;IAEA;OACG,SAAS;OACT,WAAW;IACd;AACJ","sourcesContent":[":root.light {\n    --project-name-bg: peachpuff;\n    --project-description-bg: rgb(249, 239, 221);\n    --project-color: rgb(31, 35, 96);\n    --button-filter: none;\n\n}\n\n:root.dark {\n    --project-name-bg: rgb(55, 57, 107);\n    --project-description-bg: black;\n    --project-color: azure;\n    --button-filter: invert(100%);\n}\n\n.project-item {\n    color: var(--project-color);\n    padding: 20px;\n    display: flex;\n    flex-direction: column;\n    position: relative;\n}\n\n.project-item .info {\n    text-align: center;\n    display: flex;\n    gap: 20px;\n    align-self: center;\n    align-items: center;\n    margin: 20px;\n}\n\n.project-item .info .details {\n    background: var(--project-name-bg);\n    padding: 10px;\n    border-radius: 10px;\n    width: 300px;\n}\n\n.project-item .info .details h2 {\n    font-size: 1.55rem;\n}\n\n.project-item .info .details p {\n    background: var(--project-description-bg);\n    border-radius: 10px;\n    padding: 10px;\n    margin: 10px;\n}\n\n.project-item .info .graphics {\n    display: flex;\n    align-items: center;\n    gap: 20px;\n}\n\n.project-item .info .graphics img {\n    border: 3px solid azure;\n    width: 200px;\n    border-radius: 30px;\n}\n\n.project-item .info .graphics .canvas-container {\n    position: relative;\n}\n\n.project-item .info .graphics .canvas-container p {\n    position: absolute;\n    display: grid;\n    place-items: center;\n    font-size: 2rem;\n    width: 6rem;\n    height: 6rem;\n    top: calc(50% - 3rem);\n    left: calc(50% - 3rem);\n}\n\n.project-item .tasks {\n    display: flex;\n    justify-content: space-around;\n}\n\n.project-item .checked-container .remove-all-checked {\n    background: rgb(236, 151, 145);\n    color: azure;\n    padding: 5px;\n    margin: 20px;\n    width: 100px;\n    border-radius: 5px;\n    display: flex;\n}\n\n.project-item .checked-container .remove-all-checked:hover {\n    background: rgb(212, 131, 128);\n}\n\n.project-item .checked-container .remove-all-checked:active {\n    transform: scale(.975);\n}\n\n.project-item .checked-container .remove-all-checked img {\n    filter: invert(100%);\n}\n\n.project-item .checked-container .remove-all-checked p {\n    width: 100px;\n}\n\n.project-item .add-task {\n    background-color: rgb(164, 230, 209);\n    background-image: url(\"../images/plus-box-outline.svg\");\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center;\n    width: calc(100% + 10px);\n    height: 50px;\n    margin: 20px 0;\n    border-radius: 10px;\n}\n\n.project-item .add-task:hover {\n    filter: invert(10%);\n}\n\n.project-item .add-task:active {\n    transform: scale(.975);\n}\n\n.project-item .delete-project {\n    background-color: transparent;\n    background-image: url(\"../images/delete-outline.svg\");\n    background-size: contain;\n    border: 2px solid rgb(40, 36, 36);\n    border-radius: 5px;\n    position: absolute;\n    top: 20px;\n    right: 20px;\n    width: 30px;\n    height: 30px;\n    filter: var(--button-filter);\n}\n\n.project-item .delete-project:hover {\n    background-color: rgba(111, 97, 97, 0.25);\n}\n\n.project-item .delete-project:active {\n    transform: scale(.975);\n}\n\n@media screen and (max-width: 700px) {\n    .project-item .tasks {\n        flex-direction: column;\n    }\n}\n\n@media screen and (max-width: 480px) {\n    .project-item {\n        padding: 10px;\n    }\n\n    .project-item .info {\n        flex-direction: column;\n    }\n\n    .project-item .info .graphics img {\n        width: 150px;\n    }\n\n    .project-item .info canvas {\n        width: 150px;\n        height: 150px;\n    }\n\n    .project-item .delete-project {\n       top: 10px;\n       right: 10px; \n    }\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -520,6 +552,61 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
        /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_burger_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_burger_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_burger_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./src/css/empty.css":
+/*!***************************!*\
+  !*** ./src/css/empty.css ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_empty_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./empty.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/empty.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_empty_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_empty_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_empty_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_empty_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -1156,6 +1243,103 @@ asideInterface.resize_aside();
 
 /***/ }),
 
+/***/ "./src/empty_period.js":
+/*!*****************************!*\
+  !*** ./src/empty_period.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "emptyObj": () => (/* binding */ emptyObj)
+/* harmony export */ });
+const emptyObj = (
+    () => {
+        const empty = document.createElement("div");
+        const message = document.createElement("h2");
+        const container = document.createElement("div");
+        const img = document.createElement("img");
+        const canvas = document.createElement("canvas");
+        const context = canvas.getContext("2d");
+        const reload = document.createElement("button");
+        let animeKiller, reg, intervals, subs;
+
+        intervals = ["week", "month", "year", "all"];
+        subs = ["earthporn", "TouhouArt", "brutalism"];
+        reg = /^https:\/\/i\.redd\.it\/\w+\.(jpg|png|jpeg)/i;
+
+        empty.append(message);
+        empty.append(container);
+        container.append(img);
+        container.append(reload);
+
+        empty.classList.add("empty-period");
+        container.classList.add("empty-container");
+
+        message.innerText = "There doesn't seem to be anything for this period, have a pic instead.";
+        canvas.width = 200;
+        canvas.height = 200;
+
+        img.addEventListener("load", replace);
+
+        reload.addEventListener("click", fetch_image);
+
+        show_loading();
+        fetch_image();
+
+        function replace() {
+            cancelAnimationFrame(animeKiller);
+            canvas.replaceWith(img);
+            reload.style.display = "block";
+        }
+
+        function fetch_image() {
+            let interval, sub;
+
+            interval = intervals[~~(Math.random() * intervals.length)];
+            sub = subs[~~(Math.random() * subs.length)];
+            show_loading();
+            reload.style.display = "none";
+            img.replaceWith(canvas);
+            fetch(`https://www.reddit.com/r/${sub}/top.json?t=${interval}&limit=100`, { method: "GET" })
+                .then(res => res.json())
+                .then(res => {
+                    let child;
+
+                    do {    
+                        child = res.data.children[~~(Math.random() * res.data.children.length)];
+                    } while (!reg.test(child.data.url));
+
+                    img.src = child.data.url;
+                }).catch(error => {
+                    console.log(error);
+                    img.src = "./pepe.jpg";
+                });
+        }
+
+        function show_loading() {
+            let x, y, radius;
+
+            x = Math.random() * canvas.width;
+            y = Math.random() * canvas.height;
+            radius = Math.random() * 100 + 50;
+            context.fillStyle = "rgb(255, 255, 255, .05)";
+            context.fillRect(0, 0, canvas.width, canvas.height);
+            context.fillStyle = "red";
+            context.beginPath();
+            context.arc(x, y, radius, 0, Math.PI * 2);
+            context.stroke();
+
+            animeKiller = requestAnimationFrame(show_loading);
+        }
+
+        return empty;
+    }
+)();
+
+/***/ }),
+
 /***/ "./src/imports.js":
 /*!************************!*\
   !*** ./src/imports.js ***!
@@ -1171,24 +1355,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_task_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./css/task.css */ "./src/css/task.css");
 /* harmony import */ var _css_project_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./css/project.css */ "./src/css/project.css");
 /* harmony import */ var _css_period_project_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./css/period_project.css */ "./src/css/period_project.css");
-/* harmony import */ var _theme_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./theme.js */ "./src/theme.js");
-/* harmony import */ var _theme_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_theme_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _aside_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./aside.js */ "./src/aside.js");
-/* harmony import */ var _test_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./test.js */ "./src/test.js");
-/* harmony import */ var _test_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_test_js__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _task_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./task.js */ "./src/task.js");
-/* harmony import */ var _taskdom_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./taskdom.js */ "./src/taskdom.js");
-/* harmony import */ var _images_project_svg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./images/project.svg */ "./src/images/project.svg");
-/* harmony import */ var _images_granular_jpg__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./images/granular.jpg */ "./src/images/granular.jpg");
-/* harmony import */ var _images_plus_svg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./images/plus.svg */ "./src/images/plus.svg");
-/* harmony import */ var _images_logo_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./images/logo.png */ "./src/images/logo.png");
-/* harmony import */ var _images_check_bold_svg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./images/check-bold.svg */ "./src/images/check-bold.svg");
-/* harmony import */ var _images_arrow_expand_all_svg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./images/arrow-expand-all.svg */ "./src/images/arrow-expand-all.svg");
-/* harmony import */ var _images_arrow_collapse_all_svg__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./images/arrow-collapse-all.svg */ "./src/images/arrow-collapse-all.svg");
-/* harmony import */ var _images_delete_outline_svg__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./images/delete-outline.svg */ "./src/images/delete-outline.svg");
-/* harmony import */ var _images_plus_box_outline_svg__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./images/plus-box-outline.svg */ "./src/images/plus-box-outline.svg");
-/* harmony import */ var _images_shredder_svg__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./images/shredder.svg */ "./src/images/shredder.svg");
-/* harmony import */ var _images_chevron_right_svg__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./images/chevron-right.svg */ "./src/images/chevron-right.svg");
+/* harmony import */ var _css_empty_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./css/empty.css */ "./src/css/empty.css");
+/* harmony import */ var _theme_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./theme.js */ "./src/theme.js");
+/* harmony import */ var _theme_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_theme_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _aside_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./aside.js */ "./src/aside.js");
+/* harmony import */ var _test_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./test.js */ "./src/test.js");
+/* harmony import */ var _test_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_test_js__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _task_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./task.js */ "./src/task.js");
+/* harmony import */ var _taskdom_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./taskdom.js */ "./src/taskdom.js");
+/* harmony import */ var _images_project_svg__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./images/project.svg */ "./src/images/project.svg");
+/* harmony import */ var _images_granular_jpg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./images/granular.jpg */ "./src/images/granular.jpg");
+/* harmony import */ var _images_plus_svg__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./images/plus.svg */ "./src/images/plus.svg");
+/* harmony import */ var _images_logo_png__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./images/logo.png */ "./src/images/logo.png");
+/* harmony import */ var _images_check_bold_svg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./images/check-bold.svg */ "./src/images/check-bold.svg");
+/* harmony import */ var _images_arrow_expand_all_svg__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./images/arrow-expand-all.svg */ "./src/images/arrow-expand-all.svg");
+/* harmony import */ var _images_arrow_collapse_all_svg__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./images/arrow-collapse-all.svg */ "./src/images/arrow-collapse-all.svg");
+/* harmony import */ var _images_delete_outline_svg__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./images/delete-outline.svg */ "./src/images/delete-outline.svg");
+/* harmony import */ var _images_plus_box_outline_svg__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./images/plus-box-outline.svg */ "./src/images/plus-box-outline.svg");
+/* harmony import */ var _images_shredder_svg__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./images/shredder.svg */ "./src/images/shredder.svg");
+/* harmony import */ var _images_chevron_right_svg__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./images/chevron-right.svg */ "./src/images/chevron-right.svg");
+/* harmony import */ var _images_reload_svg__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./images/reload.svg */ "./src/images/reload.svg");
+/* harmony import */ var _images_pepe_jpg__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./images/pepe.jpg */ "./src/images/pepe.jpg");
+
+
+
 
 
 
@@ -1817,6 +2007,17 @@ module.exports = __webpack_require__.p + "night.svg";
 
 /***/ }),
 
+/***/ "./src/images/pepe.jpg":
+/*!*****************************!*\
+  !*** ./src/images/pepe.jpg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "pepe.jpg";
+
+/***/ }),
+
 /***/ "./src/images/plus-box-outline.svg":
 /*!*****************************************!*\
   !*** ./src/images/plus-box-outline.svg ***!
@@ -1847,6 +2048,17 @@ module.exports = __webpack_require__.p + "plus.svg";
 
 "use strict";
 module.exports = __webpack_require__.p + "project.svg";
+
+/***/ }),
+
+/***/ "./src/images/reload.svg":
+/*!*******************************!*\
+  !*** ./src/images/reload.svg ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "reload.svg";
 
 /***/ }),
 
@@ -2018,6 +2230,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _task_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./task.js */ "./src/task.js");
 /* harmony import */ var _taskdom_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./taskdom.js */ "./src/taskdom.js");
 /* harmony import */ var _utilities_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utilities.js */ "./src/utilities.js");
+/* harmony import */ var _empty_period_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./empty_period.js */ "./src/empty_period.js");
+
 
 
 
@@ -2063,108 +2277,92 @@ __webpack_require__.r(__webpack_exports__);
 
 // asideInterface.resize_aside();
 
-const extras = document.querySelectorAll(".period-project .lower-section");
-const checks = document.querySelectorAll(".period-project .show-tasks");
-const tasks = [];
-const extInterface = {
-    array: tasks,
-    warning: null,
-    checked: null,
-    unchecked: null,
-    userDataString: null
-};
+//--------------------------------------------------------------------------------------
 
-let priorities = ["low", "medium", "high"];
+// const extras = document.querySelectorAll(".period-project .lower-section");
+// const checks = document.querySelectorAll(".period-project .show-tasks");
+// const tasks = [];
+// const extInterface = {
+//     array: tasks,
+//     warning: null,
+//     checked: null,
+//     unchecked: null,
+//     userDataString: null
+// };
 
-extras.forEach(extra => {
-    for (let i = 0; i < 3; i++) {
-        let description, checkedBox, priority, duedate, id, notes, task;
+// let priorities = ["low", "medium", "high"];
 
-        description = "This is a test task";
-        checkedBox = false;
-        priority = priorities[~~(Math.random() * priorities.length)];
-        duedate = "2022-05-13";
-        id = (0,_utilities_js__WEBPACK_IMPORTED_MODULE_3__.create_id)(10);
-        notes = [
-            {
-                text: "This is a string",
-                id: (0,_utilities_js__WEBPACK_IMPORTED_MODULE_3__.create_id)(10)
-            },
-            {
-                text: "This is a test",
-                id: (0,_utilities_js__WEBPACK_IMPORTED_MODULE_3__.create_id)(10)
-            }
-        ];
+// extras.forEach(extra => {
+//     for (let i = 0; i < 3; i++) {
+//         let description, checkedBox, priority, duedate, id, notes, task;
 
-        task = (0,_task_js__WEBPACK_IMPORTED_MODULE_1__.create_task)(description, checkedBox, priority, duedate, id, notes);
-        extra.append((0,_taskdom_js__WEBPACK_IMPORTED_MODULE_2__.create_task_dom)(task, extInterface));
-    }
-});
+//         description = "This is a test task";
+//         checkedBox = false;
+//         priority = priorities[~~(Math.random() * priorities.length)];
+//         duedate = "2022-05-13";
+//         id = create_id(10);
+//         notes = [
+//             {
+//                 text: "This is a string",
+//                 id: create_id(10)
+//             },
+//             {
+//                 text: "This is a test",
+//                 id: create_id(10)
+//             }
+//         ];
 
-// function resize_expanded() {
-//     let height;
+//         task = create_task(description, checkedBox, priority, duedate, id, notes);
+//         extra.append(create_task_dom(task, extInterface));
+//     }
+// });
 
-//     height = window.getComputedStyle(extraSection).height;
-//     if (expand.checked) {
-//         extraWrapper.style.height = height;
-//         extraSection.style.top = 0;
+// checks.forEach(check => check.addEventListener("click", () => {
+//     resize_secs(check);
+// }));
+
+// checks.forEach(check => {
+//     let parent, taskChecks, wrapper, lowerSecs;
+//     parent = check.parentElement.parentElement;
+//     console.log(parent);
+//     taskChecks = parent.querySelectorAll(".task .expand-contract");
+//     wrapper = parent.querySelector(".extra-wrapper");
+//     lowerSecs = parent.querySelector(".lower-section");
+
+//     taskChecks.forEach(task => task.addEventListener("click", () => {
+//         let height;
+
+//         setTimeout(() => {
+//             height = window.getComputedStyle(lowerSecs).height;
+//             wrapper.style.height = height;
+//         }, 330);
+//     }));
+// });
+
+// function resize_secs(check) {
+//     let grandParent, wrapper, lowerSecs, height;
+
+//     grandParent = check.parentElement.parentElement;
+//     wrapper = grandParent.querySelector(".extra-wrapper");
+//     lowerSecs = grandParent.querySelector(".lower-section");
+//     height = window.getComputedStyle(lowerSecs).height;
+
+//     if (check.checked) {
+//         wrapper.style.height = height;
+//         lowerSecs.style.top = 0;
 //     }
 //     else {
-//         extraWrapper.style.height = 0;
-//         extraSection.style.top = `-${height}`;
+//         wrapper.style.height = 0;
+//         lowerSecs.style.top = `-${height}`;
 //     }
 // }
 
+//--------------------------------------------------------------------------------------
 
-/**
- * don't add an event listener every time you click it
- */
-checks.forEach(check => check.addEventListener("click", () => {
-    resize_secs(check);
-}));
+const main = document.querySelector("main");
 
-checks.forEach(check => {
-    let parent, taskChecks, wrapper, lowerSecs;
-    parent = check.parentElement.parentElement;
-    console.log(parent);
-    taskChecks = parent.querySelectorAll(".task .expand-contract");
-    wrapper = parent.querySelector(".extra-wrapper");
-    lowerSecs = parent.querySelector(".lower-section");
-
-    taskChecks.forEach(task => task.addEventListener("click", () => {
-        let height;
-
-        setTimeout(() => {
-            height = window.getComputedStyle(lowerSecs).height;
-            wrapper.style.height = height;
-        }, 330);
-    }));
-});
-
-function resize_secs(check) {
-    let grandParent, wrapper, lowerSecs, height;
-
-    grandParent = check.parentElement.parentElement;
-    wrapper = grandParent.querySelector(".extra-wrapper");
-    lowerSecs = grandParent.querySelector(".lower-section");
-    height = window.getComputedStyle(lowerSecs).height;
-
-    if (check.checked) {
-        wrapper.style.height = height;
-        lowerSecs.style.top = 0;
-    }
-    else {
-        wrapper.style.height = 0;
-        lowerSecs.style.top = `-${height}`;
-    }
-}
-
-/**
- * Take every checkbox in the project element, add an event listener to it so that whenever it is pressed,
- * it opens or closes the tasks section.
- * Next take all checkboxes inside tasks, add an event listener to each one so that whenever they are checked, 
- * the project's extra section will be resized.
- */
+main.append(_empty_period_js__WEBPACK_IMPORTED_MODULE_4__.emptyObj);
+//emptyObj.show_loading();
 })();
 
 /******/ })()
