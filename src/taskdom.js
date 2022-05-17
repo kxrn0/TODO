@@ -290,7 +290,7 @@ export function create_task_dom(taskObj, extInterface) {
 
         name = extInterface.modal.querySelector(".modal-content p");
         name.innerText = taskObj.description;
-        extInterface.modal.style.display = "grid";
+        extInterface.modal.style.display = "block";
         deleteButton = extInterface.modal.querySelector(".yes");
         cancelButton = extInterface.modal.querySelector(".no");
 

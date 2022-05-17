@@ -17,6 +17,7 @@
     --aside-bg: rgb(119, 154, 202);
     --period-bg: rgb(192, 193, 255);
     --project-bg: rgb(229, 97, 97);
+    --modal-content-bg: rgb(174, 179, 224);
 }
 
 :root.dark {
@@ -28,6 +29,7 @@
     --aside-bg: rgb(21, 38, 82);
     --period-bg: rgb(26, 191, 191);
     --project-bg: rgb(148, 108, 108);
+    --modal-content-bg: rgb(0, 45, 128);
 }
 
 body {
@@ -172,9 +174,87 @@ aside .project canvas {
 
 /* MAIN */
 
+:root.light {
+    --modal-color: rgb(75, 55, 55);
+    --no-bg: rgb(87, 233, 102);
+    --no-color: rgb(18, 22, 22);
+    --no-hover: rgb(82, 218, 96);
+    --yes-bg: rgb(246, 149, 149);
+    --yes-color: rgb(56, 47, 47);
+    --yes-hover: rgb(223, 135, 135);
+}
+
+:root.dark {
+    --modal-color: azure;
+    --no-bg: rgb(2, 14, 68);
+    --no-color: azure;
+    --no-hover: rgb(1, 1, 20);
+    --yes-bg: rgb(105, 11, 11);
+    --yes-color: azure;
+    --yes-hover: rgb(64, 4, 4);
+}
+
 main {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+}
+
+main .modal {
+    background: rgba(66, 43, 43, 0.5);
+    color: var(--modal-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 1;
+    /* display: none; */
+}
+
+main .modal .controls button {
+    padding: 10px;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    border: none;
+}
+
+main .modal .yes {
+    background: var(--yes-bg);
+    color: var(--yes-color);
+}
+
+main .modal .yes:hover {
+    background: var(--yes-hover);
+}
+
+main .modal .no {
+    background: var(--no-bg);
+    color: var(--no-color);
+}
+
+main .modal .no:hover {
+    background: var(--no-hover);
+}
+
+main .modal .controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .modal button:active {
+    transform: scale(.99);
+}
+
+main .modal-content {
+    background: var(--modal-content-bg);
+    border-radius: 10px;
+    margin: 100px auto; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
 }
 
 @media screen and (max-width: 480px) {

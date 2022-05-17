@@ -120,7 +120,7 @@
             </li>
         </ul> -->
         
-        <div class="project-item">
+        <!-- <div class="project-item">
             <button class="delete-project"></button>
             <div class="info">
                 <div class="graphics">
@@ -158,11 +158,11 @@
             </div>
             <div class="modal">
                 <div class="modal-content">
-                    <form action="" class="crete-new-task">
+                    <form action="" class="create-new-task">
                         <ul class="variables">
                             <li>
                                 <label for="new-task-label">Label</label>
-                                <input type="text" id="new-task-label" name="new-task-label">
+                                <input type="text" id="new-task-label" name="new-task-label" required>
                             </li>
                             <li>
                                 <label for="new-task-due-date">Due date</label>
@@ -172,13 +172,13 @@
                                 <p>Priority</p>
                                 <ul class="choices">
                                     <li>
-                                        <input type="checkbox" name="new-task-high" id="new-task-high"><label for="new-task-high">High</label>
+                                        <input type="checkbox" name="new-task-high" id="new-task-high" class="new-task-high"><label for="new-task-high">High</label>
                                     </li>
                                     <li>
-                                        <input type="checkbox" name="new-task-medium" id="new-task-medium"><label for="new-task-medium">Medium</label>
+                                        <input type="checkbox" name="new-task-medium" id="new-task-medium" class="new-task-medium"><label for="new-task-medium">Medium</label>
                                     </li>
                                     <li>
-                                        <input type="checkbox" name="new-task-low" id="new-task-low"><label for="new-task-low">Low</label>
+                                        <input type="checkbox" name="new-task-low" id="new-task-low" class="new-task-low"><label for="new-task-low">Low</label>
                                     </li>
                                 </ul>
                             </li>
@@ -193,41 +193,56 @@
                                 </ul>
                             </li>
                         </ul>
-                        <button type="submit" class="create">Create</button>
+                        <div class="controls">
+                            <button type="submit" class="create">Create</button>
+                            <button type="button" class="cancel">Cancel</button>
+                        </div>
                     </form>
+                </div>
+            </div>
+            <div class="modal warning-delete-task">
+                <div class="modal-content">
+                    <div class="deletion">
+                        <h2>Do you really wish to delete</h2>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h2>?</h2>
+                    </div>
+                    <div class="controls">
+                        <button class="yes">Delete</button><button class="no">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="modal delete-project">
+            <div class="modal-content">
+                <h2>Do you really wish to delete this project?</h2>
+                <div class="controls">
+                    <button class="yes">Delete</button>
+                    <button class="no">Cancel</button>
                 </div>
             </div>
         </div>
     </main>
 
-    <button id="shalom">shalom</button>
 
     <script>
-        const canvas = document.querySelector("main canvas");
-        const context = canvas.getContext("2d");
+        // const canvas = document.querySelector("main canvas");
+        // const context = canvas.getContext("2d");
 
-        context.beginPath();
+        // context.beginPath();
         
-        context.lineWidth = 10;
-        context.strokeStyle = "rgb(225, 190, 255)";
-        context.arc(canvas.width / 2, canvas.height / 2, canvas.width / 2 - 5, 0, Math.PI * 2);
-        context.stroke();
-        context.beginPath();
-        // context.lineWidth = 20;
-        context.strokeStyle = "rgb(100, 150, 200)";
-        context.arc(canvas.width / 2, canvas.height / 2, canvas.width / 2 - 5, - Math.PI / 2, 1.44 - Math.PI / 2);
-        context.stroke();
-        console.log("shalom");
+        // context.lineWidth = 10;
+        // context.strokeStyle = "rgb(225, 190, 255)";
+        // context.arc(canvas.width / 2, canvas.height / 2, canvas.width / 2 - 5, 0, Math.PI * 2);
+        // context.stroke();
+        // context.beginPath();
+        // // context.lineWidth = 20;
+        // context.strokeStyle = "rgb(100, 150, 200)";
+        // context.arc(canvas.width / 2, canvas.height / 2, canvas.width / 2 - 5, - Math.PI / 2, 1.44 - Math.PI / 2);
+        // context.stroke();
 
         //--------------------------------------------------------------------
-        const shalom = document.getElementById("shalom");
 
-        shalom.addEventListener("click", () => {
-            let root = document.documentElement;
-
-            root.classList.toggle("dark");
-            root.classList.toggle("light");
-        });
     </script>
 </body>
 

@@ -45,7 +45,17 @@
     font-size: 1.55rem;
 }
 
-.project-item .info .details p {
+.project-item .info input[type="text"] {
+    background: beige;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    padding: 5px;
+    width: 90%;
+    text-align: center;
+}
+
+.project-item .info .details p, .project-item .info .details textarea {
     background: var(--project-description-bg);
     border-radius: 10px;
     padding: 10px;
@@ -165,6 +175,9 @@
     --create-bg: rgb(87, 233, 102);
     --create-color: rgb(18, 22, 22);
     --create-hover: rgb(82, 218, 96);
+    --cancel-bg: rgb(246, 149, 149);
+    --cancel-color: rgb(56, 47, 47);
+    --cancel-hover: rgb(223, 135, 135);
     --filter: none;
 }
 
@@ -175,16 +188,24 @@
     --create-bg: rgb(2, 14, 68);
     --create-color: azure;
     --create-hover: rgb(1, 1, 20);
+    --cancel-bg: rgb(105, 11, 11);
+    --cancel-color: azure;
+    --cancel-hover: rgb(64, 4, 4);
     --filter: invert(100%);
 }
 
-.project-item .modal {
+/* .project-item .modal {
     background: rgba(66, 43, 43, 0.5);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    display: none;
+}
+
+.project-item .modal button:active {
+    transform: scale(.99);
 }
 
 .project-item .modal-content {
@@ -195,6 +216,10 @@
     display: flex;
     flex-direction: column;
     width: 300px;
+} */
+
+.project-item .modal {
+    display: none;
 }
 
 .project-item .modal .variables > li {
@@ -225,30 +250,30 @@
     text-align: center;
 }
 
-.project-item .modal #new-task-high {
+.project-item .modal .new-task-high {
     background: rgb(239, 93, 93, .5);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-.project-item .modal #new-task-high:checked {
+.project-item .modal .new-task-high:checked {
     background: rgb(239, 93, 93);
     border-top: 1px solid azure;
     border-left: 1px solid azure;
     border-bottom: 1px solid azure;
 }
 
-.project-item .modal #new-task-medium {
+.project-item .modal .new-task-medium {
     background: rgb(235, 241, 7, .5);
 }
 
-.project-item .modal #new-task-medium:checked {
+.project-item .modal .new-task-medium:checked {
     background: rgb(235, 241, 7);
     border-top: 1px solid azure;
     border-bottom: 1px solid azure;
 }
 
-.project-item .modal #new-task-low {
+.project-item .modal .new-task-low {
     background: rgb(59, 180, 213);
     border-top: 1px solid azure;
     border-right: 1px solid azure;
@@ -270,6 +295,7 @@
 
 .project-item .modal .new-task-notes {
     background: var(--new-task-notes-bg);
+    min-height: 50px;
     position: relative;
     border-radius: 10px;
     padding: 10px;
@@ -288,12 +314,16 @@
     border: none;
 }
 
-.project-item .modal .new-task-notes li {
+.project-item .modal .new-task-notes li, .project-item .modal .new-task-notes textarea {
     background: var(--new-note-bg);
     padding: 5px;
     border-radius: 5px;
     margin-bottom: 30px;
     position: relative;
+}
+
+.project-item .modal .new-task-notes li p {
+    padding-right: 10px;
 }
 
 .project-item .modal .new-task-notes .new-task-add-note {
@@ -309,23 +339,75 @@
     height: 30px;
 }
 
+/* .project-item .modal .controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+} */
+
+/* .project-item .modal .controls button {
+    padding: 10px;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    border: none;
+} */
+
 .project-item .modal .create {
     background: var(--create-bg);
     color: var(--create-color);
-    display: block;
-    padding: 10px;
-    font-size: 1.25rem;
-    margin: 10px auto;
-    border-radius: 5px;
-    border: none;
 }
 
 .project-item .modal .create:hover {
     background: var(--create-hover);
 }
 
-.project-item .modal .create:active {
-    transform: scale(.99);
+.project-item .modal .cancel {
+    background-color: var(--cancel-bg);
+    color: var(--cancel-color)
+}
+
+.project-item .modal .cancel:hover {
+    background: var(--cancel-hover);
+}
+
+:root.dark {
+    --deletion-p-bg: black;
+    --deletion-p-color: azure;
+}
+
+:root.light {
+    --deletion-p-bg: azure;
+    --deletion-p-color: black;
+}
+
+.project-item .warning-delete-task {
+    text-align: center;
+}
+
+.project-item .warning-delete-task .deletion p {
+    background: var(--deletion-p-bg);
+    color: var(--deletion-p-color);
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.project-item .warning-delete-task .yes {
+    background-color: var(--cancel-bg);
+    color: var(--cancel-color)
+}
+
+.project-item .warning-delete-task .yes:hover {
+    background: var(--cancel-hover);
+}
+
+.project-item .warning-delete-task .no {
+    background: var(--create-bg);
+    color: var(--create-color);   
+}
+
+.project-item .warning-delete-task .no:hover {
+    background: var(--create-hover);
 }
 
 @media screen and (max-width: 700px) {
@@ -336,7 +418,7 @@
 
 @media screen and (max-width: 480px) {
     .project-item {
-        padding: 10px;
+        padding: 10px 15px 10px 10px;
     }
 
     .project-item .info {
@@ -358,10 +440,3 @@
     }
 }
 
-/* ... */
-#shalom {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    z-index: 100;
-}
