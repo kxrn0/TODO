@@ -24,3 +24,4 @@ import shredder from "./images/shredder.svg";
 import chevron from "./images/chevron-right.svg";
 import reload from "./images/reload.svg"
 import pepe from "./images/pepe.jpg";
+import upload from "./images/image-change.svg";

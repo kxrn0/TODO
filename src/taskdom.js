@@ -303,6 +303,7 @@ export function create_task_dom(taskObj, extInterface) {
 
             index = extInterface.array.findIndex(task => task.id == taskObj.id);
             extInterface.array.splice(index, 1);
+            extInterface.update();
             task.parentElement.removeChild(task);
             hide();
         }

@@ -1,17 +1,21 @@
 import { create_task_dom } from "./taskdom";
 import { create_task } from "./task";
 import { create_id } from "./utilities";
+import { kill_many } from "./utilities";
+import { make_cover } from "./utilities";
 
 /**
  * todo;
- * edit project label from clicking on it                         [x];
- * edit project description from clicking on it                   [x];
- * clear note tasks on the form                                   [x];
- * implement deletion of individual tasks                         [x];
- * implement deletion of project                                  [];
- * remove all checked by clicking on the corresponding button     [];
- * show the correct percentage in the inner p element             [];
- * show the percentage of completed tasks with the canvas element [];
+ * edit project label from clicking on it                                       [x];
+ * edit project description from clicking on it                                 [x];
+ * clear note tasks on the form                                                 [x];
+ * implement deletion of individual tasks                                       [x];
+ * implement deletion of project                                                [x];
+ * remove all checked by clicking on the corresponding button                   [x];
+ * show the correct percentage in the inner p element                           [x];
+ * show the percentage of completed tasks with the canvas element               [x];
+ * change the image used for the project                                        [x];
+ * add different algorithms to make a picture when the user doesn't provide one []
  */
 
 export function create_project_main_dom(projectObj, extInterface) {
@@ -22,6 +26,7 @@ export function create_project_main_dom(projectObj, extInterface) {
     const logo = document.createElement("img");
     const canvasContainer = document.createElement("div");
     const canvas = document.createElement("canvas");
+    const context = canvas.getContext("2d");
     const canvasProgress = document.createElement("p");
     const details = document.createElement("div");
     const projectH2 = document.createElement("h2");
@@ -79,8 +84,29 @@ export function create_project_main_dom(projectObj, extInterface) {
     const warnignControls = document.createElement("div");
     const yes = document.createElement("button");
     const no = document.createElement("button");
-    let innerInterface;
-    let checks;
+
+    const imageModal = document.createElement("div");
+    const imageModalContent = document.createElement("div");
+    const imageInputWrapper = document.createElement("div");
+    const actualImg = document.createElement("img");
+    const imageInput = document.createElement("input");
+    const imageLabel = document.createElement("label");
+    const imageControls = document.createElement("div");
+    const imageYes = document.createElement("button");
+    const imageNo = document.createElement("button");
+
+    let innerInterface, checks, deleteLocal, newCover;
+
+    //#region
+
+    project.append(imageModal);
+    imageModal.append(imageModalContent);
+    imageModalContent.append(imageInputWrapper);
+    imageInputWrapper.append(imageInput);
+    imageInputWrapper.append(imageLabel);
+    imageModalContent.append(imageControls);
+    imageControls.append(imageYes);
+    imageControls.append(imageNo);
 
     project.append(deleteProject);
     project.append(info);
@@ -143,6 +169,18 @@ export function create_project_main_dom(projectObj, extInterface) {
     warnignControls.append(yes);
     warnignControls.append(no);
 
+    //#endregion
+
+
+    //#region
+    imageModal.classList.add("modal");
+    imageModal.classList.add("image-modal");
+    imageModalContent.classList.add("modal-content");
+    imageInputWrapper.classList.add("image-input-wrapper");
+    imageControls.classList.add("controls");
+    imageYes.classList.add("yes");
+    imageNo.classList.add("no");
+
     project.classList.add("project-item");
     deleteProject.classList.add("delete-project");
     info.classList.add("info");
@@ -174,7 +212,15 @@ export function create_project_main_dom(projectObj, extInterface) {
     warnignControls.classList.add("controls");
     yes.classList.add("yes");
     no.classList.add("no");
+    //#endregion
 
+    //#region
+    imageInput.setAttribute("type", "file");
+    imageInput.setAttribute("accept", ".jpg, .jpeg, .png");
+    imageInput.id = `image-input-${projectObj.id}`;
+    imageLabel.setAttribute("for", `image-input-${projectObj.id}`);
+    imageYes.innerText = "Change";
+    imageNo.innerText = "Cancel";
     projectNameInput.setAttribute("type", "text");
     logo.src = projectObj.img;
     canvas.width = 200;
@@ -226,16 +272,22 @@ export function create_project_main_dom(projectObj, extInterface) {
     warningMessagePt2.innerText = "?";
     yes.innerText = "Delete";
     no.innerText = "Cancel";
+    //#endregion
 
     checks = [];
     innerInterface = {
         checked,
-        unchecked, 
-        array : projectObj.tasks,
+        unchecked,
+        array: projectObj.tasks,
         modal: warning,
-        userDataString : null
+        userDataString: null,
+        update : () => {
+            update();
+            update_checks();
+        }
     };
-    update_per_chan();
+    deleteLocal = false;
+    update();
 
     projectObj.tasks.forEach(task => {
         let taskDom;
@@ -252,7 +304,36 @@ export function create_project_main_dom(projectObj, extInterface) {
         checks.push(taskDom.querySelector(".checkmark input[type='checkbox']"));
     });
 
-    checks.forEach(check => check.addEventListener("click", update_per_chan));
+    checks.forEach(check => check.addEventListener("click", update));
+
+    deleteProject.addEventListener("click", () => {
+        let deleteButton, cancelButton;
+
+        extInterface.modal.style.display = "block";
+        deleteButton = extInterface.modal.querySelector(".yes");
+        cancelButton = extInterface.modal.querySelector(".no");
+
+        deleteButton.addEventListener("click", delete_project);
+
+        cancelButton.addEventListener("click", hide);
+
+        function delete_project() {
+            let index;
+
+            index = extInterface.array.findIndex(project => project.id == projectObj.id);
+            extInterface.array.splice(index, 1);
+            project.parentElement.removeChild(project);
+            hide();
+        }
+
+        function hide() {
+            extInterface.modal.style.display = "none";
+
+            deleteButton.removeEventListener("click", delete_project);
+
+            cancelButton.removeEventListener("click", hide);
+        }
+    });
 
     projectH2.addEventListener("click", () => {
         projectNameInput.value = projectH2.innerText;
@@ -310,12 +391,9 @@ export function create_project_main_dom(projectObj, extInterface) {
         lowInput.checked = true;
     });
 
-    //...
-    canvas.style.border = "2px solid red";
-
     addTask.addEventListener("click", () => {
         let leftOverNotes;
-        
+
         leftOverNotes = newNotes.querySelectorAll(".new-task-notes li");
         leftOverNotes.forEach(note => note.parentElement.removeChild(note));
 
@@ -330,7 +408,7 @@ export function create_project_main_dom(projectObj, extInterface) {
 
         priority = highInput.checked ? "high" : mediumInput.checked ? "medium" : "low"
         notes = [...addForm.querySelectorAll(".new-task-notes p")].map(p => {
-            return {text : p.innerText, id : create_id(10)};
+            return { text: p.innerText, id: create_id(10) };
         });
         task = create_task(addForm["new-task-label"].value, false, priority, addForm["new-task-due-date"].value, create_id(10), notes);
         taskDom = create_task_dom(task, innerInterface);
@@ -338,6 +416,8 @@ export function create_project_main_dom(projectObj, extInterface) {
         projectObj.tasks.push(task);
         addTaskModal.style.display = "none";
         addForm.reset();
+        update();
+        update_checks();
     });
 
     cancelCreationButton.addEventListener("click", () => {
@@ -364,25 +444,125 @@ export function create_project_main_dom(projectObj, extInterface) {
             li.append(parag);
 
             button.classList.add("remove-new-task-note");
-            
+
             parag.innerText = value;
             newNoteArea.replaceWith(li);
 
             button.addEventListener("click", () => li.parentElement.removeChild(li));
         }
-        else 
+        else
             newNoteArea.parentElement.removeChild(newNoteArea);
         newNoteArea.value = '';
     });
 
-    function update_per_chan() {
-        if (!projectObj.tasks.length)
-            return "0%";
+    removeAllChecked.addEventListener("click", () => {
+        warned.innerText = "All checked items";
+        warning.style.display = "block";
+        deleteLocal = true;
+    });
 
+    yes.addEventListener("click", () => {
+        if (deleteLocal)
+            remove_all_checked();
+        hide();
+    });
+
+    no.addEventListener("click", hide);
+
+    // const imageModal = document.createElement("div");
+    // const imageModalContent = document.createElement("div");
+    // const actualImg = document.createElement("img");
+
+    // const imageInputWrapper = document.createElement("div");
+    // const imageInput = document.createElement("input");
+    // const imageLabel = document.createElement("label");
+
+    // const imageControls = document.createElement("div");
+    // const imageYes = document.createElement("button");
+    // const imageNo = document.createElement("button");
+
+    logo.addEventListener("click", () => imageModal.style.display = "block");
+
+    imageInput.addEventListener("change", () => {
+        make_cover(URL.createObjectURL(imageInput.files[0]), 200, 200).then(res => {
+            newCover = res;
+            actualImg.src = newCover;
+        });
+    });
+
+    actualImg.addEventListener("load", () => {
+        imageInputWrapper.replaceWith(actualImg);
+    });
+
+    imageYes.addEventListener("click", () => {
+        projectObj.img = newCover ? newCover : "./pepe.jpg";
+        logo.src = newCover ? newCover : "./pepe.jpg";
+        hide_cover();
+    });
+
+    imageNo.addEventListener("click", hide_cover);
+
+    function hide_cover() {
+        imageModal.style.display = "none";
+        actualImg.replaceWith(imageInputWrapper);
+        newCover = '';
+    }
+
+    function hide() {
+        warning.style.display = "none";
+        deleteLocal = false;
+    }
+
+    function remove_all_checked() {
+        let toRemoveDom;
+
+        toRemoveDom = checked.querySelectorAll(".task");
+        toRemoveDom.forEach(remed => remed.parentElement.removeChild(remed));
+        kill_many(projectObj.tasks, task => task.checked);
+        update();
+        update_checks();
+    }
+
+    function update_checks() {
+        //remove event listeners, is this even necessasy?
+        checks.forEach(check => check.removeEventListener("click", update));
+        checks = document.querySelectorAll(".project-item .task .checkmark input[type='checkbox']");
+        checks.forEach(check => check.addEventListener("click", update));
+    }
+
+    function update() {
+        update_per_chan();
+        draw_percentage();
+    }
+
+    function update_per_chan() {
         let per;
 
-        per =~~(100 * projectObj.tasks.filter(task => task.checked).length / projectObj.tasks.length);
+        if (!projectObj.tasks.length)
+            per = 0;
+        else
+            per = ~~(100 * projectObj.tasks.filter(task => task.checked).length / projectObj.tasks.length);
         canvasProgress.innerText = `${per}%`;
+    }
+
+    function draw_percentage() {
+        let angle;
+
+        if (!projectObj.tasks.length)
+            angle = 0;
+        else
+            angle = Math.PI * 2 * projectObj.tasks.filter(task => task.checked).length / projectObj.tasks.length;
+
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        context.beginPath();
+        context.lineWidth = 10;
+        context.strokeStyle = "rgb(225, 190, 255)";
+        context.arc(canvas.width / 2, canvas.height / 2, canvas.width / 2 - 5, 0, Math.PI * 2);
+        context.stroke();
+        context.beginPath();
+        context.strokeStyle = "rgb(100, 150, 200)";
+        context.arc(canvas.width / 2, canvas.height / 2, canvas.width / 2 - 5, - Math.PI / 2, angle - Math.PI / 2);
+        context.stroke();
     }
 
     return project;

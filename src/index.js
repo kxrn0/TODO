@@ -137,8 +137,10 @@ import { create_project } from "./project.js";
 
 const main = document.querySelector("main");
 const warning = document.querySelector(".delete-project");
+const projects = [];
 const extInterface = {
-    warning
+    modal: warning,
+    array: projects
 };
 
 let label, description, img, tasks, id, project, projectDom;
@@ -151,35 +153,102 @@ img = "data:image/png;base64,/9j/4AAQSkZJRgABAQEASABIAAD/4gxYSUNDX1BST0ZJTEUAAQE
 //create_task(description, checked, priority, duedate, id, notes);
 tasks = [
     {
-        description: "Description",
-        checked : false,
-        priority : "high",
-        duedate : "2022-12-25",
-        id : create_id(10),
-        notes : [
+        description: create_id(3),
+        checked: false,
+        priority: "high",
+        duedate: "2022-12-25",
+        id: create_id(10),
+        notes: [
             {
                 text: "this machine",
-                id : create_id(10)
+                id: create_id(10)
             }
         ]
     },
     {
-        description: "Description",
-        checked : false,
-        priority : "high",
-        duedate : "2022-12-25",
-        id : create_id(10),
-        notes : [
+        description: create_id(3),
+        checked: false,
+        priority: "high",
+        duedate: "2022-12-25",
+        id: create_id(10),
+        notes: [
             {
                 text: "this machine",
-                id : create_id(10)
+                id: create_id(10)
             }
         ]
     },
+    {
+        description: create_id(3),
+        checked: false,
+        priority: "high",
+        duedate: "2022-12-25",
+        id: create_id(10),
+        notes: [
+            {
+                text: "this machine",
+                id: create_id(10)
+            }
+        ]
+    },
+    // {
+    //     description: create_id(3),
+    //     checked: false,
+    //     priority: "high",
+    //     duedate: "2022-12-25",
+    //     id: create_id(10),
+    //     notes: [
+    //         {
+    //             text: "this machine",
+    //             id: create_id(10)
+    //         }
+    //     ]
+    // },
+    // {
+    //     description: create_id(3),
+    //     checked: false,
+    //     priority: "high",
+    //     duedate: "2022-12-25",
+    //     id: create_id(10),
+    //     notes: [
+    //         {
+    //             text: "this machine",
+    //             id: create_id(10)
+    //         }
+    //     ]
+    // },
+    // {
+    //     description: create_id(3),
+    //     checked: false,
+    //     priority: "high",
+    //     duedate: "2022-12-25",
+    //     id: create_id(10),
+    //     notes: [
+    //         {
+    //             text: "this machine",
+    //             id: create_id(10)
+    //         }
+    //     ]
+    // },
+    // {
+    //     description: create_id(3),
+    //     checked: false,
+    //     priority: "high",
+    //     duedate: "2022-12-25",
+    //     id: create_id(10),
+    //     notes: [
+    //         {
+    //             text: "this machine",
+    //             id: create_id(10)
+    //         }
+    //     ]
+    // },
+    
 ];
 
 id = create_id(10);
 
 project = create_project(label, description, img, tasks, id);
+projects.push(project);
 projectDom = create_project_main_dom(project, extInterface);
 main.append(projectDom);

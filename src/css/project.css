@@ -57,6 +57,7 @@
 
 .project-item .info .details p, .project-item .info .details textarea {
     background: var(--project-description-bg);
+    color: var(--project-color);
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
@@ -194,30 +195,6 @@
     --filter: invert(100%);
 }
 
-/* .project-item .modal {
-    background: rgba(66, 43, 43, 0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-
-.project-item .modal button:active {
-    transform: scale(.99);
-}
-
-.project-item .modal-content {
-    background: var(--modal-content-bg);
-    border-radius: 10px;
-    margin: 100px auto; 
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-} */
-
 .project-item .modal {
     display: none;
 }
@@ -316,6 +293,7 @@
 
 .project-item .modal .new-task-notes li, .project-item .modal .new-task-notes textarea {
     background: var(--new-note-bg);
+    color: var(--project-color);
     padding: 5px;
     border-radius: 5px;
     margin-bottom: 30px;
@@ -338,19 +316,6 @@
     width: 30px;
     height: 30px;
 }
-
-/* .project-item .modal .controls {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-} */
-
-/* .project-item .modal .controls button {
-    padding: 10px;
-    font-size: 1.25rem;
-    border-radius: 5px;
-    border: none;
-} */
 
 .project-item .modal .create {
     background: var(--create-bg);
@@ -410,6 +375,38 @@
     background: var(--create-hover);
 }
 
+.project-item .image-modal {
+    /* display: block; */
+}
+
+.project-item .image-modal input[type="file"] {
+    width: 0;
+    height: 0;
+}
+
+.project-item .image-modal img {
+    border: 10px;
+}
+
+.project-item .image-modal .image-input-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.project-item .image-modal label {
+    display: block;
+    background-color: rgba(52, 93, 164, 0.25);
+    border-radius: 10px;
+    background-image: url("../images/image-change.svg");
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.project-item .image-modal label:hover {
+    background-color: rgba(52, 93, 164, 0.5);
+}
+
 @media screen and (max-width: 700px) {
     .project-item .tasks {
         flex-direction: column;
@@ -439,4 +436,3 @@
        right: 10px; 
     }
 }
-
