@@ -322,6 +322,7 @@ export function create_project_main_dom(projectObj, extInterface) {
 
             index = extInterface.array.findIndex(project => project.id == projectObj.id);
             extInterface.array.splice(index, 1);
+            extInterface.side.remove();
             project.parentElement.removeChild(project);
             hide();
         }
@@ -348,6 +349,7 @@ export function create_project_main_dom(projectObj, extInterface) {
         if (value) {
             projectH2.innerText = value;
             projectObj.label = value;
+            extInterface.side.update();
         }
         projectNameInput.replaceWith(projectH2);
     });
@@ -469,18 +471,6 @@ export function create_project_main_dom(projectObj, extInterface) {
 
     no.addEventListener("click", hide);
 
-    // const imageModal = document.createElement("div");
-    // const imageModalContent = document.createElement("div");
-    // const actualImg = document.createElement("img");
-
-    // const imageInputWrapper = document.createElement("div");
-    // const imageInput = document.createElement("input");
-    // const imageLabel = document.createElement("label");
-
-    // const imageControls = document.createElement("div");
-    // const imageYes = document.createElement("button");
-    // const imageNo = document.createElement("button");
-
     logo.addEventListener("click", () => imageModal.style.display = "block");
 
     imageInput.addEventListener("change", () => {
@@ -524,7 +514,7 @@ export function create_project_main_dom(projectObj, extInterface) {
     }
 
     function update_checks() {
-        //remove event listeners, is this even necessasy?
+        //remove event listeners, is this even necessary?
         checks.forEach(check => check.removeEventListener("click", update));
         checks = document.querySelectorAll(".project-item .task .checkmark input[type='checkbox']");
         checks.forEach(check => check.addEventListener("click", update));
@@ -533,6 +523,7 @@ export function create_project_main_dom(projectObj, extInterface) {
     function update() {
         update_per_chan();
         draw_percentage();
+        extInterface.side.update();
     }
 
     function update_per_chan() {
@@ -556,14 +547,19 @@ export function create_project_main_dom(projectObj, extInterface) {
         context.clearRect(0, 0, canvas.width, canvas.height);
         context.beginPath();
         context.lineWidth = 10;
-        context.strokeStyle = "rgb(225, 190, 255)";
+        context.strokeStyle = "rgb(225, 200, 255)";
         context.arc(canvas.width / 2, canvas.height / 2, canvas.width / 2 - 5, 0, Math.PI * 2);
         context.stroke();
         context.beginPath();
-        context.strokeStyle = "rgb(100, 150, 200)";
+        context.strokeStyle = "rgb(100, 150, 1900)";
         context.arc(canvas.width / 2, canvas.height / 2, canvas.width / 2 - 5, - Math.PI / 2, angle - Math.PI / 2);
         context.stroke();
     }
 
-    return project;
+    function update_external() {
+        console.log("hi");
+        return 0;
+    }
+
+    return { project, update : update_external };
 }

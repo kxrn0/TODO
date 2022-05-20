@@ -1,0 +1,142 @@
+Can we go through that again? There's the sideproject DOM element, and there's the mainproject DOM element. The sideproject just displays information, while the mainproject is there to be interacted with
+and used to change the POJO object representing the project. If I update the mainproject the sideproject also has to be updated. I think I would need to pass a reference to sideproject to mainproject
+for this to be possible, then create_side_project() would return an object with two properties; a function to update the DOM elements, and the main DOM element wrapping up everything elese in the 
+sideproject. So, for example if I want to update the title of the project, at the very end of the call back that is triggered when that happens, I will also call 
+
+    extInterface.upate_side();
+
+where udpate_side() is the function returned from create_side_project(). This means that now I will have to crete an extInterface object for every project, instead of using the same one, like I'm doing
+currently. That's a non issue. At any rate, so that's how I'll update the sideproject, but I also want to do it so that when the sideproject is clicked, the mainproject associated with it comes up in
+the main section, so I'll need to add an event listener to the side property of object created by create_side_project(). I think it will go like this
+
+    createProject.addEventListener("submit", event => {
+        event.preventDefault();
+
+        let project, sideProject, mainProject, extInterface, li;
+
+        project = create_project(
+            createProject["project-name"].value,
+            createProject["project-description"].value,
+            cover, 
+            [], 
+            create_id(10)
+        );
+        projects.push(project);
+        sideProject = create_side_project(project);
+        extInterface = {
+            modal : warning, 
+            array : projects,
+            update : sideProject.update
+        };
+        mainProject = create_project_main_dom(project, extInterface);
+        sideProject.side.addEventListener("click", () => {
+            let current, main, active;
+            
+            main  = document.querySelector("main");
+            current = main.querySelector(".project-item");
+
+            if (current)
+                current.replaceWith(mainProject);
+            else
+                main.append(mainProject);
+            active = document.getElementById("active");
+            if (active)
+                active.id = '';
+            sideProject.side.id = "active";
+        });
+
+        li = document.createElement("li");
+        li.append(sideProject.side);
+        document.querySelector("aside .projects ul").append(li);
+        great_reset();
+        sideProject.side.click();
+    });
+
+This looks like it would work, what am I missing? I create the POJO project, then I use it to create the sideproject, which then I use to create the mainproject. 
+javaScript is a garbage collected language, so if theresn't any reference to an object, it will be deleted from memory, do I have to make an array of mainprojects so they aren't deleted once the
+code of creation finishes executing? I think no, since they would live on due to the closure created when the event listened to sideProject.side is added. Let's try it out.
+
+I'm having an issue with the modal of creation, in which I can't focus the label input, I'll ignore it for now, but will come back to it later once I make sure that project creation works properly.
+
+OK, so the birthing of new projects seems to be going smoothly, now what I want to do is update the circular progress bar in the sidproject. It's just a canvas that draws two circles to indicate the 
+amount of progress made to that point. I already implemented that funcionality in mainproject, I wonder if I can just copy and paste the same function in sideproject.
+
+    function draw_percentage() {
+        let angle;
+
+        if (!projectObj.tasks.length)
+            angle = 0;
+        else
+            angle = Math.PI * 2 * projectObj.tasks.filter(task => task.checked).length / projectObj.tasks.length;
+
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        context.beginPath();
+        context.lineWidth = 10;
+        context.strokeStyle = "rgb(225, 200, 255)";
+        context.arc(canvas.width / 2, canvas.height / 2, canvas.width / 2 - 5, 0, Math.PI * 2);
+        context.stroke();
+        context.beginPath();
+        context.strokeStyle = "rgb(100, 150, 1900)";
+        context.arc(canvas.width / 2, canvas.height / 2, canvas.width / 2 - 5, - Math.PI / 2, angle - Math.PI / 2);
+        context.stroke();
+    }
+
+Let's try it out.
+It's seems to work properly, even when I add and delete tasks.
+
+On other news, I think the button that I was using to test color changes is now getting in the way, so I'll remove it.
+OK, cool. first of all let's fix the focusing issue mentioned above. I want to focus the input label when the modal pops up.
+Anything else? it seem like I'm almost done with this part. What happens if I delete a projec? The delicious deletion is carried out in the mainproject, so I will have to inform sideproject to commit
+suicide if that happens. Then I guess this means that create_side_project() will also have to return an eliminate() function that removes side from the sidebar, and since javaScript is a garbage
+collected language, since nothing will be referencing sideproject nor mainproject, I hope the garbage collector will take care of it, and it won't cause any memory leaks. I'm not qualified for any of 
+this. To make things simpler, what I'll pass as the interface between mainproject and sideproject will be an object with both functions of sideproject instead of the functions individually. That
+doesn't exactly make things simpler, but I guess abstracts away some stuff, and that makes me feel like I know what I'm doing. Why do people kill Queen bees?
+That seems to work.
+I think I may have overlooked something. The main section not only houses the projects, but it can also contain the activity previews, as well as the modals. It would have been better if I had put the
+modals outside of the main section, that way every time I wanted to add a new project I could just set the innerHTML of main to an empty string, and then append the project or preview. It's a non issue
+really, since I can just check for project or preview with querySelector, and delete whichever is in there when I want to place something new.
+Ok, so with that out of the way I need to move on to the activity section. I feel like I'm slowing down. That's dangerous. I need to wake up.
+Anyway, so what is the activity section? It shows the tasks for a given period of time. It has buttons that when pressed show the projects with tasks that are due to that time period, but how should it 
+work? for example, should the This Week section show items that are due to the current week as measured in terms of days, like from Monday to Sunday, or should the items be the ones included in a period
+of time equal to one week from the current moment? I think the former is more appropriate, since the user would be able to see tasks that should have been done within a certain period of time, but
+that weren't. Anyway, the previews will be created every time the user pressed a button in the activity section.
+Ok, so I clicked on one of the activity buttons, what do I expect to see next? well, what before your eyes unfolds is the birthing of a brand new preview, freshly created with data from the projects 
+array. So the function that creates such creature takes in the projects array as a parameter. So what's stopping you from further analizyng this? well, I think that I may run into some issues. 
+The preview also shows the tasks that are due to that time period, and like with the task objects in the mainproject objects, those are also checkable, so if I check one of them, what do I expect to see?
+well, obviously mainproject would need to be updated, since it's not dinamically generated like the previews, but rather kept alive due to the magic of closures. so I guess that what I will need to 
+do is have a function that updates the mainproject, and it has access to the mainproject's internals due to closures, which means that create_project_main_dom() will need to return an object with the 
+DOM element and the updating function, just like create_side_project(). 
+Should I delete the checked tasks in the preview? I think it would be rather straight forward, just a matter of doing
+
+    let checks;
+
+    checks = [];
+
+    projectObj.tasks.forEach(task => {
+        if (!task.checked)
+            taskDom = create_task_dom(task, extInterface);
+        loversSection.append(taskDom);
+        checks.push(taskDom.querySelector(".checkmark input[type='checkbox']"));
+    });
+
+    checks.forEach(check => check.addEventListener("click", () => {
+        let task;
+
+        task = check.parentElement.parentElement;
+        loversSection.removeChild(task);
+    }));
+
+The problem is that the interface that create_task_dom expects an interface with sections in which to separate the checked and unchecked tasks, but in this case there is only onse section, and I don't
+really have any need for those sections in this particular instance. I guess I can add a variable to the interface to indicate if the tasks is expected to be moved around, but for now I'll just ignore
+it's cries.
+To recap, I click on the activity button, which calls the create_preview() function which takes in the array of projects, and the array of update functions, each one responsible for updating a 
+mainproject object. Then I append the return of create_preview() to main. Whenever I check a taks in the preview, I call the update() function of the mainproject to, well, update it. I think update()
+will also have to update the sideproject. 
+What does create_preview() look like? preview is an ul, so I'll add a li for each project with tasks due to the given time period. So for each project in projects, create an array which will hold the
+tasks due to the given period. For each task in project, if the task is due to this time period, add this task to the array. Once we've gone through each task in project, if the array is not empty, then
+call create_li() which creates a li to append to preview.
+For now the time being, I'm including all taks of a given project, but how do I know which tasks are supposed to be included? for example if the time period is "this-week", I want all of the tasks of the
+project that are within the given time period. What does that mean? 
+What create_project_main_dom() returns is an object with the update function and the DOM element, so I think what I may want to pass to create_preview() is this object, as that may make it easier to 
+reason about which object I'm working with. You know what? fuck this. I'll only be updating the checked status of the task, and nothing elese. I'll disble all other buttons, so the user won't be able to
+update from this view, only check.

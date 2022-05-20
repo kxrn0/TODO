@@ -25,12 +25,16 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../images/cog-outline.svg */ "./src/images/cog-outline.svg"), __webpack_require__.b);
 var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../images/granular.jpg */ "./src/images/granular.jpg"), __webpack_require__.b);
 var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../images/plus-box-outline.svg */ "./src/images/plus-box-outline.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(/*! ../images/close.svg */ "./src/images/close.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_4___ = new URL(/* asset import */ __webpack_require__(/*! ../images/upload-image.svg */ "./src/images/upload-image.svg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
+var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_3___);
+var ___CSS_LOADER_URL_REPLACEMENT_4___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_4___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "*,\n*::before,\n*::after {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    transition: all .33s;\n    font-family: Arial, Helvetica, sans-serif;\n}\n\n:root.light {\n    --nav-bg: rgb(136, 188, 226);\n    --body-bg: rgb(255, 255, 255);\n    --color: rgb(31, 20, 20);\n    --cog-filter: none;\n    --cog-hover-filter: invert(25%);\n    --aside-bg: rgb(119, 154, 202);\n    --period-bg: rgb(192, 193, 255);\n    --project-bg: rgb(229, 97, 97);\n    --modal-content-bg: rgb(174, 179, 224);\n}\n\n:root.dark {\n    --nav-bg: rgb(8, 15, 33);\n    --body-bg: rgb(67, 18, 65);\n    --color: azure;\n    --cog-filter: invert(100%);\n    --cog-hover-filter: invert(75%);\n    --aside-bg: rgb(21, 38, 82);\n    --period-bg: rgb(26, 191, 191);\n    --project-bg: rgb(148, 108, 108);\n    --modal-content-bg: rgb(0, 45, 128);\n}\n\nbody {\n    background: var(--body-bg);\n    display: grid;\n    grid-template-columns: 1fr 3fr;\n    grid-template-rows: auto auto;\n}\n\n/* NAV */\n\nnav {\n    background: var(--nav-bg);\n    color: var(--color);\n    padding: 10px 20px;\n    display: flex;\n    justify-content: space-between;\n    grid-row: 1 / 2;\n    grid-column: 1 / 3;\n}\n\nnav>div {\n    display: flex;\n    align-items: center;\n}\n\nnav .logo h1 {\n    margin-left: 20px;\n}\n\nnav .config .settings {\n    margin-right: 20px;\n    width: 30px;\n    height: 30px;\n    background-color: transparent;\n    border: none;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-size: cover;\n    filter: var(--cog-filter);\n}\n\nnav .config .settings:hover {\n    filter: var(--cog-hover-filter);\n}\n\nnav .config .settings:hover {\n    transform: rotate(90deg);\n}\n\nnav .logo .burger {\n    display: none;\n}\n\n/* ASIDE */\n\naside {\n    background: var(--aside-bg);\n    color: var(--color);\n    position: relative; \n    padding: 20px;\n    grid-row: 2 / 3;\n    grid-column: 1 / 2;\n}\n\naside ul {\n    list-style: none;\n}\n\naside h2 {\n    font-size: 2rem;\n    margin: 20px 0;\n}\n\naside .activity button {\n    background: var(--period-bg);\n    border: none;\n    width: 100%;\n    text-align: start;\n    border-radius: 5px;\n    margin: 0 20px 20px 0;\n    padding: 10px;\n    font-size: 1.25rem;\n}\n\naside #active-sidebar-element {\n    border: 3px solid yellow;\n    color: azure;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n    background-size: cover;\n}\n\naside .projects:last-child {\n    margin-bottom: 75px;\n}\n\naside .add-project {\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center;\n    background-color: rgb(251, 251, 252);\n    filter: invert(32%) sepia(96%) saturate(558%) hue-rotate(182deg) brightness(94%) contrast(200%);\n    border-radius: 10px;\n    width: 100%;\n    height: 75px;\n}\n\naside .add-project:hover {\n    filter: invert(32%) sepia(96%) saturate(558%) hue-rotate(182deg) brightness(94%) contrast(150%);\n}\n\naside .add-project:active {\n    transform: scale(.975);\n}\n\naside .project {\n    background: var(--project-bg);\n    color: azure;\n    text-align: center;\n    margin: 20px 5px;\n    padding: 10px;\n    border-radius: 5px;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\naside .project h3 {\n    margin: 0 10px;\n}\n\naside .project img {\n    filter: invert(100%);\n    width: 30px;\n    height: 30px;\n}\n\naside .project canvas {\n    border: 2px solid yellow;\n    border-radius: 50%;\n}\n\n/* MAIN */\n\n:root.light {\n    --modal-color: rgb(75, 55, 55);\n    --no-bg: rgb(87, 233, 102);\n    --no-color: rgb(18, 22, 22);\n    --no-hover: rgb(82, 218, 96);\n    --yes-bg: rgb(246, 149, 149);\n    --yes-color: rgb(56, 47, 47);\n    --yes-hover: rgb(223, 135, 135);\n}\n\n:root.dark {\n    --modal-color: azure;\n    --no-bg: rgb(2, 14, 68);\n    --no-color: azure;\n    --no-hover: rgb(1, 1, 20);\n    --yes-bg: rgb(105, 11, 11);\n    --yes-color: azure;\n    --yes-hover: rgb(64, 4, 4);\n}\n\nmain {\n    grid-row: 2 / 3;\n    grid-column: 2 / 3;\n}\n\nmain .modal {\n    background: rgba(66, 43, 43, 0.5);\n    color: var(--modal-color);\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    text-align: center;\n    z-index: 1;\n    display: none;\n}\n\nmain .modal .controls button {\n    padding: 10px;\n    font-size: 1.25rem;\n    border-radius: 5px;\n    border: none;\n}\n\nmain .modal .yes {\n    background: var(--yes-bg);\n    color: var(--yes-color);\n}\n\nmain .modal .yes:hover {\n    background: var(--yes-hover);\n}\n\nmain .modal .no {\n    background: var(--no-bg);\n    color: var(--no-color);\n}\n\nmain .modal .no:hover {\n    background: var(--no-hover);\n}\n\nmain .modal .controls {\n    margin-top: 20px;\n    display: flex;\n    justify-content: space-between;\n}\n\nmain .modal button:active {\n    transform: scale(.99);\n}\n\nmain .modal-content {\n    background: var(--modal-content-bg);\n    border-radius: 10px;\n    margin: 100px auto; \n    padding: 20px;\n    display: flex;\n    flex-direction: column;\n    width: 300px;\n}\n\n@media screen and (max-width: 480px) {\n    body {\n        display: block;\n        position: relative;\n    }\n\n    nav .logo .burger {\n        display: flex;\n    }\n\n    aside {\n        width: 90%;\n        height: 100%;\n        position: absolute;\n        transform: translateX(-100%);\n        z-index: 1;\n    }\n}", "",{"version":3,"sources":["webpack://./src/css/based.css"],"names":[],"mappings":"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","sourcesContent":["*,\n*::before,\n*::after {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    transition: all .33s;\n    font-family: Arial, Helvetica, sans-serif;\n}\n\n:root.light {\n    --nav-bg: rgb(136, 188, 226);\n    --body-bg: rgb(255, 255, 255);\n    --color: rgb(31, 20, 20);\n    --cog-filter: none;\n    --cog-hover-filter: invert(25%);\n    --aside-bg: rgb(119, 154, 202);\n    --period-bg: rgb(192, 193, 255);\n    --project-bg: rgb(229, 97, 97);\n    --modal-content-bg: rgb(174, 179, 224);\n}\n\n:root.dark {\n    --nav-bg: rgb(8, 15, 33);\n    --body-bg: rgb(67, 18, 65);\n    --color: azure;\n    --cog-filter: invert(100%);\n    --cog-hover-filter: invert(75%);\n    --aside-bg: rgb(21, 38, 82);\n    --period-bg: rgb(26, 191, 191);\n    --project-bg: rgb(148, 108, 108);\n    --modal-content-bg: rgb(0, 45, 128);\n}\n\nbody {\n    background: var(--body-bg);\n    display: grid;\n    grid-template-columns: 1fr 3fr;\n    grid-template-rows: auto auto;\n}\n\n/* NAV */\n\nnav {\n    background: var(--nav-bg);\n    color: var(--color);\n    padding: 10px 20px;\n    display: flex;\n    justify-content: space-between;\n    grid-row: 1 / 2;\n    grid-column: 1 / 3;\n}\n\nnav>div {\n    display: flex;\n    align-items: center;\n}\n\nnav .logo h1 {\n    margin-left: 20px;\n}\n\nnav .config .settings {\n    margin-right: 20px;\n    width: 30px;\n    height: 30px;\n    background-color: transparent;\n    border: none;\n    background-image: url(\"../images/cog-outline.svg\");\n    background-size: cover;\n    filter: var(--cog-filter);\n}\n\nnav .config .settings:hover {\n    filter: var(--cog-hover-filter);\n}\n\nnav .config .settings:hover {\n    transform: rotate(90deg);\n}\n\nnav .logo .burger {\n    display: none;\n}\n\n/* ASIDE */\n\naside {\n    background: var(--aside-bg);\n    color: var(--color);\n    position: relative; \n    padding: 20px;\n    grid-row: 2 / 3;\n    grid-column: 1 / 2;\n}\n\naside ul {\n    list-style: none;\n}\n\naside h2 {\n    font-size: 2rem;\n    margin: 20px 0;\n}\n\naside .activity button {\n    background: var(--period-bg);\n    border: none;\n    width: 100%;\n    text-align: start;\n    border-radius: 5px;\n    margin: 0 20px 20px 0;\n    padding: 10px;\n    font-size: 1.25rem;\n}\n\naside #active-sidebar-element {\n    border: 3px solid yellow;\n    color: azure;\n    background-image: url(\"../images/granular.jpg\");\n    background-size: cover;\n}\n\naside .projects:last-child {\n    margin-bottom: 75px;\n}\n\naside .add-project {\n    background-image: url(\"../images/plus-box-outline.svg\");\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center;\n    background-color: rgb(251, 251, 252);\n    filter: invert(32%) sepia(96%) saturate(558%) hue-rotate(182deg) brightness(94%) contrast(200%);\n    border-radius: 10px;\n    width: 100%;\n    height: 75px;\n}\n\naside .add-project:hover {\n    filter: invert(32%) sepia(96%) saturate(558%) hue-rotate(182deg) brightness(94%) contrast(150%);\n}\n\naside .add-project:active {\n    transform: scale(.975);\n}\n\naside .project {\n    background: var(--project-bg);\n    color: azure;\n    text-align: center;\n    margin: 20px 5px;\n    padding: 10px;\n    border-radius: 5px;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\naside .project h3 {\n    margin: 0 10px;\n}\n\naside .project img {\n    filter: invert(100%);\n    width: 30px;\n    height: 30px;\n}\n\naside .project canvas {\n    border: 2px solid yellow;\n    border-radius: 50%;\n}\n\n/* MAIN */\n\n:root.light {\n    --modal-color: rgb(75, 55, 55);\n    --no-bg: rgb(87, 233, 102);\n    --no-color: rgb(18, 22, 22);\n    --no-hover: rgb(82, 218, 96);\n    --yes-bg: rgb(246, 149, 149);\n    --yes-color: rgb(56, 47, 47);\n    --yes-hover: rgb(223, 135, 135);\n}\n\n:root.dark {\n    --modal-color: azure;\n    --no-bg: rgb(2, 14, 68);\n    --no-color: azure;\n    --no-hover: rgb(1, 1, 20);\n    --yes-bg: rgb(105, 11, 11);\n    --yes-color: azure;\n    --yes-hover: rgb(64, 4, 4);\n}\n\nmain {\n    grid-row: 2 / 3;\n    grid-column: 2 / 3;\n}\n\nmain .modal {\n    background: rgba(66, 43, 43, 0.5);\n    color: var(--modal-color);\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    text-align: center;\n    z-index: 1;\n    display: none;\n}\n\nmain .modal .controls button {\n    padding: 10px;\n    font-size: 1.25rem;\n    border-radius: 5px;\n    border: none;\n}\n\nmain .modal .yes {\n    background: var(--yes-bg);\n    color: var(--yes-color);\n}\n\nmain .modal .yes:hover {\n    background: var(--yes-hover);\n}\n\nmain .modal .no {\n    background: var(--no-bg);\n    color: var(--no-color);\n}\n\nmain .modal .no:hover {\n    background: var(--no-hover);\n}\n\nmain .modal .controls {\n    margin-top: 20px;\n    display: flex;\n    justify-content: space-between;\n}\n\nmain .modal button:active {\n    transform: scale(.99);\n}\n\nmain .modal-content {\n    background: var(--modal-content-bg);\n    border-radius: 10px;\n    margin: 100px auto; \n    padding: 20px;\n    display: flex;\n    flex-direction: column;\n    width: 300px;\n}\n\n@media screen and (max-width: 480px) {\n    body {\n        display: block;\n        position: relative;\n    }\n\n    nav .logo .burger {\n        display: flex;\n    }\n\n    aside {\n        width: 90%;\n        height: 100%;\n        position: absolute;\n        transform: translateX(-100%);\n        z-index: 1;\n    }\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "*,\n*::before,\n*::after {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    transition: all .33s;\n    font-family: Arial, Helvetica, sans-serif;\n}\n\n:root.light {\n    --nav-bg: rgb(136, 188, 226);\n    --body-bg: rgb(255, 255, 255);\n    --color: rgb(31, 20, 20);\n    --cog-filter: none;\n    --cog-hover-filter: invert(25%);\n    --aside-bg: rgb(119, 154, 202);\n    --period-bg: rgb(192, 193, 255);\n    --project-bg: rgb(229, 97, 97);\n    --modal-content-bg: rgb(174, 179, 224);\n}\n\n:root.dark {\n    --nav-bg: rgb(8, 15, 33);\n    --body-bg: rgb(67, 18, 65);\n    --color: azure;\n    --cog-filter: invert(100%);\n    --cog-hover-filter: invert(75%);\n    --aside-bg: rgb(21, 38, 82);\n    --period-bg: rgb(26, 191, 191);\n    --project-bg: rgb(148, 108, 108);\n    --modal-content-bg: rgb(0, 45, 128);\n}\n\nbody {\n    background: var(--body-bg);\n    display: grid;\n    grid-template-columns: 1fr 3fr;\n    grid-template-rows: auto auto;\n}\n\n/* NAV */\n\nnav {\n    background: var(--nav-bg);\n    color: var(--color);\n    padding: 10px 20px;\n    display: flex;\n    justify-content: space-between;\n    grid-row: 1 / 2;\n    grid-column: 1 / 3;\n}\n\nnav>div {\n    display: flex;\n    align-items: center;\n}\n\nnav .logo h1 {\n    margin-left: 20px;\n}\n\nnav .config .settings {\n    margin-right: 20px;\n    width: 30px;\n    height: 30px;\n    background-color: transparent;\n    border: none;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-size: cover;\n    filter: var(--cog-filter);\n}\n\nnav .config .settings:hover {\n    filter: var(--cog-hover-filter);\n}\n\nnav .config .settings:hover {\n    transform: rotate(90deg);\n}\n\nnav .logo .burger {\n    display: none;\n}\n\n/* ASIDE */\n\naside {\n    background: var(--aside-bg);\n    color: var(--color);\n    position: relative; \n    padding: 20px;\n    grid-row: 2 / 3;\n    grid-column: 1 / 2;\n}\n\naside ul {\n    list-style: none;\n}\n\naside h2 {\n    font-size: 2rem;\n    margin: 20px 0;\n}\n\naside .activity button {\n    background: var(--period-bg);\n    border: none;\n    width: 100%;\n    text-align: start;\n    border-radius: 5px;\n    margin: 0 20px 20px 0;\n    padding: 10px;\n    font-size: 1.25rem;\n}\n\naside #active-sidebar-element {\n    border: 3px solid yellow;\n    color: azure;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n    background-size: cover;\n}\n\naside .projects:last-child {\n    margin-bottom: 75px;\n}\n\naside .add-project {\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center;\n    background-color: rgb(251, 251, 252);\n    filter: invert(32%) sepia(96%) saturate(558%) hue-rotate(182deg) brightness(94%) contrast(200%);\n    border-radius: 10px;\n    width: 100%;\n    height: 75px;\n}\n\naside .add-project:hover {\n    filter: invert(32%) sepia(96%) saturate(558%) hue-rotate(182deg) brightness(94%) contrast(150%);\n}\n\naside .add-project:active {\n    transform: scale(.975);\n}\n\naside .project {\n    background: var(--project-bg);\n    color: azure;\n    text-align: center;\n    margin: 20px 5px;\n    padding: 10px;\n    border-radius: 5px;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\naside .project h3 {\n    margin: 0 10px;\n}\n\naside .project img {\n    filter: invert(100%);\n    width: 30px;\n    height: 30px;\n}\n\n/* MAIN */\n\n:root.light {\n    --modal-color: rgb(75, 55, 55);\n    --no-bg: rgb(87, 233, 102);\n    --no-color: rgb(18, 22, 22);\n    --no-hover: rgb(82, 218, 96);\n    --yes-bg: rgb(246, 149, 149);\n    --yes-color: rgb(56, 47, 47);\n    --yes-hover: rgb(223, 135, 135);\n    --input-bg: rgb(224, 229, 243);\n    --label-filter: none;\n}\n\n:root.dark {\n    --modal-color: azure;\n    --no-bg: rgb(2, 14, 68);\n    --no-color: azure;\n    --no-hover: rgb(1, 1, 20);\n    --yes-bg: rgb(105, 11, 11);\n    --yes-color: azure;\n    --yes-hover: rgb(64, 4, 4);\n    --input-bg: rgb(9, 2, 37);\n    --label-filter: invert(100%);\n}\n\nmain {\n    grid-row: 2 / 3;\n    grid-column: 2 / 3;\n}\n\nmain .modal {\n    background: rgba(66, 43, 43, 0.5);\n    color: var(--modal-color);\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    text-align: center;\n    z-index: 1;\n    display: none;\n}\n\nmain .modal .controls button {\n    padding: 10px;\n    font-size: 1.25rem;\n    border-radius: 5px;\n    border: none;\n}\n\nmain .modal .yes {\n    background: var(--yes-bg);\n    color: var(--yes-color);\n}\n\nmain .modal .yes:hover {\n    background: var(--yes-hover);\n}\n\nmain .modal .no {\n    background: var(--no-bg);\n    color: var(--no-color);\n}\n\nmain .modal .no:hover {\n    background: var(--no-hover);\n}\n\nmain .modal .controls {\n    margin-top: 20px;\n    display: flex;\n    justify-content: space-between;\n}\n\nmain .modal button:active {\n    transform: scale(.99);\n}\n\nmain .modal-content {\n    background: var(--modal-content-bg);\n    border-radius: 10px;\n    margin: 100px auto; \n    padding: 20px;\n    display: flex;\n    flex-direction: column;\n    width: 300px;\n}\n\n/* main .create-project-modal {\n    display: block;\n} */\n\nmain .create-project-modal {\n    text-align: start;\n}\n\nmain .create-project-modal ul {\n    list-style: none;\n    display: flex;\n    flex-direction: column;\n    gap: 20px;\n}\n\nmain .create-project-modal li {\n    display: flex;\n    flex-direction: column;\n}\n\nmain .create-project-modal label {\n    font-size: 1.5rem;\n}\n\nmain .create-project-modal textarea, main .create-project-modal input[type=\"text\"] {\n    background: var(--input-bg);\n    color: var(--color);\n    padding: 5px;\n    font-size: 1.25rem;\n    border-radius: 5px;\n}\n\nmain .create-project-modal input[type=\"file\"] {\n    width: 0;\n    height: 0;\n}\n\nmain .create-project-modal .image-cover-wrapper {\n    /* display: flex; */\n    display: none;\n    justify-content: center;\n    align-self: center;\n    position: relative;\n}\n\nmain .create-project-modal .image-cover-wrapper .remove-image {\n    background: rgb(253, 251, 251, .5);\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ");\n    background-size: cover;\n    border-radius: 5px;\n    position: absolute;\n    top: 10px;\n    right: 10px;\n    width: 30px;\n    height: 30px;\n}\n\nmain .create-project-modal .image-cover-wrapper .remove-image:hover {\n    filter: invert(20%);\n}\n\nmain .create-project-modal .label-cover {\n    background-color: rgb(170, 115, 115, .25);\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ");\n    filter: var(--label-filter);\n    background-size: cover;\n    border-radius: 10px;\n    width: 100px;\n    height: 100px;\n    align-self: center;\n}\n\nmain .create-project-modal .label-cover:hover {\n    background-color: rgb(170, 115, 115, .5);\n}\n\n@media screen and (max-width: 480px) {\n    body {\n        display: block;\n        position: relative;\n    }\n\n    nav .logo .burger {\n        display: flex;\n    }\n\n    aside {\n        width: 90%;\n        height: 100%;\n        position: absolute;\n        transform: translateX(-100%);\n        z-index: 1;\n    }\n}", "",{"version":3,"sources":["webpack://./src/css/based.css"],"names":[],"mappings":"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","sourcesContent":["*,\n*::before,\n*::after {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    transition: all .33s;\n    font-family: Arial, Helvetica, sans-serif;\n}\n\n:root.light {\n    --nav-bg: rgb(136, 188, 226);\n    --body-bg: rgb(255, 255, 255);\n    --color: rgb(31, 20, 20);\n    --cog-filter: none;\n    --cog-hover-filter: invert(25%);\n    --aside-bg: rgb(119, 154, 202);\n    --period-bg: rgb(192, 193, 255);\n    --project-bg: rgb(229, 97, 97);\n    --modal-content-bg: rgb(174, 179, 224);\n}\n\n:root.dark {\n    --nav-bg: rgb(8, 15, 33);\n    --body-bg: rgb(67, 18, 65);\n    --color: azure;\n    --cog-filter: invert(100%);\n    --cog-hover-filter: invert(75%);\n    --aside-bg: rgb(21, 38, 82);\n    --period-bg: rgb(26, 191, 191);\n    --project-bg: rgb(148, 108, 108);\n    --modal-content-bg: rgb(0, 45, 128);\n}\n\nbody {\n    background: var(--body-bg);\n    display: grid;\n    grid-template-columns: 1fr 3fr;\n    grid-template-rows: auto auto;\n}\n\n/* NAV */\n\nnav {\n    background: var(--nav-bg);\n    color: var(--color);\n    padding: 10px 20px;\n    display: flex;\n    justify-content: space-between;\n    grid-row: 1 / 2;\n    grid-column: 1 / 3;\n}\n\nnav>div {\n    display: flex;\n    align-items: center;\n}\n\nnav .logo h1 {\n    margin-left: 20px;\n}\n\nnav .config .settings {\n    margin-right: 20px;\n    width: 30px;\n    height: 30px;\n    background-color: transparent;\n    border: none;\n    background-image: url(\"../images/cog-outline.svg\");\n    background-size: cover;\n    filter: var(--cog-filter);\n}\n\nnav .config .settings:hover {\n    filter: var(--cog-hover-filter);\n}\n\nnav .config .settings:hover {\n    transform: rotate(90deg);\n}\n\nnav .logo .burger {\n    display: none;\n}\n\n/* ASIDE */\n\naside {\n    background: var(--aside-bg);\n    color: var(--color);\n    position: relative; \n    padding: 20px;\n    grid-row: 2 / 3;\n    grid-column: 1 / 2;\n}\n\naside ul {\n    list-style: none;\n}\n\naside h2 {\n    font-size: 2rem;\n    margin: 20px 0;\n}\n\naside .activity button {\n    background: var(--period-bg);\n    border: none;\n    width: 100%;\n    text-align: start;\n    border-radius: 5px;\n    margin: 0 20px 20px 0;\n    padding: 10px;\n    font-size: 1.25rem;\n}\n\naside #active-sidebar-element {\n    border: 3px solid yellow;\n    color: azure;\n    background-image: url(\"../images/granular.jpg\");\n    background-size: cover;\n}\n\naside .projects:last-child {\n    margin-bottom: 75px;\n}\n\naside .add-project {\n    background-image: url(\"../images/plus-box-outline.svg\");\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center;\n    background-color: rgb(251, 251, 252);\n    filter: invert(32%) sepia(96%) saturate(558%) hue-rotate(182deg) brightness(94%) contrast(200%);\n    border-radius: 10px;\n    width: 100%;\n    height: 75px;\n}\n\naside .add-project:hover {\n    filter: invert(32%) sepia(96%) saturate(558%) hue-rotate(182deg) brightness(94%) contrast(150%);\n}\n\naside .add-project:active {\n    transform: scale(.975);\n}\n\naside .project {\n    background: var(--project-bg);\n    color: azure;\n    text-align: center;\n    margin: 20px 5px;\n    padding: 10px;\n    border-radius: 5px;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\naside .project h3 {\n    margin: 0 10px;\n}\n\naside .project img {\n    filter: invert(100%);\n    width: 30px;\n    height: 30px;\n}\n\n/* MAIN */\n\n:root.light {\n    --modal-color: rgb(75, 55, 55);\n    --no-bg: rgb(87, 233, 102);\n    --no-color: rgb(18, 22, 22);\n    --no-hover: rgb(82, 218, 96);\n    --yes-bg: rgb(246, 149, 149);\n    --yes-color: rgb(56, 47, 47);\n    --yes-hover: rgb(223, 135, 135);\n    --input-bg: rgb(224, 229, 243);\n    --label-filter: none;\n}\n\n:root.dark {\n    --modal-color: azure;\n    --no-bg: rgb(2, 14, 68);\n    --no-color: azure;\n    --no-hover: rgb(1, 1, 20);\n    --yes-bg: rgb(105, 11, 11);\n    --yes-color: azure;\n    --yes-hover: rgb(64, 4, 4);\n    --input-bg: rgb(9, 2, 37);\n    --label-filter: invert(100%);\n}\n\nmain {\n    grid-row: 2 / 3;\n    grid-column: 2 / 3;\n}\n\nmain .modal {\n    background: rgba(66, 43, 43, 0.5);\n    color: var(--modal-color);\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    text-align: center;\n    z-index: 1;\n    display: none;\n}\n\nmain .modal .controls button {\n    padding: 10px;\n    font-size: 1.25rem;\n    border-radius: 5px;\n    border: none;\n}\n\nmain .modal .yes {\n    background: var(--yes-bg);\n    color: var(--yes-color);\n}\n\nmain .modal .yes:hover {\n    background: var(--yes-hover);\n}\n\nmain .modal .no {\n    background: var(--no-bg);\n    color: var(--no-color);\n}\n\nmain .modal .no:hover {\n    background: var(--no-hover);\n}\n\nmain .modal .controls {\n    margin-top: 20px;\n    display: flex;\n    justify-content: space-between;\n}\n\nmain .modal button:active {\n    transform: scale(.99);\n}\n\nmain .modal-content {\n    background: var(--modal-content-bg);\n    border-radius: 10px;\n    margin: 100px auto; \n    padding: 20px;\n    display: flex;\n    flex-direction: column;\n    width: 300px;\n}\n\n/* main .create-project-modal {\n    display: block;\n} */\n\nmain .create-project-modal {\n    text-align: start;\n}\n\nmain .create-project-modal ul {\n    list-style: none;\n    display: flex;\n    flex-direction: column;\n    gap: 20px;\n}\n\nmain .create-project-modal li {\n    display: flex;\n    flex-direction: column;\n}\n\nmain .create-project-modal label {\n    font-size: 1.5rem;\n}\n\nmain .create-project-modal textarea, main .create-project-modal input[type=\"text\"] {\n    background: var(--input-bg);\n    color: var(--color);\n    padding: 5px;\n    font-size: 1.25rem;\n    border-radius: 5px;\n}\n\nmain .create-project-modal input[type=\"file\"] {\n    width: 0;\n    height: 0;\n}\n\nmain .create-project-modal .image-cover-wrapper {\n    /* display: flex; */\n    display: none;\n    justify-content: center;\n    align-self: center;\n    position: relative;\n}\n\nmain .create-project-modal .image-cover-wrapper .remove-image {\n    background: rgb(253, 251, 251, .5);\n    background-image: url(\"../images/close.svg\");\n    background-size: cover;\n    border-radius: 5px;\n    position: absolute;\n    top: 10px;\n    right: 10px;\n    width: 30px;\n    height: 30px;\n}\n\nmain .create-project-modal .image-cover-wrapper .remove-image:hover {\n    filter: invert(20%);\n}\n\nmain .create-project-modal .label-cover {\n    background-color: rgb(170, 115, 115, .25);\n    background-image: url(\"../images/upload-image.svg\");\n    filter: var(--label-filter);\n    background-size: cover;\n    border-radius: 10px;\n    width: 100px;\n    height: 100px;\n    align-self: center;\n}\n\nmain .create-project-modal .label-cover:hover {\n    background-color: rgb(170, 115, 115, .5);\n}\n\n@media screen and (max-width: 480px) {\n    body {\n        display: block;\n        position: relative;\n    }\n\n    nav .logo .burger {\n        display: flex;\n    }\n\n    aside {\n        width: 90%;\n        height: 100%;\n        position: absolute;\n        transform: translateX(-100%);\n        z-index: 1;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -148,7 +152,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root.light {\n    --project-bg: rgb(229, 97, 97);\n    --color: black;\n\n}\n\n:root.dark {\n    --project-bg: rgb(148, 108, 108);\n    --color: azure;\n}\n\n.period-projects {\n    color: var(--color);\n    list-style: none;\n    display: grid;\n    place-items: center;\n}\n\n.period-project {\n    background: var(--project-bg);\n    width: fit-content;\n    margin: 20px;\n    padding: 20px;\n    border-radius: 10px;\n}\n\n.period-project .principal-section {\n    display: flex;\n    justify-content: space-around;\n    align-items: center;\n    gap: 20px;\n    margin-bottom: 20px;\n}\n\n.period-project .principal-section img {\n    width: 40px;\n    height: 40px;\n    filter: invert(100%);\n}\n\n.period-project .principal-section h2 {\n    text-align: center;\n}\n\n.period-project canvas {\n    width: 50px;\n    height: 50px;\n    border: 3px solid snow;\n}\n\n.period-project .show-tasks {\n    appearance: none;\n    background-color: transparent;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-size: cover;\n    border: none;\n    filter: invert(100%);\n    width: 40px;\n    height: 40px;\n}\n\n.period-project .show-tasks:checked {\n    transform: rotate(90deg);\n}\n\n.period-project .show-tasks:hover {\n    filter: invert(90%);\n}\n\n.period-project .lower-section {\n    background: rgb(185, 185, 248);\n    padding: 15px 15px 15px 5px;\n    border-radius: 10px;\n    display: grid;\n    place-items: center;\n    position: absolute;\n}\n\n.period-project .extra-wrapper {\n    position: relative;\n    height: 0;\n    overflow: hidden;\n}\n\n@media screen and (max-width: 480px) {\n    .period-project {\n        margin: 20px 5px;\n        padding: 5px;\n    }\n}", "",{"version":3,"sources":["webpack://./src/css/period_project.css"],"names":[],"mappings":"AAAA;IACI,8BAA8B;IAC9B,cAAc;;AAElB;;AAEA;IACI,gCAAgC;IAChC,cAAc;AAClB;;AAEA;IACI,mBAAmB;IACnB,gBAAgB;IAChB,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI,6BAA6B;IAC7B,kBAAkB;IAClB,YAAY;IACZ,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI,aAAa;IACb,6BAA6B;IAC7B,mBAAmB;IACnB,SAAS;IACT,mBAAmB;AACvB;;AAEA;IACI,WAAW;IACX,YAAY;IACZ,oBAAoB;AACxB;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,WAAW;IACX,YAAY;IACZ,sBAAsB;AAC1B;;AAEA;IACI,gBAAgB;IAChB,6BAA6B;IAC7B,yDAAoD;IACpD,sBAAsB;IACtB,YAAY;IACZ,oBAAoB;IACpB,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,wBAAwB;AAC5B;;AAEA;IACI,mBAAmB;AACvB;;AAEA;IACI,8BAA8B;IAC9B,2BAA2B;IAC3B,mBAAmB;IACnB,aAAa;IACb,mBAAmB;IACnB,kBAAkB;AACtB;;AAEA;IACI,kBAAkB;IAClB,SAAS;IACT,gBAAgB;AACpB;;AAEA;IACI;QACI,gBAAgB;QAChB,YAAY;IAChB;AACJ","sourcesContent":[":root.light {\n    --project-bg: rgb(229, 97, 97);\n    --color: black;\n\n}\n\n:root.dark {\n    --project-bg: rgb(148, 108, 108);\n    --color: azure;\n}\n\n.period-projects {\n    color: var(--color);\n    list-style: none;\n    display: grid;\n    place-items: center;\n}\n\n.period-project {\n    background: var(--project-bg);\n    width: fit-content;\n    margin: 20px;\n    padding: 20px;\n    border-radius: 10px;\n}\n\n.period-project .principal-section {\n    display: flex;\n    justify-content: space-around;\n    align-items: center;\n    gap: 20px;\n    margin-bottom: 20px;\n}\n\n.period-project .principal-section img {\n    width: 40px;\n    height: 40px;\n    filter: invert(100%);\n}\n\n.period-project .principal-section h2 {\n    text-align: center;\n}\n\n.period-project canvas {\n    width: 50px;\n    height: 50px;\n    border: 3px solid snow;\n}\n\n.period-project .show-tasks {\n    appearance: none;\n    background-color: transparent;\n    background-image: url(\"../images/chevron-right.svg\");\n    background-size: cover;\n    border: none;\n    filter: invert(100%);\n    width: 40px;\n    height: 40px;\n}\n\n.period-project .show-tasks:checked {\n    transform: rotate(90deg);\n}\n\n.period-project .show-tasks:hover {\n    filter: invert(90%);\n}\n\n.period-project .lower-section {\n    background: rgb(185, 185, 248);\n    padding: 15px 15px 15px 5px;\n    border-radius: 10px;\n    display: grid;\n    place-items: center;\n    position: absolute;\n}\n\n.period-project .extra-wrapper {\n    position: relative;\n    height: 0;\n    overflow: hidden;\n}\n\n@media screen and (max-width: 480px) {\n    .period-project {\n        margin: 20px 5px;\n        padding: 5px;\n    }\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root.light {\n    --project-bg: rgb(229, 97, 97);\n    --color: black;\n\n}\n\n:root.dark {\n    --project-bg: rgb(148, 108, 108);\n    --color: azure;\n}\n\n.period-projects {\n    color: var(--color);\n    list-style: none;\n    display: grid;\n    place-items: center;\n}\n\n.period-project {\n    background: var(--project-bg);\n    min-width: 480px;\n    width: fit-content;\n    margin: 20px;\n    padding: 20px;\n    border-radius: 10px;\n}\n\n.period-project .principal-section {\n    display: flex;\n    justify-content: space-around;\n    align-items: center;\n    gap: 20px;\n    margin-bottom: 20px;\n}\n\n.period-project .principal-section img {\n    width: 40px;\n    height: 40px;\n    filter: invert(100%);\n}\n\n.period-project .principal-section h2 {\n    width: 150px;\n    text-align: center;\n}\n\n.period-project canvas {\n    width: 50px;\n    height: 50px;\n    border: 3px solid snow;\n}\n\n.period-project .show-tasks {\n    appearance: none;\n    background-color: transparent;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-size: cover;\n    border: none;\n    filter: invert(100%);\n    width: 40px;\n    height: 40px;\n}\n\n.period-project .show-tasks:checked {\n    transform: rotate(90deg);\n}\n\n.period-project .show-tasks:hover {\n    filter: invert(90%);\n}\n\n.period-project .lower-section {\n    background: rgb(185, 185, 248);\n    padding: 15px 15px 15px 5px;\n    border-radius: 10px;\n    display: grid;\n    place-items: center;\n    position: absolute;\n}\n\n.period-project .extra-wrapper {\n    position: relative;\n    height: 0;\n    overflow: hidden;\n    display: flex;\n    justify-content: center;\n}\n\n@media screen and (max-width: 480px) {\n    .period-project {\n        margin: 20px 5px;\n        padding: 5px;\n        min-width: 350px;\n    }\n}", "",{"version":3,"sources":["webpack://./src/css/period_project.css"],"names":[],"mappings":"AAAA;IACI,8BAA8B;IAC9B,cAAc;;AAElB;;AAEA;IACI,gCAAgC;IAChC,cAAc;AAClB;;AAEA;IACI,mBAAmB;IACnB,gBAAgB;IAChB,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI,6BAA6B;IAC7B,gBAAgB;IAChB,kBAAkB;IAClB,YAAY;IACZ,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI,aAAa;IACb,6BAA6B;IAC7B,mBAAmB;IACnB,SAAS;IACT,mBAAmB;AACvB;;AAEA;IACI,WAAW;IACX,YAAY;IACZ,oBAAoB;AACxB;;AAEA;IACI,YAAY;IACZ,kBAAkB;AACtB;;AAEA;IACI,WAAW;IACX,YAAY;IACZ,sBAAsB;AAC1B;;AAEA;IACI,gBAAgB;IAChB,6BAA6B;IAC7B,yDAAoD;IACpD,sBAAsB;IACtB,YAAY;IACZ,oBAAoB;IACpB,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,wBAAwB;AAC5B;;AAEA;IACI,mBAAmB;AACvB;;AAEA;IACI,8BAA8B;IAC9B,2BAA2B;IAC3B,mBAAmB;IACnB,aAAa;IACb,mBAAmB;IACnB,kBAAkB;AACtB;;AAEA;IACI,kBAAkB;IAClB,SAAS;IACT,gBAAgB;IAChB,aAAa;IACb,uBAAuB;AAC3B;;AAEA;IACI;QACI,gBAAgB;QAChB,YAAY;QACZ,gBAAgB;IACpB;AACJ","sourcesContent":[":root.light {\n    --project-bg: rgb(229, 97, 97);\n    --color: black;\n\n}\n\n:root.dark {\n    --project-bg: rgb(148, 108, 108);\n    --color: azure;\n}\n\n.period-projects {\n    color: var(--color);\n    list-style: none;\n    display: grid;\n    place-items: center;\n}\n\n.period-project {\n    background: var(--project-bg);\n    min-width: 480px;\n    width: fit-content;\n    margin: 20px;\n    padding: 20px;\n    border-radius: 10px;\n}\n\n.period-project .principal-section {\n    display: flex;\n    justify-content: space-around;\n    align-items: center;\n    gap: 20px;\n    margin-bottom: 20px;\n}\n\n.period-project .principal-section img {\n    width: 40px;\n    height: 40px;\n    filter: invert(100%);\n}\n\n.period-project .principal-section h2 {\n    width: 150px;\n    text-align: center;\n}\n\n.period-project canvas {\n    width: 50px;\n    height: 50px;\n    border: 3px solid snow;\n}\n\n.period-project .show-tasks {\n    appearance: none;\n    background-color: transparent;\n    background-image: url(\"../images/chevron-right.svg\");\n    background-size: cover;\n    border: none;\n    filter: invert(100%);\n    width: 40px;\n    height: 40px;\n}\n\n.period-project .show-tasks:checked {\n    transform: rotate(90deg);\n}\n\n.period-project .show-tasks:hover {\n    filter: invert(90%);\n}\n\n.period-project .lower-section {\n    background: rgb(185, 185, 248);\n    padding: 15px 15px 15px 5px;\n    border-radius: 10px;\n    display: grid;\n    place-items: center;\n    position: absolute;\n}\n\n.period-project .extra-wrapper {\n    position: relative;\n    height: 0;\n    overflow: hidden;\n    display: flex;\n    justify-content: center;\n}\n\n@media screen and (max-width: 480px) {\n    .period-project {\n        margin: 20px 5px;\n        padding: 5px;\n        min-width: 350px;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -184,7 +188,7 @@ var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_g
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root.light {\n    --project-name-bg: peachpuff;\n    --project-description-bg: rgb(249, 239, 221);\n    --project-color: rgb(31, 35, 96);\n    --button-filter: none;\n\n}\n\n:root.dark {\n    --project-name-bg: rgb(55, 57, 107);\n    --project-description-bg: black;\n    --project-color: azure;\n    --button-filter: invert(100%);\n}\n\n.project-item {\n    color: var(--project-color);\n    padding: 20px;\n    display: flex;\n    flex-direction: column;\n    position: relative;\n}\n\n.project-item ul {\n    list-style: none;\n}\n\n.project-item .info {\n    text-align: center;\n    display: flex;\n    gap: 20px;\n    align-self: center;\n    align-items: center;\n    margin: 20px;\n}\n\n.project-item .info .details {\n    background: var(--project-name-bg);\n    padding: 10px;\n    border-radius: 10px;\n    width: 300px;\n}\n\n.project-item .info .details h2 {\n    font-size: 1.55rem;\n}\n\n.project-item .info input[type=\"text\"] {\n    background: beige;\n    border: none;\n    border-radius: 5px;\n    font-size: 1.25rem;\n    padding: 5px;\n    width: 90%;\n    text-align: center;\n}\n\n.project-item .info .details p, .project-item .info .details textarea {\n    background: var(--project-description-bg);\n    color: var(--project-color);\n    border-radius: 10px;\n    padding: 10px;\n    margin: 10px;\n}\n\n.project-item .info .graphics {\n    display: flex;\n    align-items: center;\n    gap: 20px;\n}\n\n.project-item .info .graphics img {\n    border: 3px solid azure;\n    width: 200px;\n    border-radius: 30px;\n}\n\n.project-item .info .graphics .canvas-container {\n    position: relative;\n}\n\n.project-item .info .graphics .canvas-container p {\n    position: absolute;\n    display: grid;\n    place-items: center;\n    font-size: 2rem;\n    width: 6rem;\n    height: 6rem;\n    top: calc(50% - 3rem);\n    left: calc(50% - 3rem);\n}\n\n.project-item .tasks {\n    display: flex;\n    justify-content: space-around;\n}\n\n.project-item .checked-container .remove-all-checked {\n    background: rgb(236, 151, 145);\n    color: azure;\n    padding: 5px;\n    margin: 20px;\n    width: 100px;\n    height: 50px;\n    border-radius: 5px;\n    display: flex;\n    align-items: center;\n}\n\n.project-item .checked-container .remove-all-checked:hover {\n    background: rgb(212, 131, 128);\n}\n\n.project-item .checked-container .remove-all-checked:active {\n    transform: scale(.975);\n}\n\n.project-item .checked-container .remove-all-checked img {\n    width: 30px;\n    height: 30px;\n    filter: invert(100%);\n}\n\n.project-item .checked-container .remove-all-checked p {\n    width: 100px;\n}\n\n.project-item .add-task {\n    background-color: rgb(164, 230, 209);\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center;\n    min-width: 300px;\n    width: calc(100% + 10px);\n    height: 50px;\n    margin: 20px 0;\n    border-radius: 10px;\n    border: none;\n}\n\n.project-item .add-task:hover {\n    filter: invert(10%);\n}\n\n.project-item .add-task:active {\n    transform: scale(.975);\n}\n\n.project-item .delete-project {\n    background-color: transparent;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n    background-size: contain;\n    border: 2px solid rgb(40, 36, 36);\n    border-radius: 5px;\n    position: absolute;\n    top: 20px;\n    right: 20px;\n    width: 30px;\n    height: 30px;\n    filter: var(--button-filter);\n}\n\n.project-item .delete-project:hover {\n    background-color: rgba(111, 97, 97, 0.25);\n}\n\n.project-item .delete-project:active {\n    transform: scale(.975);\n}\n\n:root.light {\n    --modal-content-bg: rgb(174, 179, 224);\n    --new-task-notes-bg: rgb(228, 224, 171);\n    --new-note-bg: rgb(249, 255, 232);\n    --create-bg: rgb(87, 233, 102);\n    --create-color: rgb(18, 22, 22);\n    --create-hover: rgb(82, 218, 96);\n    --cancel-bg: rgb(246, 149, 149);\n    --cancel-color: rgb(56, 47, 47);\n    --cancel-hover: rgb(223, 135, 135);\n    --filter: none;\n}\n\n:root.dark {\n    --modal-content-bg: rgb(0, 45, 128);\n    --new-task-notes-bg: rgb(13, 36, 57);\n    --new-note-bg: rgb(0, 0, 29);\n    --create-bg: rgb(2, 14, 68);\n    --create-color: azure;\n    --create-hover: rgb(1, 1, 20);\n    --cancel-bg: rgb(105, 11, 11);\n    --cancel-color: azure;\n    --cancel-hover: rgb(64, 4, 4);\n    --filter: invert(100%);\n}\n\n.project-item .modal {\n    display: none;\n}\n\n.project-item .modal .variables > li {\n    display: flex;\n    flex-direction: column;\n}\n\n.project-item .modal input[type=\"date\"] {\n    width: fit-content;\n}\n\n.project-item .modal input[type=\"text\"] {\n    background: beige;\n    width: 70%;\n    padding: 5px;\n    font-size: 1.25rem;\n    border-radius: 5px;\n    border: none;\n}\n\n.project-item .modal .variables > li > p, .project-item .modal .variables > li > label {\n    font-size: 1.5rem;\n    margin-top: 20px;\n}\n\n.project-item .modal .choices {\n    display: flex;\n    text-align: center;\n}\n\n.project-item .modal .new-task-high {\n    background: rgb(239, 93, 93, .5);\n    border-top-left-radius: 10px;\n    border-bottom-left-radius: 10px;\n}\n\n.project-item .modal .new-task-high:checked {\n    background: rgb(239, 93, 93);\n    border-top: 1px solid azure;\n    border-left: 1px solid azure;\n    border-bottom: 1px solid azure;\n}\n\n.project-item .modal .new-task-medium {\n    background: rgb(235, 241, 7, .5);\n}\n\n.project-item .modal .new-task-medium:checked {\n    background: rgb(235, 241, 7);\n    border-top: 1px solid azure;\n    border-bottom: 1px solid azure;\n}\n\n.project-item .modal .new-task-low {\n    background: rgb(59, 180, 213);\n    border-top: 1px solid azure;\n    border-right: 1px solid azure;\n    border-bottom: 1px solid azure;\n    border-top-right-radius: 10px;\n    border-bottom-right-radius: 10px\n}\n\n.project-item .modal .choices input[type=\"checkbox\"] {\n    appearance: none;\n    width: 75px;\n    height: 20px;\n}\n\n.project-item .modal .choices li {\n    display: flex;\n    flex-direction: column;\n}\n\n.project-item .modal .new-task-notes {\n    background: var(--new-task-notes-bg);\n    min-height: 50px;\n    position: relative;\n    border-radius: 10px;\n    padding: 10px;\n}\n\n.project-item .modal .new-task-notes .remove-new-task-note {\n    background-color: transparent;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n    background-size: cover;\n    filter: var(--filter);\n    position: absolute;\n    top: 5px;\n    right: 5px;\n    width: 20px;\n    height: 20px;\n    border: none;\n}\n\n.project-item .modal .new-task-notes li, .project-item .modal .new-task-notes textarea {\n    background: var(--new-note-bg);\n    color: var(--project-color);\n    padding: 5px;\n    border-radius: 5px;\n    margin-bottom: 30px;\n    position: relative;\n}\n\n.project-item .modal .new-task-notes li p {\n    padding-right: 10px;\n}\n\n.project-item .modal .new-task-notes .new-task-add-note {\n    background-color: transparent;\n    border: none;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-size: cover;\n    filter: var(--filter);\n    position: absolute;\n    bottom: 5px;\n    right: 5px;\n    width: 30px;\n    height: 30px;\n}\n\n.project-item .modal .create {\n    background: var(--create-bg);\n    color: var(--create-color);\n}\n\n.project-item .modal .create:hover {\n    background: var(--create-hover);\n}\n\n.project-item .modal .cancel {\n    background-color: var(--cancel-bg);\n    color: var(--cancel-color)\n}\n\n.project-item .modal .cancel:hover {\n    background: var(--cancel-hover);\n}\n\n:root.dark {\n    --deletion-p-bg: black;\n    --deletion-p-color: azure;\n}\n\n:root.light {\n    --deletion-p-bg: azure;\n    --deletion-p-color: black;\n}\n\n.project-item .warning-delete-task {\n    text-align: center;\n}\n\n.project-item .warning-delete-task .deletion p {\n    background: var(--deletion-p-bg);\n    color: var(--deletion-p-color);\n    border-radius: 5px;\n    margin: 20px;\n    padding: 10px;\n}\n\n.project-item .warning-delete-task .yes {\n    background-color: var(--cancel-bg);\n    color: var(--cancel-color)\n}\n\n.project-item .warning-delete-task .yes:hover {\n    background: var(--cancel-hover);\n}\n\n.project-item .warning-delete-task .no {\n    background: var(--create-bg);\n    color: var(--create-color);   \n}\n\n.project-item .warning-delete-task .no:hover {\n    background: var(--create-hover);\n}\n\n.project-item .image-modal {\n    /* display: block; */\n}\n\n.project-item .image-modal input[type=\"file\"] {\n    width: 0;\n    height: 0;\n}\n\n.project-item .image-modal img {\n    border: 10px;\n}\n\n.project-item .image-modal .image-input-wrapper {\n    display: flex;\n    justify-content: center;\n}\n\n.project-item .image-modal label {\n    display: block;\n    background-color: rgba(52, 93, 164, 0.25);\n    border-radius: 10px;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\n    background-size: cover;\n    width: 100px;\n    height: 100px;\n}\n\n.project-item .image-modal label:hover {\n    background-color: rgba(52, 93, 164, 0.5);\n}\n\n@media screen and (max-width: 700px) {\n    .project-item .tasks {\n        flex-direction: column;\n    }\n}\n\n@media screen and (max-width: 480px) {\n    .project-item {\n        padding: 10px 15px 10px 10px;\n    }\n\n    .project-item .info {\n        flex-direction: column;\n    }\n\n    .project-item .info .graphics img {\n        width: 150px;\n    }\n\n    .project-item .info canvas {\n        width: 150px;\n        height: 150px;\n    }\n\n    .project-item .delete-project {\n       top: 10px;\n       right: 10px; \n    }\n}", "",{"version":3,"sources":["webpack://./src/css/project.css"],"names":[],"mappings":"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","sourcesContent":[":root.light {\n    --project-name-bg: peachpuff;\n    --project-description-bg: rgb(249, 239, 221);\n    --project-color: rgb(31, 35, 96);\n    --button-filter: none;\n\n}\n\n:root.dark {\n    --project-name-bg: rgb(55, 57, 107);\n    --project-description-bg: black;\n    --project-color: azure;\n    --button-filter: invert(100%);\n}\n\n.project-item {\n    color: var(--project-color);\n    padding: 20px;\n    display: flex;\n    flex-direction: column;\n    position: relative;\n}\n\n.project-item ul {\n    list-style: none;\n}\n\n.project-item .info {\n    text-align: center;\n    display: flex;\n    gap: 20px;\n    align-self: center;\n    align-items: center;\n    margin: 20px;\n}\n\n.project-item .info .details {\n    background: var(--project-name-bg);\n    padding: 10px;\n    border-radius: 10px;\n    width: 300px;\n}\n\n.project-item .info .details h2 {\n    font-size: 1.55rem;\n}\n\n.project-item .info input[type=\"text\"] {\n    background: beige;\n    border: none;\n    border-radius: 5px;\n    font-size: 1.25rem;\n    padding: 5px;\n    width: 90%;\n    text-align: center;\n}\n\n.project-item .info .details p, .project-item .info .details textarea {\n    background: var(--project-description-bg);\n    color: var(--project-color);\n    border-radius: 10px;\n    padding: 10px;\n    margin: 10px;\n}\n\n.project-item .info .graphics {\n    display: flex;\n    align-items: center;\n    gap: 20px;\n}\n\n.project-item .info .graphics img {\n    border: 3px solid azure;\n    width: 200px;\n    border-radius: 30px;\n}\n\n.project-item .info .graphics .canvas-container {\n    position: relative;\n}\n\n.project-item .info .graphics .canvas-container p {\n    position: absolute;\n    display: grid;\n    place-items: center;\n    font-size: 2rem;\n    width: 6rem;\n    height: 6rem;\n    top: calc(50% - 3rem);\n    left: calc(50% - 3rem);\n}\n\n.project-item .tasks {\n    display: flex;\n    justify-content: space-around;\n}\n\n.project-item .checked-container .remove-all-checked {\n    background: rgb(236, 151, 145);\n    color: azure;\n    padding: 5px;\n    margin: 20px;\n    width: 100px;\n    height: 50px;\n    border-radius: 5px;\n    display: flex;\n    align-items: center;\n}\n\n.project-item .checked-container .remove-all-checked:hover {\n    background: rgb(212, 131, 128);\n}\n\n.project-item .checked-container .remove-all-checked:active {\n    transform: scale(.975);\n}\n\n.project-item .checked-container .remove-all-checked img {\n    width: 30px;\n    height: 30px;\n    filter: invert(100%);\n}\n\n.project-item .checked-container .remove-all-checked p {\n    width: 100px;\n}\n\n.project-item .add-task {\n    background-color: rgb(164, 230, 209);\n    background-image: url(\"../images/plus-box-outline.svg\");\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center;\n    min-width: 300px;\n    width: calc(100% + 10px);\n    height: 50px;\n    margin: 20px 0;\n    border-radius: 10px;\n    border: none;\n}\n\n.project-item .add-task:hover {\n    filter: invert(10%);\n}\n\n.project-item .add-task:active {\n    transform: scale(.975);\n}\n\n.project-item .delete-project {\n    background-color: transparent;\n    background-image: url(\"../images/delete-outline.svg\");\n    background-size: contain;\n    border: 2px solid rgb(40, 36, 36);\n    border-radius: 5px;\n    position: absolute;\n    top: 20px;\n    right: 20px;\n    width: 30px;\n    height: 30px;\n    filter: var(--button-filter);\n}\n\n.project-item .delete-project:hover {\n    background-color: rgba(111, 97, 97, 0.25);\n}\n\n.project-item .delete-project:active {\n    transform: scale(.975);\n}\n\n:root.light {\n    --modal-content-bg: rgb(174, 179, 224);\n    --new-task-notes-bg: rgb(228, 224, 171);\n    --new-note-bg: rgb(249, 255, 232);\n    --create-bg: rgb(87, 233, 102);\n    --create-color: rgb(18, 22, 22);\n    --create-hover: rgb(82, 218, 96);\n    --cancel-bg: rgb(246, 149, 149);\n    --cancel-color: rgb(56, 47, 47);\n    --cancel-hover: rgb(223, 135, 135);\n    --filter: none;\n}\n\n:root.dark {\n    --modal-content-bg: rgb(0, 45, 128);\n    --new-task-notes-bg: rgb(13, 36, 57);\n    --new-note-bg: rgb(0, 0, 29);\n    --create-bg: rgb(2, 14, 68);\n    --create-color: azure;\n    --create-hover: rgb(1, 1, 20);\n    --cancel-bg: rgb(105, 11, 11);\n    --cancel-color: azure;\n    --cancel-hover: rgb(64, 4, 4);\n    --filter: invert(100%);\n}\n\n.project-item .modal {\n    display: none;\n}\n\n.project-item .modal .variables > li {\n    display: flex;\n    flex-direction: column;\n}\n\n.project-item .modal input[type=\"date\"] {\n    width: fit-content;\n}\n\n.project-item .modal input[type=\"text\"] {\n    background: beige;\n    width: 70%;\n    padding: 5px;\n    font-size: 1.25rem;\n    border-radius: 5px;\n    border: none;\n}\n\n.project-item .modal .variables > li > p, .project-item .modal .variables > li > label {\n    font-size: 1.5rem;\n    margin-top: 20px;\n}\n\n.project-item .modal .choices {\n    display: flex;\n    text-align: center;\n}\n\n.project-item .modal .new-task-high {\n    background: rgb(239, 93, 93, .5);\n    border-top-left-radius: 10px;\n    border-bottom-left-radius: 10px;\n}\n\n.project-item .modal .new-task-high:checked {\n    background: rgb(239, 93, 93);\n    border-top: 1px solid azure;\n    border-left: 1px solid azure;\n    border-bottom: 1px solid azure;\n}\n\n.project-item .modal .new-task-medium {\n    background: rgb(235, 241, 7, .5);\n}\n\n.project-item .modal .new-task-medium:checked {\n    background: rgb(235, 241, 7);\n    border-top: 1px solid azure;\n    border-bottom: 1px solid azure;\n}\n\n.project-item .modal .new-task-low {\n    background: rgb(59, 180, 213);\n    border-top: 1px solid azure;\n    border-right: 1px solid azure;\n    border-bottom: 1px solid azure;\n    border-top-right-radius: 10px;\n    border-bottom-right-radius: 10px\n}\n\n.project-item .modal .choices input[type=\"checkbox\"] {\n    appearance: none;\n    width: 75px;\n    height: 20px;\n}\n\n.project-item .modal .choices li {\n    display: flex;\n    flex-direction: column;\n}\n\n.project-item .modal .new-task-notes {\n    background: var(--new-task-notes-bg);\n    min-height: 50px;\n    position: relative;\n    border-radius: 10px;\n    padding: 10px;\n}\n\n.project-item .modal .new-task-notes .remove-new-task-note {\n    background-color: transparent;\n    background-image: url(\"../images/delete-outline.svg\");\n    background-size: cover;\n    filter: var(--filter);\n    position: absolute;\n    top: 5px;\n    right: 5px;\n    width: 20px;\n    height: 20px;\n    border: none;\n}\n\n.project-item .modal .new-task-notes li, .project-item .modal .new-task-notes textarea {\n    background: var(--new-note-bg);\n    color: var(--project-color);\n    padding: 5px;\n    border-radius: 5px;\n    margin-bottom: 30px;\n    position: relative;\n}\n\n.project-item .modal .new-task-notes li p {\n    padding-right: 10px;\n}\n\n.project-item .modal .new-task-notes .new-task-add-note {\n    background-color: transparent;\n    border: none;\n    background-image: url(\"../images/plus-box-outline.svg\");\n    background-size: cover;\n    filter: var(--filter);\n    position: absolute;\n    bottom: 5px;\n    right: 5px;\n    width: 30px;\n    height: 30px;\n}\n\n.project-item .modal .create {\n    background: var(--create-bg);\n    color: var(--create-color);\n}\n\n.project-item .modal .create:hover {\n    background: var(--create-hover);\n}\n\n.project-item .modal .cancel {\n    background-color: var(--cancel-bg);\n    color: var(--cancel-color)\n}\n\n.project-item .modal .cancel:hover {\n    background: var(--cancel-hover);\n}\n\n:root.dark {\n    --deletion-p-bg: black;\n    --deletion-p-color: azure;\n}\n\n:root.light {\n    --deletion-p-bg: azure;\n    --deletion-p-color: black;\n}\n\n.project-item .warning-delete-task {\n    text-align: center;\n}\n\n.project-item .warning-delete-task .deletion p {\n    background: var(--deletion-p-bg);\n    color: var(--deletion-p-color);\n    border-radius: 5px;\n    margin: 20px;\n    padding: 10px;\n}\n\n.project-item .warning-delete-task .yes {\n    background-color: var(--cancel-bg);\n    color: var(--cancel-color)\n}\n\n.project-item .warning-delete-task .yes:hover {\n    background: var(--cancel-hover);\n}\n\n.project-item .warning-delete-task .no {\n    background: var(--create-bg);\n    color: var(--create-color);   \n}\n\n.project-item .warning-delete-task .no:hover {\n    background: var(--create-hover);\n}\n\n.project-item .image-modal {\n    /* display: block; */\n}\n\n.project-item .image-modal input[type=\"file\"] {\n    width: 0;\n    height: 0;\n}\n\n.project-item .image-modal img {\n    border: 10px;\n}\n\n.project-item .image-modal .image-input-wrapper {\n    display: flex;\n    justify-content: center;\n}\n\n.project-item .image-modal label {\n    display: block;\n    background-color: rgba(52, 93, 164, 0.25);\n    border-radius: 10px;\n    background-image: url(\"../images/image-change.svg\");\n    background-size: cover;\n    width: 100px;\n    height: 100px;\n}\n\n.project-item .image-modal label:hover {\n    background-color: rgba(52, 93, 164, 0.5);\n}\n\n@media screen and (max-width: 700px) {\n    .project-item .tasks {\n        flex-direction: column;\n    }\n}\n\n@media screen and (max-width: 480px) {\n    .project-item {\n        padding: 10px 15px 10px 10px;\n    }\n\n    .project-item .info {\n        flex-direction: column;\n    }\n\n    .project-item .info .graphics img {\n        width: 150px;\n    }\n\n    .project-item .info canvas {\n        width: 150px;\n        height: 150px;\n    }\n\n    .project-item .delete-project {\n       top: 10px;\n       right: 10px; \n    }\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root.light {\n    --project-name-bg: peachpuff;\n    --project-description-bg: rgb(249, 239, 221);\n    --project-color: rgb(31, 35, 96);\n    --button-filter: none;\n\n}\n\n:root.dark {\n    --project-name-bg: rgb(55, 57, 107);\n    --project-description-bg: black;\n    --project-color: azure;\n    --button-filter: invert(100%);\n}\n\n.project-item {\n    color: var(--project-color);\n    padding: 20px;\n    display: flex;\n    flex-direction: column;\n    position: relative;\n}\n\n.project-item ul {\n    list-style: none;\n}\n\n.project-item .info {\n    text-align: center;\n    display: flex;\n    gap: 20px;\n    align-self: center;\n    align-items: center;\n    margin: 20px;\n}\n\n.project-item .info .details {\n    background: var(--project-name-bg);\n    padding: 10px;\n    border-radius: 10px;\n    width: 300px;\n}\n\n.project-item .info .details h2 {\n    font-size: 1.55rem;\n}\n\n.project-item .info input[type=\"text\"] {\n    background: beige;\n    border: none;\n    border-radius: 5px;\n    font-size: 1.25rem;\n    padding: 5px;\n    width: 90%;\n    text-align: center;\n}\n\n.project-item .info .details p, .project-item .info .details textarea {\n    background: var(--project-description-bg);\n    color: var(--project-color);\n    border-radius: 10px;\n    padding: 10px;\n    margin: 10px;\n}\n\n.project-item .info .graphics {\n    display: flex;\n    align-items: center;\n    gap: 20px;\n}\n\n.project-item .info .graphics img {\n    border: 3px solid azure;\n    width: 200px;\n    border-radius: 30px;\n}\n\n.project-item .info .graphics .canvas-container {\n    position: relative;\n}\n\n.project-item .info .graphics .canvas-container p {\n    position: absolute;\n    display: grid;\n    place-items: center;\n    font-size: 2rem;\n    width: 6rem;\n    height: 6rem;\n    top: calc(50% - 3rem);\n    left: calc(50% - 3rem);\n}\n\n.project-item .tasks {\n    display: flex;\n    justify-content: space-around;\n}\n\n.project-item .checked-container .remove-all-checked {\n    background: rgb(236, 151, 145);\n    color: azure;\n    padding: 5px;\n    margin: 20px;\n    width: 100px;\n    height: 50px;\n    border-radius: 5px;\n    display: flex;\n    align-items: center;\n}\n\n.project-item .checked-container .remove-all-checked:hover {\n    background: rgb(212, 131, 128);\n}\n\n.project-item .checked-container .remove-all-checked:active {\n    transform: scale(.975);\n}\n\n.project-item .checked-container .remove-all-checked img {\n    width: 30px;\n    height: 30px;\n    filter: invert(100%);\n}\n\n.project-item .checked-container .remove-all-checked p {\n    width: 100px;\n}\n\n.project-item .add-task {\n    background-color: rgb(164, 230, 209);\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center;\n    min-width: 300px;\n    width: calc(100% + 10px);\n    height: 50px;\n    margin: 20px 0;\n    border-radius: 10px;\n    border: none;\n}\n\n.project-item .add-task:hover {\n    filter: invert(10%);\n}\n\n.project-item .add-task:active {\n    transform: scale(.975);\n}\n\n.project-item .delete-project {\n    background-color: transparent;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n    background-size: contain;\n    border: 2px solid rgb(40, 36, 36);\n    border-radius: 5px;\n    position: absolute;\n    top: 20px;\n    right: 20px;\n    width: 30px;\n    height: 30px;\n    filter: var(--button-filter);\n}\n\n.project-item .delete-project:hover {\n    background-color: rgba(111, 97, 97, 0.25);\n}\n\n.project-item .delete-project:active {\n    transform: scale(.975);\n}\n\n:root.light {\n    --modal-content-bg: rgb(174, 179, 224);\n    --new-task-notes-bg: rgb(228, 224, 171);\n    --new-note-bg: rgb(249, 255, 232);\n    --create-bg: rgb(87, 233, 102);\n    --create-color: rgb(18, 22, 22);\n    --create-hover: rgb(82, 218, 96);\n    --cancel-bg: rgb(246, 149, 149);\n    --cancel-color: rgb(56, 47, 47);\n    --cancel-hover: rgb(223, 135, 135);\n    --filter: none;\n}\n\n:root.dark {\n    --modal-content-bg: rgb(0, 45, 128);\n    --new-task-notes-bg: rgb(13, 36, 57);\n    --new-note-bg: rgb(0, 0, 29);\n    --create-bg: rgb(2, 14, 68);\n    --create-color: azure;\n    --create-hover: rgb(1, 1, 20);\n    --cancel-bg: rgb(105, 11, 11);\n    --cancel-color: azure;\n    --cancel-hover: rgb(64, 4, 4);\n    --filter: invert(100%);\n}\n\n.project-item .modal {\n    display: none;\n}\n\n.project-item .modal .variables > li {\n    display: flex;\n    flex-direction: column;\n}\n\n.project-item .modal input[type=\"date\"] {\n    width: fit-content;\n}\n\n.project-item .modal input[type=\"text\"] {\n    background: beige;\n    width: 70%;\n    padding: 5px;\n    font-size: 1.25rem;\n    border-radius: 5px;\n    border: none;\n}\n\n.project-item .modal .variables > li > p, .project-item .modal .variables > li > label {\n    font-size: 1.5rem;\n    margin-top: 20px;\n}\n\n.project-item .modal .choices {\n    display: flex;\n    text-align: center;\n}\n\n.project-item .modal .new-task-high {\n    background: rgb(239, 93, 93, .5);\n    border-top-left-radius: 10px;\n    border-bottom-left-radius: 10px;\n}\n\n.project-item .modal .new-task-high:checked {\n    background: rgb(239, 93, 93);\n    border-top: 1px solid azure;\n    border-left: 1px solid azure;\n    border-bottom: 1px solid azure;\n}\n\n.project-item .modal .new-task-medium {\n    background: rgb(235, 241, 7, .5);\n}\n\n.project-item .modal .new-task-medium:checked {\n    background: rgb(235, 241, 7);\n    border-top: 1px solid azure;\n    border-bottom: 1px solid azure;\n}\n\n.project-item .modal .new-task-low {\n    background: rgb(59, 180, 213);\n    border-top: 1px solid azure;\n    border-right: 1px solid azure;\n    border-bottom: 1px solid azure;\n    border-top-right-radius: 10px;\n    border-bottom-right-radius: 10px\n}\n\n.project-item .modal .choices input[type=\"checkbox\"] {\n    appearance: none;\n    width: 75px;\n    height: 20px;\n}\n\n.project-item .modal .choices li {\n    display: flex;\n    flex-direction: column;\n}\n\n.project-item .modal .new-task-notes {\n    background: var(--new-task-notes-bg);\n    min-height: 50px;\n    position: relative;\n    border-radius: 10px;\n    padding: 10px;\n}\n\n.project-item .modal .new-task-notes .remove-new-task-note {\n    background-color: transparent;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n    background-size: cover;\n    filter: var(--filter);\n    position: absolute;\n    top: 5px;\n    right: 5px;\n    width: 20px;\n    height: 20px;\n    border: none;\n}\n\n.project-item .modal .new-task-notes li, .project-item .modal .new-task-notes textarea {\n    background: var(--new-note-bg);\n    color: var(--project-color);\n    padding: 5px;\n    border-radius: 5px;\n    margin-bottom: 30px;\n    position: relative;\n}\n\n.project-item .modal .new-task-notes li p {\n    padding-right: 10px;\n}\n\n.project-item .modal .new-task-notes .new-task-add-note {\n    background-color: transparent;\n    border: none;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-size: cover;\n    filter: var(--filter);\n    position: absolute;\n    bottom: 5px;\n    right: 5px;\n    width: 30px;\n    height: 30px;\n}\n\n.project-item .modal .create {\n    background: var(--create-bg);\n    color: var(--create-color);\n}\n\n.project-item .modal .create:hover {\n    background: var(--create-hover);\n}\n\n.project-item .modal .cancel {\n    background-color: var(--cancel-bg);\n    color: var(--cancel-color)\n}\n\n.project-item .modal .cancel:hover {\n    background: var(--cancel-hover);\n}\n\n:root.dark {\n    --deletion-p-bg: black;\n    --deletion-p-color: azure;\n}\n\n:root.light {\n    --deletion-p-bg: azure;\n    --deletion-p-color: black;\n}\n\n.project-item .warning-delete-task {\n    text-align: center;\n}\n\n.project-item .warning-delete-task .deletion p {\n    background: var(--deletion-p-bg);\n    color: var(--deletion-p-color);\n    border-radius: 5px;\n    margin: 20px;\n    padding: 10px;\n}\n\n.project-item .warning-delete-task .yes {\n    background-color: var(--cancel-bg);\n    color: var(--cancel-color)\n}\n\n.project-item .warning-delete-task .yes:hover {\n    background: var(--cancel-hover);\n}\n\n.project-item .warning-delete-task .no {\n    background: var(--create-bg);\n    color: var(--create-color);   \n}\n\n.project-item .warning-delete-task .no:hover {\n    background: var(--create-hover);\n}\n\n/* .project-item .image-modal {\n    display: block;\n} */\n\n.project-item .image-modal input[type=\"file\"] {\n    width: 0;\n    height: 0;\n}\n\n.project-item .image-modal img {\n    border: 10px;\n}\n\n.project-item .image-modal .image-input-wrapper {\n    display: flex;\n    justify-content: center;\n}\n\n.project-item .image-modal label {\n    display: block;\n    background-color: rgba(52, 93, 164, 0.25);\n    border-radius: 10px;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\n    background-size: cover;\n    width: 100px;\n    height: 100px;\n    filter: var(--button-filter);\n}\n\n.project-item .image-modal label:hover {\n    background-color: rgba(52, 93, 164, 0.5);\n}\n\n@media screen and (max-width: 700px) {\n    .project-item .tasks {\n        flex-direction: column;\n    }\n}\n\n@media screen and (max-width: 480px) {\n    .project-item {\n        padding: 10px 15px 10px 10px;\n    }\n\n    .project-item .info {\n        flex-direction: column;\n    }\n\n    .project-item .info .graphics img {\n        width: 150px;\n    }\n\n    .project-item .info canvas {\n        width: 150px;\n        height: 150px;\n    }\n\n    .project-item .delete-project {\n       top: 10px;\n       right: 10px; \n    }\n}", "",{"version":3,"sources":["webpack://./src/css/project.css"],"names":[],"mappings":"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","sourcesContent":[":root.light {\n    --project-name-bg: peachpuff;\n    --project-description-bg: rgb(249, 239, 221);\n    --project-color: rgb(31, 35, 96);\n    --button-filter: none;\n\n}\n\n:root.dark {\n    --project-name-bg: rgb(55, 57, 107);\n    --project-description-bg: black;\n    --project-color: azure;\n    --button-filter: invert(100%);\n}\n\n.project-item {\n    color: var(--project-color);\n    padding: 20px;\n    display: flex;\n    flex-direction: column;\n    position: relative;\n}\n\n.project-item ul {\n    list-style: none;\n}\n\n.project-item .info {\n    text-align: center;\n    display: flex;\n    gap: 20px;\n    align-self: center;\n    align-items: center;\n    margin: 20px;\n}\n\n.project-item .info .details {\n    background: var(--project-name-bg);\n    padding: 10px;\n    border-radius: 10px;\n    width: 300px;\n}\n\n.project-item .info .details h2 {\n    font-size: 1.55rem;\n}\n\n.project-item .info input[type=\"text\"] {\n    background: beige;\n    border: none;\n    border-radius: 5px;\n    font-size: 1.25rem;\n    padding: 5px;\n    width: 90%;\n    text-align: center;\n}\n\n.project-item .info .details p, .project-item .info .details textarea {\n    background: var(--project-description-bg);\n    color: var(--project-color);\n    border-radius: 10px;\n    padding: 10px;\n    margin: 10px;\n}\n\n.project-item .info .graphics {\n    display: flex;\n    align-items: center;\n    gap: 20px;\n}\n\n.project-item .info .graphics img {\n    border: 3px solid azure;\n    width: 200px;\n    border-radius: 30px;\n}\n\n.project-item .info .graphics .canvas-container {\n    position: relative;\n}\n\n.project-item .info .graphics .canvas-container p {\n    position: absolute;\n    display: grid;\n    place-items: center;\n    font-size: 2rem;\n    width: 6rem;\n    height: 6rem;\n    top: calc(50% - 3rem);\n    left: calc(50% - 3rem);\n}\n\n.project-item .tasks {\n    display: flex;\n    justify-content: space-around;\n}\n\n.project-item .checked-container .remove-all-checked {\n    background: rgb(236, 151, 145);\n    color: azure;\n    padding: 5px;\n    margin: 20px;\n    width: 100px;\n    height: 50px;\n    border-radius: 5px;\n    display: flex;\n    align-items: center;\n}\n\n.project-item .checked-container .remove-all-checked:hover {\n    background: rgb(212, 131, 128);\n}\n\n.project-item .checked-container .remove-all-checked:active {\n    transform: scale(.975);\n}\n\n.project-item .checked-container .remove-all-checked img {\n    width: 30px;\n    height: 30px;\n    filter: invert(100%);\n}\n\n.project-item .checked-container .remove-all-checked p {\n    width: 100px;\n}\n\n.project-item .add-task {\n    background-color: rgb(164, 230, 209);\n    background-image: url(\"../images/plus-box-outline.svg\");\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center;\n    min-width: 300px;\n    width: calc(100% + 10px);\n    height: 50px;\n    margin: 20px 0;\n    border-radius: 10px;\n    border: none;\n}\n\n.project-item .add-task:hover {\n    filter: invert(10%);\n}\n\n.project-item .add-task:active {\n    transform: scale(.975);\n}\n\n.project-item .delete-project {\n    background-color: transparent;\n    background-image: url(\"../images/delete-outline.svg\");\n    background-size: contain;\n    border: 2px solid rgb(40, 36, 36);\n    border-radius: 5px;\n    position: absolute;\n    top: 20px;\n    right: 20px;\n    width: 30px;\n    height: 30px;\n    filter: var(--button-filter);\n}\n\n.project-item .delete-project:hover {\n    background-color: rgba(111, 97, 97, 0.25);\n}\n\n.project-item .delete-project:active {\n    transform: scale(.975);\n}\n\n:root.light {\n    --modal-content-bg: rgb(174, 179, 224);\n    --new-task-notes-bg: rgb(228, 224, 171);\n    --new-note-bg: rgb(249, 255, 232);\n    --create-bg: rgb(87, 233, 102);\n    --create-color: rgb(18, 22, 22);\n    --create-hover: rgb(82, 218, 96);\n    --cancel-bg: rgb(246, 149, 149);\n    --cancel-color: rgb(56, 47, 47);\n    --cancel-hover: rgb(223, 135, 135);\n    --filter: none;\n}\n\n:root.dark {\n    --modal-content-bg: rgb(0, 45, 128);\n    --new-task-notes-bg: rgb(13, 36, 57);\n    --new-note-bg: rgb(0, 0, 29);\n    --create-bg: rgb(2, 14, 68);\n    --create-color: azure;\n    --create-hover: rgb(1, 1, 20);\n    --cancel-bg: rgb(105, 11, 11);\n    --cancel-color: azure;\n    --cancel-hover: rgb(64, 4, 4);\n    --filter: invert(100%);\n}\n\n.project-item .modal {\n    display: none;\n}\n\n.project-item .modal .variables > li {\n    display: flex;\n    flex-direction: column;\n}\n\n.project-item .modal input[type=\"date\"] {\n    width: fit-content;\n}\n\n.project-item .modal input[type=\"text\"] {\n    background: beige;\n    width: 70%;\n    padding: 5px;\n    font-size: 1.25rem;\n    border-radius: 5px;\n    border: none;\n}\n\n.project-item .modal .variables > li > p, .project-item .modal .variables > li > label {\n    font-size: 1.5rem;\n    margin-top: 20px;\n}\n\n.project-item .modal .choices {\n    display: flex;\n    text-align: center;\n}\n\n.project-item .modal .new-task-high {\n    background: rgb(239, 93, 93, .5);\n    border-top-left-radius: 10px;\n    border-bottom-left-radius: 10px;\n}\n\n.project-item .modal .new-task-high:checked {\n    background: rgb(239, 93, 93);\n    border-top: 1px solid azure;\n    border-left: 1px solid azure;\n    border-bottom: 1px solid azure;\n}\n\n.project-item .modal .new-task-medium {\n    background: rgb(235, 241, 7, .5);\n}\n\n.project-item .modal .new-task-medium:checked {\n    background: rgb(235, 241, 7);\n    border-top: 1px solid azure;\n    border-bottom: 1px solid azure;\n}\n\n.project-item .modal .new-task-low {\n    background: rgb(59, 180, 213);\n    border-top: 1px solid azure;\n    border-right: 1px solid azure;\n    border-bottom: 1px solid azure;\n    border-top-right-radius: 10px;\n    border-bottom-right-radius: 10px\n}\n\n.project-item .modal .choices input[type=\"checkbox\"] {\n    appearance: none;\n    width: 75px;\n    height: 20px;\n}\n\n.project-item .modal .choices li {\n    display: flex;\n    flex-direction: column;\n}\n\n.project-item .modal .new-task-notes {\n    background: var(--new-task-notes-bg);\n    min-height: 50px;\n    position: relative;\n    border-radius: 10px;\n    padding: 10px;\n}\n\n.project-item .modal .new-task-notes .remove-new-task-note {\n    background-color: transparent;\n    background-image: url(\"../images/delete-outline.svg\");\n    background-size: cover;\n    filter: var(--filter);\n    position: absolute;\n    top: 5px;\n    right: 5px;\n    width: 20px;\n    height: 20px;\n    border: none;\n}\n\n.project-item .modal .new-task-notes li, .project-item .modal .new-task-notes textarea {\n    background: var(--new-note-bg);\n    color: var(--project-color);\n    padding: 5px;\n    border-radius: 5px;\n    margin-bottom: 30px;\n    position: relative;\n}\n\n.project-item .modal .new-task-notes li p {\n    padding-right: 10px;\n}\n\n.project-item .modal .new-task-notes .new-task-add-note {\n    background-color: transparent;\n    border: none;\n    background-image: url(\"../images/plus-box-outline.svg\");\n    background-size: cover;\n    filter: var(--filter);\n    position: absolute;\n    bottom: 5px;\n    right: 5px;\n    width: 30px;\n    height: 30px;\n}\n\n.project-item .modal .create {\n    background: var(--create-bg);\n    color: var(--create-color);\n}\n\n.project-item .modal .create:hover {\n    background: var(--create-hover);\n}\n\n.project-item .modal .cancel {\n    background-color: var(--cancel-bg);\n    color: var(--cancel-color)\n}\n\n.project-item .modal .cancel:hover {\n    background: var(--cancel-hover);\n}\n\n:root.dark {\n    --deletion-p-bg: black;\n    --deletion-p-color: azure;\n}\n\n:root.light {\n    --deletion-p-bg: azure;\n    --deletion-p-color: black;\n}\n\n.project-item .warning-delete-task {\n    text-align: center;\n}\n\n.project-item .warning-delete-task .deletion p {\n    background: var(--deletion-p-bg);\n    color: var(--deletion-p-color);\n    border-radius: 5px;\n    margin: 20px;\n    padding: 10px;\n}\n\n.project-item .warning-delete-task .yes {\n    background-color: var(--cancel-bg);\n    color: var(--cancel-color)\n}\n\n.project-item .warning-delete-task .yes:hover {\n    background: var(--cancel-hover);\n}\n\n.project-item .warning-delete-task .no {\n    background: var(--create-bg);\n    color: var(--create-color);   \n}\n\n.project-item .warning-delete-task .no:hover {\n    background: var(--create-hover);\n}\n\n/* .project-item .image-modal {\n    display: block;\n} */\n\n.project-item .image-modal input[type=\"file\"] {\n    width: 0;\n    height: 0;\n}\n\n.project-item .image-modal img {\n    border: 10px;\n}\n\n.project-item .image-modal .image-input-wrapper {\n    display: flex;\n    justify-content: center;\n}\n\n.project-item .image-modal label {\n    display: block;\n    background-color: rgba(52, 93, 164, 0.25);\n    border-radius: 10px;\n    background-image: url(\"../images/image-change.svg\");\n    background-size: cover;\n    width: 100px;\n    height: 100px;\n    filter: var(--button-filter);\n}\n\n.project-item .image-modal label:hover {\n    background-color: rgba(52, 93, 164, 0.5);\n}\n\n@media screen and (max-width: 700px) {\n    .project-item .tasks {\n        flex-direction: column;\n    }\n}\n\n@media screen and (max-width: 480px) {\n    .project-item {\n        padding: 10px 15px 10px 10px;\n    }\n\n    .project-item .info {\n        flex-direction: column;\n    }\n\n    .project-item .info .graphics img {\n        width: 150px;\n    }\n\n    .project-item .info canvas {\n        width: 150px;\n        height: 150px;\n    }\n\n    .project-item .delete-project {\n       top: 10px;\n       right: 10px; \n    }\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1245,103 +1249,6 @@ asideInterface.resize_aside();
 
 /***/ }),
 
-/***/ "./src/empty_period.js":
-/*!*****************************!*\
-  !*** ./src/empty_period.js ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "emptyObj": () => (/* binding */ emptyObj)
-/* harmony export */ });
-const emptyObj = (
-    () => {
-        const empty = document.createElement("div");
-        const message = document.createElement("h2");
-        const container = document.createElement("div");
-        const img = document.createElement("img");
-        const canvas = document.createElement("canvas");
-        const context = canvas.getContext("2d");
-        const reload = document.createElement("button");
-        let animeKiller, reg, intervals, subs;
-
-        intervals = ["week", "month", "year", "all"];
-        subs = ["earthporn", "TouhouArt", "brutalism"];
-        reg = /^https:\/\/i\.redd\.it\/\w+\.(jpg|png|jpeg)/i;
-
-        empty.append(message);
-        empty.append(container);
-        container.append(img);
-        container.append(reload);
-
-        empty.classList.add("empty-period");
-        container.classList.add("empty-container");
-
-        message.innerText = "There doesn't seem to be anything for this period, have a pic instead.";
-        canvas.width = 200;
-        canvas.height = 200;
-
-        img.addEventListener("load", replace);
-
-        reload.addEventListener("click", fetch_image);
-
-        show_loading();
-        fetch_image();
-
-        function replace() {
-            cancelAnimationFrame(animeKiller);
-            canvas.replaceWith(img);
-            reload.style.display = "block";
-        }
-
-        function fetch_image() {
-            let interval, sub;
-
-            interval = intervals[~~(Math.random() * intervals.length)];
-            sub = subs[~~(Math.random() * subs.length)];
-            show_loading();
-            reload.style.display = "none";
-            img.replaceWith(canvas);
-            fetch(`https://www.reddit.com/r/${sub}/top.json?t=${interval}&limit=100`, { method: "GET" })
-                .then(res => res.json())
-                .then(res => {
-                    let child;
-
-                    do {    
-                        child = res.data.children[~~(Math.random() * res.data.children.length)];
-                    } while (!reg.test(child.data.url));
-
-                    img.src = child.data.url;
-                }).catch(error => {
-                    console.log(error);
-                    img.src = "./pepe.jpg";
-                });
-        }
-
-        function show_loading() {
-            let x, y, radius;
-
-            x = Math.random() * canvas.width;
-            y = Math.random() * canvas.height;
-            radius = Math.random() * 100 + 50;
-            context.fillStyle = "rgb(255, 255, 255, .05)";
-            context.fillRect(0, 0, canvas.width, canvas.height);
-            context.fillStyle = "red";
-            context.beginPath();
-            context.arc(x, y, radius, 0, Math.PI * 2);
-            context.stroke();
-
-            animeKiller = requestAnimationFrame(show_loading);
-        }
-
-        return empty;
-    }
-)();
-
-/***/ }),
-
 /***/ "./src/imports.js":
 /*!************************!*\
   !*** ./src/imports.js ***!
@@ -1377,6 +1284,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _images_reload_svg__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./images/reload.svg */ "./src/images/reload.svg");
 /* harmony import */ var _images_pepe_jpg__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./images/pepe.jpg */ "./src/images/pepe.jpg");
 /* harmony import */ var _images_image_change_svg__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./images/image-change.svg */ "./src/images/image-change.svg");
+/* harmony import */ var _images_upload_image_svg__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./images/upload-image.svg */ "./src/images/upload-image.svg");
+/* harmony import */ var _images_close_svg__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./images/close.svg */ "./src/images/close.svg");
 
 
 
@@ -1404,6 +1313,124 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+/***/ }),
+
+/***/ "./src/preview.js":
+/*!************************!*\
+  !*** ./src/preview.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "create_preview": () => (/* binding */ create_preview)
+/* harmony export */ });
+/* harmony import */ var _taskdom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./taskdom */ "./src/taskdom.js");
+
+
+function create_preview(projectItems, timePeriod) {
+    const preview = document.createElement("ul");
+
+    preview.classList.add("period-projects");
+
+    for (let i = 0; i < projectItems.length; i++) {
+        let tasks;
+
+        tasks = projectItems[i].project.tasks.filter(task => {
+            if (is_within_date(task.duedate, timePeriod) && !task.checked)
+                return true;
+            return false;
+        });
+        if (tasks.length)
+            preview.append(create_li(tasks, projectItems[i].project.label, projectItems[i].update));
+    }
+
+    function is_within_date(one, two) {
+        return true;
+    }
+
+    function create_li(tasks, label, update) {
+        const li = document.createElement("li");
+        const period = document.createElement("div");
+        const principal = document.createElement("div");
+        const img = document.createElement("img");
+        const projectLabel = document.createElement("h2");
+        const canvas = document.createElement("canvas");
+        const chevron = document.createElement("input");
+        const wrapper = document.createElement("div");
+        const lower = document.createElement("div");
+        let checks, expandables;
+        
+        li.append(period);
+        period.append(principal);
+        principal.append(img);
+        principal.append(projectLabel);
+        principal.append(canvas);
+        principal.append(chevron);
+        period.append(wrapper);
+        wrapper.append(lower);
+
+        period.classList.add("period-project");
+        principal.classList.add("principal-section");
+        chevron.classList.add("show-tasks");
+        wrapper.classList.add("extra-wrapper");
+        lower.classList.add("lower-section");
+
+        img.src = "./project.svg";
+        projectLabel.innerText = label;
+        canvas.width = 50;
+        canvas.height = 50;
+        chevron.setAttribute("type", "checkbox");
+        checks = [];
+        expandables = [];
+
+        for (let task of tasks) {
+            let taskDom;
+
+            taskDom = (0,_taskdom__WEBPACK_IMPORTED_MODULE_0__.create_task_dom)(task, { warning : null }).cloneNode(true);
+            checks.push(taskDom.querySelector(".checkmark input[type='checkbox']"));
+            expandables.push(taskDom.querySelector(".expand-contract"));
+            lower.append(taskDom);
+        }
+
+        checks.forEach(check => check.addEventListener("click", () => {
+            let task;
+    
+            task = check.parentElement.parentElement.parentElement;
+            lower.removeChild(task);
+            expand_contract();
+            if (!preview.querySelectorAll(".task").length)
+                preview.parentElement.removeChild(preview);
+            //update();
+        }));
+
+        expandables.forEach(expandable => expandable.parentElement.removeChild(expandable));
+
+        chevron.addEventListener("click", expand_contract);
+
+        function expand_contract() {
+            let height;
+            
+            height = window.getComputedStyle(lower).height;
+            if (chevron.checked) {
+                wrapper.style.height = height
+                lower.style.top = 0;
+            }
+            else {
+                wrapper.style.height = 0;
+                lower.style.top = `-${height}`;
+            }
+        }
+
+        return li;
+    }
+    
+    return preview;
+}
 
 /***/ }),
 
@@ -1446,15 +1473,16 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * todo;
- * edit project label from clicking on it                         [x];
- * edit project description from clicking on it                   [x];
- * clear note tasks on the form                                   [x];
- * implement deletion of individual tasks                         [x];
- * implement deletion of project                                  [x];
- * remove all checked by clicking on the corresponding button     [x];
- * show the correct percentage in the inner p element             [x];
- * show the percentage of completed tasks with the canvas element [x];
- * change the image used for the project                          [];
+ * edit project label from clicking on it                                       [x];
+ * edit project description from clicking on it                                 [x];
+ * clear note tasks on the form                                                 [x];
+ * implement deletion of individual tasks                                       [x];
+ * implement deletion of project                                                [x];
+ * remove all checked by clicking on the corresponding button                   [x];
+ * show the correct percentage in the inner p element                           [x];
+ * show the percentage of completed tasks with the canvas element               [x];
+ * change the image used for the project                                        [x];
+ * add different algorithms to make a picture when the user doesn't provide one []
  */
 
 function create_project_main_dom(projectObj, extInterface) {
@@ -1761,6 +1789,7 @@ function create_project_main_dom(projectObj, extInterface) {
 
             index = extInterface.array.findIndex(project => project.id == projectObj.id);
             extInterface.array.splice(index, 1);
+            extInterface.side.remove();
             project.parentElement.removeChild(project);
             hide();
         }
@@ -1787,6 +1816,7 @@ function create_project_main_dom(projectObj, extInterface) {
         if (value) {
             projectH2.innerText = value;
             projectObj.label = value;
+            extInterface.side.update();
         }
         projectNameInput.replaceWith(projectH2);
     });
@@ -1908,18 +1938,6 @@ function create_project_main_dom(projectObj, extInterface) {
 
     no.addEventListener("click", hide);
 
-    // const imageModal = document.createElement("div");
-    // const imageModalContent = document.createElement("div");
-    // const actualImg = document.createElement("img");
-
-    // const imageInputWrapper = document.createElement("div");
-    // const imageInput = document.createElement("input");
-    // const imageLabel = document.createElement("label");
-
-    // const imageControls = document.createElement("div");
-    // const imageYes = document.createElement("button");
-    // const imageNo = document.createElement("button");
-
     logo.addEventListener("click", () => imageModal.style.display = "block");
 
     imageInput.addEventListener("change", () => {
@@ -1963,7 +1981,7 @@ function create_project_main_dom(projectObj, extInterface) {
     }
 
     function update_checks() {
-        //remove event listeners, is this even necessasy?
+        //remove event listeners, is this even necessary?
         checks.forEach(check => check.removeEventListener("click", update));
         checks = document.querySelectorAll(".project-item .task .checkmark input[type='checkbox']");
         checks.forEach(check => check.addEventListener("click", update));
@@ -1972,6 +1990,7 @@ function create_project_main_dom(projectObj, extInterface) {
     function update() {
         update_per_chan();
         draw_percentage();
+        extInterface.side.update();
     }
 
     function update_per_chan() {
@@ -1995,16 +2014,85 @@ function create_project_main_dom(projectObj, extInterface) {
         context.clearRect(0, 0, canvas.width, canvas.height);
         context.beginPath();
         context.lineWidth = 10;
-        context.strokeStyle = "rgb(225, 190, 255)";
+        context.strokeStyle = "rgb(225, 200, 255)";
         context.arc(canvas.width / 2, canvas.height / 2, canvas.width / 2 - 5, 0, Math.PI * 2);
         context.stroke();
         context.beginPath();
-        context.strokeStyle = "rgb(100, 150, 200)";
+        context.strokeStyle = "rgb(100, 150, 1900)";
         context.arc(canvas.width / 2, canvas.height / 2, canvas.width / 2 - 5, - Math.PI / 2, angle - Math.PI / 2);
         context.stroke();
     }
 
-    return project;
+    function update_external() {
+        console.log("hi");
+        return 0;
+    }
+
+    return { project, update : update_external };
+}
+
+/***/ }),
+
+/***/ "./src/side_project.js":
+/*!*****************************!*\
+  !*** ./src/side_project.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "create_side_project": () => (/* binding */ create_side_project)
+/* harmony export */ });
+function create_side_project(projectObj, extInterface) {
+    const sideProject = document.createElement("div");
+    const logo = document.createElement("img");
+    const projectName = document.createElement("h3");
+    const canvas = document.createElement("canvas");
+    const context = canvas.getContext("2d");
+
+    sideProject.append(logo);
+    sideProject.append(projectName);
+    sideProject.append(canvas);
+
+    sideProject.classList.add("project");
+    logo.src = "./project.svg";
+    projectName.innerText = projectObj.label;
+    canvas.width = 50;
+    canvas.height = 50;
+
+    function update() {
+        projectName.innerText = projectObj.label;
+        draw_percentage();
+    }
+
+    function draw_percentage() {
+        let angle;
+
+        if (!projectObj.tasks.length)
+            angle = 0;
+        else
+            angle = Math.PI * 2 * projectObj.tasks.filter(task => task.checked).length / projectObj.tasks.length;
+
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        context.beginPath();
+        context.lineWidth = 10;
+        context.strokeStyle = "rgb(225, 200, 255)";
+        context.arc(canvas.width / 2, canvas.height / 2, canvas.width / 2 - 5, 0, Math.PI * 2);
+        context.stroke();
+        context.beginPath();
+        context.strokeStyle = "rgb(100, 150, 1900)";
+        context.arc(canvas.width / 2, canvas.height / 2, canvas.width / 2 - 5, - Math.PI / 2, angle - Math.PI / 2);
+        context.stroke();
+    }
+
+    function remove() {
+        sideProject.parentElement.removeChild(sideProject);
+    }
+
+    //sideProject.addEventListener("click", () => document.querySelector("main .project-item").replaceWith(mainProject));
+
+    return { side : sideProject, update, remove };
 }
 
 /***/ }),
@@ -2670,6 +2758,17 @@ module.exports = __webpack_require__.p + "chevron-right.svg";
 
 /***/ }),
 
+/***/ "./src/images/close.svg":
+/*!******************************!*\
+  !*** ./src/images/close.svg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "close.svg";
+
+/***/ }),
+
 /***/ "./src/images/cog-outline.svg":
 /*!************************************!*\
   !*** ./src/images/cog-outline.svg ***!
@@ -2810,6 +2909,17 @@ module.exports = __webpack_require__.p + "shredder.svg";
 
 "use strict";
 module.exports = __webpack_require__.p + "sun.svg";
+
+/***/ }),
+
+/***/ "./src/images/upload-image.svg":
+/*!*************************************!*\
+  !*** ./src/images/upload-image.svg ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "upload-image.svg";
 
 /***/ })
 
@@ -2959,52 +3069,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _task_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./task.js */ "./src/task.js");
 /* harmony import */ var _taskdom_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./taskdom.js */ "./src/taskdom.js");
 /* harmony import */ var _utilities_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utilities.js */ "./src/utilities.js");
-/* harmony import */ var _empty_period_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./empty_period.js */ "./src/empty_period.js");
+/* harmony import */ var _side_project_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./side_project.js */ "./src/side_project.js");
 /* harmony import */ var _project_dom_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./project_dom.js */ "./src/project_dom.js");
 /* harmony import */ var _project_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./project.js */ "./src/project.js");
+/* harmony import */ var _preview_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./preview.js */ "./src/preview.js");
 
 
 
 
 
 
+
+//import { emptyObj } from "./empty_period.js";
 // import { asideInterface } from "./aside.js";
-
-// const checked = document.querySelector(".checked");
-// const unchecked = document.querySelector(".unchecked");
-
-// const tasks = [];
-// const extInterface = {
-//     array: tasks,
-//     warning: null,
-//     checked,
-//     unchecked,
-//     userDataString: null
-// };
-
-// let priorities = ["low", "medium", "high"];
-// for (let i = 0; i < 3; i++) {
-//     let description, checkedBox, priority, duedate, id, notes, task;
-
-//     description = "This is a test task";
-//     checkedBox = false;
-//     priority = priorities[~~(Math.random() * priorities.length)];
-//     duedate = "2022-05-13";
-//     id = create_id(10);
-//     notes = [
-//         {
-//             text: "This is a string",
-//             id: create_id(10)
-//         },
-//         {
-//             text: "This is a test",
-//             id: create_id(10)
-//         }
-//     ];
-
-//     task = create_task(description, checkedBox, priority, duedate, id, notes);
-//     unchecked.append(create_task_dom(task, extInterface));
-// }
 
 // asideInterface.resize_aside();
 
@@ -3055,7 +3132,6 @@ __webpack_require__.r(__webpack_exports__);
 // checks.forEach(check => {
 //     let parent, taskChecks, wrapper, lowerSecs;
 //     parent = check.parentElement.parentElement;
-//     console.log(parent);
 //     taskChecks = parent.querySelectorAll(".task .expand-contract");
 //     wrapper = parent.querySelector(".extra-wrapper");
 //     lowerSecs = parent.querySelector(".lower-section");
@@ -3099,123 +3175,124 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 const main = document.querySelector("main");
+const today = document.querySelector(".today-button");
+
 const warning = document.querySelector(".delete-project");
 const projects = [];
-const extInterface = {
-    modal: warning,
-    array: projects
-};
+const funs = [];
+const p = [];
+const addNewProject = document.querySelector(".add-project");
+const createProjectModal = document.querySelector(".create-project-modal");
+const createProject = document.querySelector(".create-project-form");
+const cancelCreation = document.querySelector(".cancel-project-creation")
+const coverInput = document.getElementById("project-cover");
+const coverLabel = document.querySelector(".label-cover");
+const imageWrapper = document.querySelector(".image-cover-wrapper");
+const coverImage = document.getElementById("actual-image");
+const removeImage = document.querySelector(".image-cover-wrapper .remove-image");
+let cover;
 
-let label, description, img, tasks, id, project, projectDom;
+today.addEventListener("click", () => {
+    let current;
 
-label = "By Me";
-description = "This is a title, it's unclear, but its obvious."
-//#region
-img = "data:image/png;base64,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";
-//#endregion
-//create_task(description, checked, priority, duedate, id, notes);
-tasks = [
-    {
-        description: (0,_utilities_js__WEBPACK_IMPORTED_MODULE_3__.create_id)(3),
-        checked: false,
-        priority: "high",
-        duedate: "2022-12-25",
-        id: (0,_utilities_js__WEBPACK_IMPORTED_MODULE_3__.create_id)(10),
-        notes: [
-            {
-                text: "this machine",
-                id: (0,_utilities_js__WEBPACK_IMPORTED_MODULE_3__.create_id)(10)
-            }
-        ]
-    },
-    {
-        description: (0,_utilities_js__WEBPACK_IMPORTED_MODULE_3__.create_id)(3),
-        checked: false,
-        priority: "high",
-        duedate: "2022-12-25",
-        id: (0,_utilities_js__WEBPACK_IMPORTED_MODULE_3__.create_id)(10),
-        notes: [
-            {
-                text: "this machine",
-                id: (0,_utilities_js__WEBPACK_IMPORTED_MODULE_3__.create_id)(10)
-            }
-        ]
-    },
-    {
-        description: (0,_utilities_js__WEBPACK_IMPORTED_MODULE_3__.create_id)(3),
-        checked: false,
-        priority: "high",
-        duedate: "2022-12-25",
-        id: (0,_utilities_js__WEBPACK_IMPORTED_MODULE_3__.create_id)(10),
-        notes: [
-            {
-                text: "this machine",
-                id: (0,_utilities_js__WEBPACK_IMPORTED_MODULE_3__.create_id)(10)
-            }
-        ]
-    },
-    // {
-    //     description: create_id(3),
-    //     checked: false,
-    //     priority: "high",
-    //     duedate: "2022-12-25",
-    //     id: create_id(10),
-    //     notes: [
-    //         {
-    //             text: "this machine",
-    //             id: create_id(10)
-    //         }
-    //     ]
-    // },
-    // {
-    //     description: create_id(3),
-    //     checked: false,
-    //     priority: "high",
-    //     duedate: "2022-12-25",
-    //     id: create_id(10),
-    //     notes: [
-    //         {
-    //             text: "this machine",
-    //             id: create_id(10)
-    //         }
-    //     ]
-    // },
-    // {
-    //     description: create_id(3),
-    //     checked: false,
-    //     priority: "high",
-    //     duedate: "2022-12-25",
-    //     id: create_id(10),
-    //     notes: [
-    //         {
-    //             text: "this machine",
-    //             id: create_id(10)
-    //         }
-    //     ]
-    // },
-    // {
-    //     description: create_id(3),
-    //     checked: false,
-    //     priority: "high",
-    //     duedate: "2022-12-25",
-    //     id: create_id(10),
-    //     notes: [
-    //         {
-    //             text: "this machine",
-    //             id: create_id(10)
-    //         }
-    //     ]
-    // },
-    
-];
+    current = main.querySelector(".project-item");
 
-id = (0,_utilities_js__WEBPACK_IMPORTED_MODULE_3__.create_id)(10);
+    if (!current)
+        current = main.querySelector(".period-projects");
 
-project = (0,_project_js__WEBPACK_IMPORTED_MODULE_6__.create_project)(label, description, img, tasks, id);
-projects.push(project);
-projectDom = (0,_project_dom_js__WEBPACK_IMPORTED_MODULE_5__.create_project_main_dom)(project, extInterface);
-main.append(projectDom);
+    if (current)
+        main.removeChild(current);
+    main.append((0,_preview_js__WEBPACK_IMPORTED_MODULE_7__.create_preview)(p, 100));
+});
+
+coverInput.addEventListener("change", () => {
+    (0,_utilities_js__WEBPACK_IMPORTED_MODULE_3__.make_cover)(URL.createObjectURL(coverInput.files[0]), 200, 200).then(res => {
+        cover = res;
+        coverImage.src = res;
+        coverInput.style.display = "none";
+        coverLabel.style.display = "none";
+        imageWrapper.style.display = "flex";
+    });
+});
+
+addNewProject.addEventListener("click", () => {
+    createProjectModal.style.display = "block"
+    createProject["project-name"].focus();
+});
+
+createProject.addEventListener("submit", event => {
+    event.preventDefault();
+
+    let project, sideProject, mainProject, retProject, extInterface, li;
+
+    project = (0,_project_js__WEBPACK_IMPORTED_MODULE_6__.create_project)(
+        createProject["project-name"].value,
+        createProject["project-description"].value,
+        cover,
+        [],
+        (0,_utilities_js__WEBPACK_IMPORTED_MODULE_3__.create_id)(10)
+    );
+    projects.push(project);
+    sideProject = (0,_side_project_js__WEBPACK_IMPORTED_MODULE_4__.create_side_project)(project);
+    extInterface = {
+        modal: warning,
+        array: projects,
+        side: { update: sideProject.update, remove: sideProject.remove }
+    };
+    retProject = (0,_project_dom_js__WEBPACK_IMPORTED_MODULE_5__.create_project_main_dom)(project, extInterface);
+    mainProject = retProject.project;
+
+    //...
+    p.push({ project, udpate : retProject.update });
+
+    funs.push({ update: retProject.update, id: project.id });
+
+    sideProject.side.addEventListener("click", () => {
+        let current, main, active;
+
+        main = document.querySelector("main");
+        current = main.querySelector(".project-item");
+
+        if (!current)
+            current = main.querySelector(".period-projects");
+
+        if (current)
+            current.replaceWith(mainProject);
+        else
+            main.append(mainProject);
+
+        active = document.getElementById("active-sidebar-element");
+        if (active)
+            active.id = '';
+        sideProject.side.id = "active-sidebar-element";
+    });
+
+    li = document.createElement("li");
+    li.append(sideProject.side);
+    document.querySelector("aside .projects ul").append(li);
+    great_reset();
+    sideProject.side.click();
+});
+
+cancelCreation.addEventListener("click", great_reset)
+
+removeImage.addEventListener("click", reset);
+
+function great_reset() {
+    createProject.reset();
+    reset();
+    createProjectModal.style.display = "none";
+}
+
+function reset() {
+    cover = '';
+    coverImage.src = "./pepe.jpg";
+    imageWrapper.style.display = "none";
+    coverLabel.style.display = "block";
+    coverInput.style.display = "block";
+}
 })();
 
 /******/ })()

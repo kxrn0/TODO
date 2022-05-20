@@ -375,9 +375,9 @@
     background: var(--create-hover);
 }
 
-.project-item .image-modal {
-    /* display: block; */
-}
+/* .project-item .image-modal {
+    display: block;
+} */
 
 .project-item .image-modal input[type="file"] {
     width: 0;
@@ -401,6 +401,7 @@
     background-size: cover;
     width: 100px;
     height: 100px;
+    filter: var(--button-filter);
 }
 
 .project-item .image-modal label:hover {

@@ -25,3 +25,5 @@ import chevron from "./images/chevron-right.svg";
 import reload from "./images/reload.svg"
 import pepe from "./images/pepe.jpg";
 import upload from "./images/image-change.svg";
+import uploadImage from "./images/upload-image.svg";
+import close from "./images/close.svg";

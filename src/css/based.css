@@ -167,11 +167,6 @@ aside .project img {
     height: 30px;
 }
 
-aside .project canvas {
-    border: 2px solid yellow;
-    border-radius: 50%;
-}
-
 /* MAIN */
 
 :root.light {
@@ -182,6 +177,8 @@ aside .project canvas {
     --yes-bg: rgb(246, 149, 149);
     --yes-color: rgb(56, 47, 47);
     --yes-hover: rgb(223, 135, 135);
+    --input-bg: rgb(224, 229, 243);
+    --label-filter: none;
 }
 
 :root.dark {
@@ -192,6 +189,8 @@ aside .project canvas {
     --yes-bg: rgb(105, 11, 11);
     --yes-color: azure;
     --yes-hover: rgb(64, 4, 4);
+    --input-bg: rgb(9, 2, 37);
+    --label-filter: invert(100%);
 }
 
 main {
@@ -255,6 +254,82 @@ main .modal-content {
     display: flex;
     flex-direction: column;
     width: 300px;
+}
+
+/* main .create-project-modal {
+    display: block;
+} */
+
+main .create-project-modal {
+    text-align: start;
+}
+
+main .create-project-modal ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main .create-project-modal li {
+    display: flex;
+    flex-direction: column;
+}
+
+main .create-project-modal label {
+    font-size: 1.5rem;
+}
+
+main .create-project-modal textarea, main .create-project-modal input[type="text"] {
+    background: var(--input-bg);
+    color: var(--color);
+    padding: 5px;
+    font-size: 1.25rem;
+    border-radius: 5px;
+}
+
+main .create-project-modal input[type="file"] {
+    width: 0;
+    height: 0;
+}
+
+main .create-project-modal .image-cover-wrapper {
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+}
+
+main .create-project-modal .image-cover-wrapper .remove-image {
+    background: rgb(253, 251, 251, .5);
+    background-image: url("../images/close.svg");
+    background-size: cover;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+main .create-project-modal .image-cover-wrapper .remove-image:hover {
+    filter: invert(20%);
+}
+
+main .create-project-modal .label-cover {
+    background-color: rgb(170, 115, 115, .25);
+    background-image: url("../images/upload-image.svg");
+    filter: var(--label-filter);
+    background-size: cover;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    align-self: center;
+}
+
+main .create-project-modal .label-cover:hover {
+    background-color: rgb(170, 115, 115, .5);
 }
 
 @media screen and (max-width: 480px) {
