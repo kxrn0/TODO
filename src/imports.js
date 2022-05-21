@@ -9,7 +9,7 @@ import "./css/empty.css";
 
 import "./theme.js";
 import "./aside.js"
-import "./test.js";
+//import "./test.js";
 
 import project from "./images/project.svg";
 import granular from "./images/granular.jpg";

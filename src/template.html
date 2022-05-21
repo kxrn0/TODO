@@ -46,64 +46,10 @@
             <h2>Projects</h2>
             <button class="add-project"></button>
             <ul>
-                <!-- <li>
-                    <div class="project" id="active-sidebar-element">
-                        <img src="./project.svg" alt="project symbol">
-                        <h3>Lorem ipsum dolor sit amet.</h3>
-                        <canvas width="50" height="50"></canvas>
-                    </div>
-                </li> -->
             </ul>
         </div>
     </aside>
     <main>
-
-
-<!-- 
-        <ul class="period-projects">
-            <li>
-                <div class="period-project">
-                    <div class="principal-section">
-                        <img src="project.svg" alt="project-logo">
-                        <h2>This is a project</h2>
-                        <canvas width="50" height="50"></canvas>
-                        <input type="checkbox" class="show-tasks">
-                    </div>
-                    <div class="extra-wrapper">
-                        <div class="lower-section"></div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="period-project">
-                    <div class="principal-section">
-                        <img src="project.svg" alt="project-logo">
-                        <h2>This is a project</h2>
-                        <canvas width="50" height="50"></canvas>
-                        <input type="checkbox" class="show-tasks">
-                    </div>
-                    <div class="extra-wrapper">
-                        <div class="lower-section"></div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="period-project">
-                    <div class="principal-section">
-                        <img src="project.svg" alt="project-logo">
-                        <h2>This is a project</h2>
-                        <canvas width="50" height="50"></canvas>
-                        <input type="checkbox" class="show-tasks">
-                    </div>
-                    <div class="extra-wrapper">
-                        <div class="lower-section"></div>
-                    </div>
-                </div>
-            </li>
-        </ul> -->
-
-        
-
         <div class="modal delete-project">
             <div class="modal-content">
                 <h2>Do you really wish to delete this project?</h2>
@@ -118,10 +64,10 @@
                 <form class="create-project-form">
                     <ul>
                         <li>
-                            <label for="project-name">Label</label><input type="text" id="project-name" name="project-name">
+                            <label for="project-name">Label</label><input type="text" id="project-name" name="project-name" required>
                         </li>
                         <li>
-                            <label for="project-description">Description</label><textarea name="project-description" id="project-description"></textarea>
+                            <label for="project-description">Description</label><textarea name="project-description" id="project-description" required></textarea>
                         </li>
                         <li>
                             <div class="image-cover-wrapper">
@@ -141,22 +87,6 @@
             </div>
         </div>
     </main>
-    <script>
-        // const canvas = document.querySelector("main canvas");
-        // const context = canvas.getContext("2d");
-
-        // context.beginPath();
-        
-        // context.lineWidth = 10;
-        // context.strokeStyle = "rgb(225, 190, 255)";
-        // context.arc(canvas.width / 2, canvas.height / 2, canvas.width / 2 - 5, 0, Math.PI * 2);
-        // context.stroke();
-        // context.beginPath();
-        // // context.lineWidth = 20;
-        // context.strokeStyle = "rgb(100, 150, 200)";
-        // context.arc(canvas.width / 2, canvas.height / 2, canvas.width / 2 - 5, - Math.PI / 2, 1.44 - Math.PI / 2);
-        // context.stroke();
-    </script>
 </body>
 
 </html>

@@ -1,4 +1,5 @@
 import { create_task_dom } from "./taskdom";
+import { emptyObj } from "./empty_period";
 
 export function create_preview(projectItems, timePeriod) {
     const preview = document.createElement("ul");
@@ -14,25 +15,55 @@ export function create_preview(projectItems, timePeriod) {
             return false;
         });
         if (tasks.length)
-            preview.append(create_li(tasks, projectItems[i].project.label, projectItems[i].update));
+            preview.append(create_li(tasks, projectItems[i]));
     }
 
-    function is_within_date(one, two) {
-        return true;
+    function is_within_date(duedate, period) {
+        let today, currentPeriod, correctPeriod;
+
+        today = new Date();
+        currentPeriod = [
+            today.getFullYear(),
+            today.getMonth() + 1,
+            today.getDate()
+        ];
+        correctPeriod = duedate.split('-');
+
+        if (period == "today" && currentPeriod[0] == correctPeriod[0] &&
+            currentPeriod[1] == correctPeriod[1] && currentPeriod[2] == correctPeriod[2])
+            return true;
+        else if (period == "this-week") {
+            let dates, dayLength, startOfTheWeek;
+
+            dates = [];
+            dayLength = 24 * 3600 * 1000;
+            startOfTheWeek = new Date(today - today.getDay() * dayLength);
+            for (let i = 0; i < 7; i++)
+                dates.push(new Date(startOfTheWeek.valueOf() + i * dayLength));
+            dates = dates.map(date => `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`);
+            return dates.some(date => date == duedate)
+        }
+        else if (period == "this-month" && currentPeriod[0] == correctPeriod[0] &&
+            currentPeriod[1] == correctPeriod[1])
+            return true;
+        else if (period == "this-year" && currentPeriod[0] == correctPeriod[0])
+            return true;
+        return false;
     }
 
-    function create_li(tasks, label, update) {
+    function create_li(tasks, projectItem) {
         const li = document.createElement("li");
         const period = document.createElement("div");
         const principal = document.createElement("div");
         const img = document.createElement("img");
         const projectLabel = document.createElement("h2");
         const canvas = document.createElement("canvas");
+        const context = canvas.getContext("2d");
         const chevron = document.createElement("input");
         const wrapper = document.createElement("div");
         const lower = document.createElement("div");
-        let checks, expandables;
-        
+        let expandables;
+
         li.append(period);
         period.append(principal);
         principal.append(img);
@@ -49,32 +80,40 @@ export function create_preview(projectItems, timePeriod) {
         lower.classList.add("lower-section");
 
         img.src = "./project.svg";
-        projectLabel.innerText = label;
+        projectLabel.innerText = projectItem.project.label;
         canvas.width = 50;
         canvas.height = 50;
         chevron.setAttribute("type", "checkbox");
-        checks = [];
         expandables = [];
+        draw_percentage();
 
         for (let task of tasks) {
-            let taskDom;
+            let taskDom, check;
 
-            taskDom = create_task_dom(task, { warning : null }).cloneNode(true);
-            checks.push(taskDom.querySelector(".checkmark input[type='checkbox']"));
+            taskDom = create_task_dom(task, { warning: null }).cloneNode(true);
             expandables.push(taskDom.querySelector(".expand-contract"));
             lower.append(taskDom);
-        }
 
-        checks.forEach(check => check.addEventListener("click", () => {
-            let task;
-    
-            task = check.parentElement.parentElement.parentElement;
-            lower.removeChild(task);
-            expand_contract();
-            if (!preview.querySelectorAll(".task").length)
-                preview.parentElement.removeChild(preview);
-            //update();
-        }));
+            check = taskDom.querySelector(".checkmark input[type='checkbox']");
+            check.addEventListener("click", () => {
+                lower.removeChild(taskDom);
+                task.checked = true;
+                expand_contract();
+                projectItem.update();
+                draw_percentage();
+
+                if (!li.querySelector(".task"))
+                    preview.removeChild(li);
+
+                if (!preview.querySelectorAll(".task").length) {
+                    let main;
+
+                    main = preview.parentElement;
+                    main.removeChild(preview);
+                    main.append(emptyObj);
+                }
+            });
+        }
 
         expandables.forEach(expandable => expandable.parentElement.removeChild(expandable));
 
@@ -82,7 +121,7 @@ export function create_preview(projectItems, timePeriod) {
 
         function expand_contract() {
             let height;
-            
+
             height = window.getComputedStyle(lower).height;
             if (chevron.checked) {
                 wrapper.style.height = height
@@ -94,8 +133,25 @@ export function create_preview(projectItems, timePeriod) {
             }
         }
 
+        function draw_percentage() {
+            let angle;
+
+            angle = Math.PI * 2 * projectItem.project.tasks.filter(task => task.checked).length / projectItem.project.tasks.length;
+
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            context.beginPath();
+            context.lineWidth = 10;
+            context.strokeStyle = "rgb(225, 200, 255)";
+            context.arc(canvas.width / 2, canvas.height / 2, canvas.width / 2 - 5, 0, Math.PI * 2);
+            context.stroke();
+            context.beginPath();
+            context.strokeStyle = "rgb(100, 150, 1900)";
+            context.arc(canvas.width / 2, canvas.height / 2, canvas.width / 2 - 5, - Math.PI / 2, angle - Math.PI / 2);
+            context.stroke();
+        }
+
         return li;
     }
-    
+
     return preview;
 }

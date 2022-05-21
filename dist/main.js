@@ -93,7 +93,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root.light {\n    --empty-color: rgb(149, 217, 246);\n    --color: rgb(95, 75, 75);\n}\n\n:root.dark {\n    --empty-color: rgb(0, 10, 126);\n    --color: azure;\n}\n\n.empty-period {\n    background: var(--empty-color);\n    color: var(--color);\n    margin: 50px auto;\n    width: fit-content;\n    border-radius: 20px;\n    padding: 20px;\n    position: relative;\n    display: grid;\n    place-items: center;\n}\n\n.empty-period .empty-container {\n    position: relative;\n}\n\n.empty-period h2 {\n    width: 50%;\n    text-align: center;\n    margin-bottom: 20px;\n}\n\n.empty-period img {\n    border-radius: 20px;\n}\n\n.empty-period button {\n    background-color: rgba(249, 243, 243, 0.75);\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-size: cover;\n    border: none;\n    width: 30px;\n    height: 30px;\n    border-radius: 100%;\n    position: absolute;\n    bottom: 20px;\n    right: 20px;\n}\n\n.empty-period button:hover {\n    filter: invert(10%);\n}\n\n.empty-period button:active {\n    transform: scale(.975);\n}\n\n.empty-period img {\n    width: 700px;\n}\n\n@media screen and (max-width: 800px) {\n    .empty-period img {\n        width: 500px;\n    }\n}\n\n@media screen and (max-width: 480px) {\n    .empty-period {\n        max-width: 350px;\n    }\n\n    .empty-period img {\n        width: 300px;\n    }\n\n    .empty-period h2 {\n        width: 100%;\n    }\n}", "",{"version":3,"sources":["webpack://./src/css/empty.css"],"names":[],"mappings":"AAAA;IACI,iCAAiC;IACjC,wBAAwB;AAC5B;;AAEA;IACI,8BAA8B;IAC9B,cAAc;AAClB;;AAEA;IACI,8BAA8B;IAC9B,mBAAmB;IACnB,iBAAiB;IACjB,kBAAkB;IAClB,mBAAmB;IACnB,aAAa;IACb,kBAAkB;IAClB,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,UAAU;IACV,kBAAkB;IAClB,mBAAmB;AACvB;;AAEA;IACI,mBAAmB;AACvB;;AAEA;IACI,2CAA2C;IAC3C,yDAA6C;IAC7C,sBAAsB;IACtB,YAAY;IACZ,WAAW;IACX,YAAY;IACZ,mBAAmB;IACnB,kBAAkB;IAClB,YAAY;IACZ,WAAW;AACf;;AAEA;IACI,mBAAmB;AACvB;;AAEA;IACI,sBAAsB;AAC1B;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI;QACI,YAAY;IAChB;AACJ;;AAEA;IACI;QACI,gBAAgB;IACpB;;IAEA;QACI,YAAY;IAChB;;IAEA;QACI,WAAW;IACf;AACJ","sourcesContent":[":root.light {\n    --empty-color: rgb(149, 217, 246);\n    --color: rgb(95, 75, 75);\n}\n\n:root.dark {\n    --empty-color: rgb(0, 10, 126);\n    --color: azure;\n}\n\n.empty-period {\n    background: var(--empty-color);\n    color: var(--color);\n    margin: 50px auto;\n    width: fit-content;\n    border-radius: 20px;\n    padding: 20px;\n    position: relative;\n    display: grid;\n    place-items: center;\n}\n\n.empty-period .empty-container {\n    position: relative;\n}\n\n.empty-period h2 {\n    width: 50%;\n    text-align: center;\n    margin-bottom: 20px;\n}\n\n.empty-period img {\n    border-radius: 20px;\n}\n\n.empty-period button {\n    background-color: rgba(249, 243, 243, 0.75);\n    background-image: url(\"../images/reload.svg\");\n    background-size: cover;\n    border: none;\n    width: 30px;\n    height: 30px;\n    border-radius: 100%;\n    position: absolute;\n    bottom: 20px;\n    right: 20px;\n}\n\n.empty-period button:hover {\n    filter: invert(10%);\n}\n\n.empty-period button:active {\n    transform: scale(.975);\n}\n\n.empty-period img {\n    width: 700px;\n}\n\n@media screen and (max-width: 800px) {\n    .empty-period img {\n        width: 500px;\n    }\n}\n\n@media screen and (max-width: 480px) {\n    .empty-period {\n        max-width: 350px;\n    }\n\n    .empty-period img {\n        width: 300px;\n    }\n\n    .empty-period h2 {\n        width: 100%;\n    }\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root.light {\n    --empty-color: rgb(149, 207, 246);\n    --color: rgb(95, 75, 75);\n}\n\n:root.dark {\n    --empty-color: rgb(0, 10, 126);\n    --color: azure;\n}\n\n.empty-period {\n    background: var(--empty-color);\n    color: var(--color);\n    margin: 50px auto;\n    width: fit-content;\n    border-radius: 20px;\n    padding: 20px;\n    position: relative;\n    display: grid;\n    place-items: center;\n}\n\n.empty-period .empty-container {\n    position: relative;\n}\n\n.empty-period h2 {\n    width: 50%;\n    text-align: center;\n    margin-bottom: 20px;\n}\n\n.empty-period img {\n    border-radius: 20px;\n}\n\n.empty-period button {\n    background-color: rgba(249, 243, 243, 0.75);\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-size: cover;\n    border: none;\n    width: 30px;\n    height: 30px;\n    border-radius: 100%;\n    position: absolute;\n    bottom: 20px;\n    right: 20px;\n}\n\n.empty-period button:hover {\n    filter: invert(10%);\n}\n\n.empty-period button:active {\n    transform: scale(.975);\n}\n\n.empty-period img {\n    width: 700px;\n}\n\n.empty-period canvas {\n    background: rgb(52, 39, 59);\n    border-radius: 50%;\n}\n\n.empty-period a {\n    background: rgb(255, 186, 57, .5);\n    color: azure;\n    font-size: .75rem;\n    text-decoration: none;\n    padding: 3px;\n    border-radius: 3px;\n    position: absolute;\n    bottom: 20px;\n    left: 20px;\n}\n\n@media screen and (max-width: 800px) {\n    .empty-period img {\n        width: 500px;\n    }\n}\n\n@media screen and (max-width: 480px) {\n    .empty-period {\n        max-width: 350px;\n    }\n\n    .empty-period img {\n        width: 300px;\n    }\n\n    .empty-period h2 {\n        width: 100%;\n    }\n}", "",{"version":3,"sources":["webpack://./src/css/empty.css"],"names":[],"mappings":"AAAA;IACI,iCAAiC;IACjC,wBAAwB;AAC5B;;AAEA;IACI,8BAA8B;IAC9B,cAAc;AAClB;;AAEA;IACI,8BAA8B;IAC9B,mBAAmB;IACnB,iBAAiB;IACjB,kBAAkB;IAClB,mBAAmB;IACnB,aAAa;IACb,kBAAkB;IAClB,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,UAAU;IACV,kBAAkB;IAClB,mBAAmB;AACvB;;AAEA;IACI,mBAAmB;AACvB;;AAEA;IACI,2CAA2C;IAC3C,yDAA6C;IAC7C,sBAAsB;IACtB,YAAY;IACZ,WAAW;IACX,YAAY;IACZ,mBAAmB;IACnB,kBAAkB;IAClB,YAAY;IACZ,WAAW;AACf;;AAEA;IACI,mBAAmB;AACvB;;AAEA;IACI,sBAAsB;AAC1B;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,2BAA2B;IAC3B,kBAAkB;AACtB;;AAEA;IACI,iCAAiC;IACjC,YAAY;IACZ,iBAAiB;IACjB,qBAAqB;IACrB,YAAY;IACZ,kBAAkB;IAClB,kBAAkB;IAClB,YAAY;IACZ,UAAU;AACd;;AAEA;IACI;QACI,YAAY;IAChB;AACJ;;AAEA;IACI;QACI,gBAAgB;IACpB;;IAEA;QACI,YAAY;IAChB;;IAEA;QACI,WAAW;IACf;AACJ","sourcesContent":[":root.light {\n    --empty-color: rgb(149, 207, 246);\n    --color: rgb(95, 75, 75);\n}\n\n:root.dark {\n    --empty-color: rgb(0, 10, 126);\n    --color: azure;\n}\n\n.empty-period {\n    background: var(--empty-color);\n    color: var(--color);\n    margin: 50px auto;\n    width: fit-content;\n    border-radius: 20px;\n    padding: 20px;\n    position: relative;\n    display: grid;\n    place-items: center;\n}\n\n.empty-period .empty-container {\n    position: relative;\n}\n\n.empty-period h2 {\n    width: 50%;\n    text-align: center;\n    margin-bottom: 20px;\n}\n\n.empty-period img {\n    border-radius: 20px;\n}\n\n.empty-period button {\n    background-color: rgba(249, 243, 243, 0.75);\n    background-image: url(\"../images/reload.svg\");\n    background-size: cover;\n    border: none;\n    width: 30px;\n    height: 30px;\n    border-radius: 100%;\n    position: absolute;\n    bottom: 20px;\n    right: 20px;\n}\n\n.empty-period button:hover {\n    filter: invert(10%);\n}\n\n.empty-period button:active {\n    transform: scale(.975);\n}\n\n.empty-period img {\n    width: 700px;\n}\n\n.empty-period canvas {\n    background: rgb(52, 39, 59);\n    border-radius: 50%;\n}\n\n.empty-period a {\n    background: rgb(255, 186, 57, .5);\n    color: azure;\n    font-size: .75rem;\n    text-decoration: none;\n    padding: 3px;\n    border-radius: 3px;\n    position: absolute;\n    bottom: 20px;\n    left: 20px;\n}\n\n@media screen and (max-width: 800px) {\n    .empty-period img {\n        width: 500px;\n    }\n}\n\n@media screen and (max-width: 480px) {\n    .empty-period {\n        max-width: 350px;\n    }\n\n    .empty-period img {\n        width: 300px;\n    }\n\n    .empty-period h2 {\n        width: 100%;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -152,7 +152,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root.light {\n    --project-bg: rgb(229, 97, 97);\n    --color: black;\n\n}\n\n:root.dark {\n    --project-bg: rgb(148, 108, 108);\n    --color: azure;\n}\n\n.period-projects {\n    color: var(--color);\n    list-style: none;\n    display: grid;\n    place-items: center;\n}\n\n.period-project {\n    background: var(--project-bg);\n    min-width: 480px;\n    width: fit-content;\n    margin: 20px;\n    padding: 20px;\n    border-radius: 10px;\n}\n\n.period-project .principal-section {\n    display: flex;\n    justify-content: space-around;\n    align-items: center;\n    gap: 20px;\n    margin-bottom: 20px;\n}\n\n.period-project .principal-section img {\n    width: 40px;\n    height: 40px;\n    filter: invert(100%);\n}\n\n.period-project .principal-section h2 {\n    width: 150px;\n    text-align: center;\n}\n\n.period-project canvas {\n    width: 50px;\n    height: 50px;\n    border: 3px solid snow;\n}\n\n.period-project .show-tasks {\n    appearance: none;\n    background-color: transparent;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-size: cover;\n    border: none;\n    filter: invert(100%);\n    width: 40px;\n    height: 40px;\n}\n\n.period-project .show-tasks:checked {\n    transform: rotate(90deg);\n}\n\n.period-project .show-tasks:hover {\n    filter: invert(90%);\n}\n\n.period-project .lower-section {\n    background: rgb(185, 185, 248);\n    padding: 15px 15px 15px 5px;\n    border-radius: 10px;\n    display: grid;\n    place-items: center;\n    position: absolute;\n}\n\n.period-project .extra-wrapper {\n    position: relative;\n    height: 0;\n    overflow: hidden;\n    display: flex;\n    justify-content: center;\n}\n\n@media screen and (max-width: 480px) {\n    .period-project {\n        margin: 20px 5px;\n        padding: 5px;\n        min-width: 350px;\n    }\n}", "",{"version":3,"sources":["webpack://./src/css/period_project.css"],"names":[],"mappings":"AAAA;IACI,8BAA8B;IAC9B,cAAc;;AAElB;;AAEA;IACI,gCAAgC;IAChC,cAAc;AAClB;;AAEA;IACI,mBAAmB;IACnB,gBAAgB;IAChB,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI,6BAA6B;IAC7B,gBAAgB;IAChB,kBAAkB;IAClB,YAAY;IACZ,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI,aAAa;IACb,6BAA6B;IAC7B,mBAAmB;IACnB,SAAS;IACT,mBAAmB;AACvB;;AAEA;IACI,WAAW;IACX,YAAY;IACZ,oBAAoB;AACxB;;AAEA;IACI,YAAY;IACZ,kBAAkB;AACtB;;AAEA;IACI,WAAW;IACX,YAAY;IACZ,sBAAsB;AAC1B;;AAEA;IACI,gBAAgB;IAChB,6BAA6B;IAC7B,yDAAoD;IACpD,sBAAsB;IACtB,YAAY;IACZ,oBAAoB;IACpB,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,wBAAwB;AAC5B;;AAEA;IACI,mBAAmB;AACvB;;AAEA;IACI,8BAA8B;IAC9B,2BAA2B;IAC3B,mBAAmB;IACnB,aAAa;IACb,mBAAmB;IACnB,kBAAkB;AACtB;;AAEA;IACI,kBAAkB;IAClB,SAAS;IACT,gBAAgB;IAChB,aAAa;IACb,uBAAuB;AAC3B;;AAEA;IACI;QACI,gBAAgB;QAChB,YAAY;QACZ,gBAAgB;IACpB;AACJ","sourcesContent":[":root.light {\n    --project-bg: rgb(229, 97, 97);\n    --color: black;\n\n}\n\n:root.dark {\n    --project-bg: rgb(148, 108, 108);\n    --color: azure;\n}\n\n.period-projects {\n    color: var(--color);\n    list-style: none;\n    display: grid;\n    place-items: center;\n}\n\n.period-project {\n    background: var(--project-bg);\n    min-width: 480px;\n    width: fit-content;\n    margin: 20px;\n    padding: 20px;\n    border-radius: 10px;\n}\n\n.period-project .principal-section {\n    display: flex;\n    justify-content: space-around;\n    align-items: center;\n    gap: 20px;\n    margin-bottom: 20px;\n}\n\n.period-project .principal-section img {\n    width: 40px;\n    height: 40px;\n    filter: invert(100%);\n}\n\n.period-project .principal-section h2 {\n    width: 150px;\n    text-align: center;\n}\n\n.period-project canvas {\n    width: 50px;\n    height: 50px;\n    border: 3px solid snow;\n}\n\n.period-project .show-tasks {\n    appearance: none;\n    background-color: transparent;\n    background-image: url(\"../images/chevron-right.svg\");\n    background-size: cover;\n    border: none;\n    filter: invert(100%);\n    width: 40px;\n    height: 40px;\n}\n\n.period-project .show-tasks:checked {\n    transform: rotate(90deg);\n}\n\n.period-project .show-tasks:hover {\n    filter: invert(90%);\n}\n\n.period-project .lower-section {\n    background: rgb(185, 185, 248);\n    padding: 15px 15px 15px 5px;\n    border-radius: 10px;\n    display: grid;\n    place-items: center;\n    position: absolute;\n}\n\n.period-project .extra-wrapper {\n    position: relative;\n    height: 0;\n    overflow: hidden;\n    display: flex;\n    justify-content: center;\n}\n\n@media screen and (max-width: 480px) {\n    .period-project {\n        margin: 20px 5px;\n        padding: 5px;\n        min-width: 350px;\n    }\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root.light {\n    --project-bg: rgb(229, 97, 97);\n    --color: black;\n\n}\n\n:root.dark {\n    --project-bg: rgb(148, 108, 108);\n    --color: azure;\n}\n\n.period-projects {\n    color: var(--color);\n    list-style: none;\n    display: grid;\n    place-items: center;\n}\n\n.period-project {\n    background: var(--project-bg);\n    min-width: 480px;\n    width: fit-content;\n    margin: 20px;\n    padding: 20px;\n    border-radius: 10px;\n}\n\n.period-project .principal-section {\n    display: flex;\n    justify-content: space-around;\n    align-items: center;\n    gap: 20px;\n    margin-bottom: 20px;\n}\n\n.period-project .principal-section img {\n    width: 40px;\n    height: 40px;\n    filter: invert(100%);\n}\n\n.period-project .principal-section h2 {\n    color: azure;\n    width: 150px;\n    text-align: center;\n}\n\n.period-project canvas {\n    width: 50px;\n    height: 50px;\n}\n\n.period-project .show-tasks {\n    appearance: none;\n    background-color: transparent;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-size: cover;\n    border: none;\n    filter: invert(100%);\n    width: 40px;\n    height: 40px;\n}\n\n.period-project .show-tasks:checked {\n    transform: rotate(90deg);\n}\n\n.period-project .show-tasks:hover {\n    filter: invert(90%);\n}\n\n.period-project .lower-section {\n    background: rgb(185, 185, 248);\n    padding: 15px 15px 15px 5px;\n    border-radius: 10px;\n    display: grid;\n    place-items: center;\n    position: absolute;\n}\n\n.period-project .extra-wrapper {\n    position: relative;\n    height: 0;\n    overflow: hidden;\n    display: flex;\n    justify-content: center;\n}\n\n@media screen and (max-width: 480px) {\n    .period-project {\n        margin: 20px 5px;\n        padding: 5px;\n        min-width: 350px;\n    }\n}", "",{"version":3,"sources":["webpack://./src/css/period_project.css"],"names":[],"mappings":"AAAA;IACI,8BAA8B;IAC9B,cAAc;;AAElB;;AAEA;IACI,gCAAgC;IAChC,cAAc;AAClB;;AAEA;IACI,mBAAmB;IACnB,gBAAgB;IAChB,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI,6BAA6B;IAC7B,gBAAgB;IAChB,kBAAkB;IAClB,YAAY;IACZ,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI,aAAa;IACb,6BAA6B;IAC7B,mBAAmB;IACnB,SAAS;IACT,mBAAmB;AACvB;;AAEA;IACI,WAAW;IACX,YAAY;IACZ,oBAAoB;AACxB;;AAEA;IACI,YAAY;IACZ,YAAY;IACZ,kBAAkB;AACtB;;AAEA;IACI,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,gBAAgB;IAChB,6BAA6B;IAC7B,yDAAoD;IACpD,sBAAsB;IACtB,YAAY;IACZ,oBAAoB;IACpB,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,wBAAwB;AAC5B;;AAEA;IACI,mBAAmB;AACvB;;AAEA;IACI,8BAA8B;IAC9B,2BAA2B;IAC3B,mBAAmB;IACnB,aAAa;IACb,mBAAmB;IACnB,kBAAkB;AACtB;;AAEA;IACI,kBAAkB;IAClB,SAAS;IACT,gBAAgB;IAChB,aAAa;IACb,uBAAuB;AAC3B;;AAEA;IACI;QACI,gBAAgB;QAChB,YAAY;QACZ,gBAAgB;IACpB;AACJ","sourcesContent":[":root.light {\n    --project-bg: rgb(229, 97, 97);\n    --color: black;\n\n}\n\n:root.dark {\n    --project-bg: rgb(148, 108, 108);\n    --color: azure;\n}\n\n.period-projects {\n    color: var(--color);\n    list-style: none;\n    display: grid;\n    place-items: center;\n}\n\n.period-project {\n    background: var(--project-bg);\n    min-width: 480px;\n    width: fit-content;\n    margin: 20px;\n    padding: 20px;\n    border-radius: 10px;\n}\n\n.period-project .principal-section {\n    display: flex;\n    justify-content: space-around;\n    align-items: center;\n    gap: 20px;\n    margin-bottom: 20px;\n}\n\n.period-project .principal-section img {\n    width: 40px;\n    height: 40px;\n    filter: invert(100%);\n}\n\n.period-project .principal-section h2 {\n    color: azure;\n    width: 150px;\n    text-align: center;\n}\n\n.period-project canvas {\n    width: 50px;\n    height: 50px;\n}\n\n.period-project .show-tasks {\n    appearance: none;\n    background-color: transparent;\n    background-image: url(\"../images/chevron-right.svg\");\n    background-size: cover;\n    border: none;\n    filter: invert(100%);\n    width: 40px;\n    height: 40px;\n}\n\n.period-project .show-tasks:checked {\n    transform: rotate(90deg);\n}\n\n.period-project .show-tasks:hover {\n    filter: invert(90%);\n}\n\n.period-project .lower-section {\n    background: rgb(185, 185, 248);\n    padding: 15px 15px 15px 5px;\n    border-radius: 10px;\n    display: grid;\n    place-items: center;\n    position: absolute;\n}\n\n.period-project .extra-wrapper {\n    position: relative;\n    height: 0;\n    overflow: hidden;\n    display: flex;\n    justify-content: center;\n}\n\n@media screen and (max-width: 480px) {\n    .period-project {\n        margin: 20px 5px;\n        padding: 5px;\n        min-width: 350px;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1249,6 +1249,127 @@ asideInterface.resize_aside();
 
 /***/ }),
 
+/***/ "./src/empty_period.js":
+/*!*****************************!*\
+  !*** ./src/empty_period.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "emptyObj": () => (/* binding */ emptyObj)
+/* harmony export */ });
+/* harmony import */ var _utilities__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utilities */ "./src/utilities.js");
+
+
+const emptyObj = (
+    () => {
+        const empty = document.createElement("div");
+        const message = document.createElement("h2");
+        const container = document.createElement("div");
+        const img = document.createElement("img");
+        const canvas = document.createElement("canvas");
+        const context = canvas.getContext("2d");
+        const link = document.createElement("a");
+        const reload = document.createElement("button");
+        let animeKiller, reg, intervals, subs, color, dt;
+
+
+        intervals = ["week", "month", "year", "all"];
+        subs = ["earthporn", "TouhouArt", "brutalism", "artporn"];
+        reg = /^https:\/\/i\.redd\.it\/\w+\.(jpg|png|jpeg)/i;
+        color = 0;
+        dt = 0;
+
+        empty.append(message);
+        empty.append(container);
+        container.append(img);
+        container.append(reload);
+        container.append(link);
+
+        empty.classList.add("empty-period");
+        container.classList.add("empty-container");
+
+        message.innerText = "There doesn't seem to be anything for this period, have a pic instead.";
+        canvas.width = 200;
+        canvas.height = 200;
+        link.setAttribute("alt", "image source");
+        link.setAttribute("target", "_blank");
+
+        img.addEventListener("load", replace);
+
+        reload.addEventListener("click", fetch_image);
+
+        show_loading();
+        fetch_image();
+
+        function replace() {
+            cancelAnimationFrame(animeKiller);
+            canvas.replaceWith(img);
+            reload.style.display = "block";
+        }
+
+        function fetch_image() {
+            let interval, sub;
+
+            interval = intervals[~~(Math.random() * intervals.length)];
+            sub = subs[~~(Math.random() * subs.length)];
+            show_loading();
+            reload.style.display = "none";
+            link.style.display = "none";
+            img.replaceWith(canvas);
+            fetch(`https://www.reddit.com/r/${sub}/top.json?t=${interval}&limit=100`, { method: "GET" })
+                .then(res => res.json())
+                .then(res => {
+                    let child;
+
+                    do {
+                        child = res.data.children[~~(Math.random() * res.data.children.length)];
+                    } while (!reg.test(child.data.url));
+
+                    link.style.display = "block";
+                    link.innerText = `by u/${child.data.author} on reddit`;
+                    link.href = `https://old.reddit.com${child.data.permalink}`;
+                    img.src = child.data.url;
+                }).catch(error => {
+                    console.log(error);
+                    img.src = "./pepe.jpg";
+                });
+        }
+
+        function show_loading() {
+            let circles, distance, angle, angleInc, minRad, maxRad;
+
+            circles = 20;
+            distance = 45;
+            angle = 0;
+            angleInc = Math.PI * 2 / circles;
+            minRad = 1;
+            maxRad = 6;
+
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            for (let i = 0; i < circles; i++, angle += angleInc) {
+                let radius;
+
+                radius = minRad + Math.abs(maxRad * Math.sin((0,_utilities__WEBPACK_IMPORTED_MODULE_0__.map)(dt % circles, 0, circles, 0, Math.PI * 2) + i * Math.PI * 3 / circles));
+                context.beginPath();
+                context.fillStyle = `hsl(${(i * 10 + color) % 360}, 100%, 50%)`;
+                context.arc(distance * Math.cos(angle) + canvas.width / 2, distance * Math.sin(angle) + canvas.height / 2, radius, 0, Math.PI * 2);
+                context.fill();
+            }
+            color += 1;
+            dt += .1;
+
+            animeKiller = requestAnimationFrame(show_loading);
+        }
+
+        return empty;
+    }
+)();
+
+/***/ }),
+
 /***/ "./src/imports.js":
 /*!************************!*\
   !*** ./src/imports.js ***!
@@ -1268,24 +1389,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _theme_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./theme.js */ "./src/theme.js");
 /* harmony import */ var _theme_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_theme_js__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _aside_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./aside.js */ "./src/aside.js");
-/* harmony import */ var _test_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./test.js */ "./src/test.js");
-/* harmony import */ var _test_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_test_js__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _images_project_svg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./images/project.svg */ "./src/images/project.svg");
-/* harmony import */ var _images_granular_jpg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./images/granular.jpg */ "./src/images/granular.jpg");
-/* harmony import */ var _images_plus_svg__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./images/plus.svg */ "./src/images/plus.svg");
-/* harmony import */ var _images_logo_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./images/logo.png */ "./src/images/logo.png");
-/* harmony import */ var _images_check_bold_svg__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./images/check-bold.svg */ "./src/images/check-bold.svg");
-/* harmony import */ var _images_arrow_expand_all_svg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./images/arrow-expand-all.svg */ "./src/images/arrow-expand-all.svg");
-/* harmony import */ var _images_arrow_collapse_all_svg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./images/arrow-collapse-all.svg */ "./src/images/arrow-collapse-all.svg");
-/* harmony import */ var _images_delete_outline_svg__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./images/delete-outline.svg */ "./src/images/delete-outline.svg");
-/* harmony import */ var _images_plus_box_outline_svg__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./images/plus-box-outline.svg */ "./src/images/plus-box-outline.svg");
-/* harmony import */ var _images_shredder_svg__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./images/shredder.svg */ "./src/images/shredder.svg");
-/* harmony import */ var _images_chevron_right_svg__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./images/chevron-right.svg */ "./src/images/chevron-right.svg");
-/* harmony import */ var _images_reload_svg__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./images/reload.svg */ "./src/images/reload.svg");
-/* harmony import */ var _images_pepe_jpg__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./images/pepe.jpg */ "./src/images/pepe.jpg");
-/* harmony import */ var _images_image_change_svg__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./images/image-change.svg */ "./src/images/image-change.svg");
-/* harmony import */ var _images_upload_image_svg__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./images/upload-image.svg */ "./src/images/upload-image.svg");
-/* harmony import */ var _images_close_svg__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./images/close.svg */ "./src/images/close.svg");
+/* harmony import */ var _images_project_svg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./images/project.svg */ "./src/images/project.svg");
+/* harmony import */ var _images_granular_jpg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./images/granular.jpg */ "./src/images/granular.jpg");
+/* harmony import */ var _images_plus_svg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./images/plus.svg */ "./src/images/plus.svg");
+/* harmony import */ var _images_logo_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./images/logo.png */ "./src/images/logo.png");
+/* harmony import */ var _images_check_bold_svg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./images/check-bold.svg */ "./src/images/check-bold.svg");
+/* harmony import */ var _images_arrow_expand_all_svg__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./images/arrow-expand-all.svg */ "./src/images/arrow-expand-all.svg");
+/* harmony import */ var _images_arrow_collapse_all_svg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./images/arrow-collapse-all.svg */ "./src/images/arrow-collapse-all.svg");
+/* harmony import */ var _images_delete_outline_svg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./images/delete-outline.svg */ "./src/images/delete-outline.svg");
+/* harmony import */ var _images_plus_box_outline_svg__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./images/plus-box-outline.svg */ "./src/images/plus-box-outline.svg");
+/* harmony import */ var _images_shredder_svg__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./images/shredder.svg */ "./src/images/shredder.svg");
+/* harmony import */ var _images_chevron_right_svg__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./images/chevron-right.svg */ "./src/images/chevron-right.svg");
+/* harmony import */ var _images_reload_svg__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./images/reload.svg */ "./src/images/reload.svg");
+/* harmony import */ var _images_pepe_jpg__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./images/pepe.jpg */ "./src/images/pepe.jpg");
+/* harmony import */ var _images_image_change_svg__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./images/image-change.svg */ "./src/images/image-change.svg");
+/* harmony import */ var _images_upload_image_svg__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./images/upload-image.svg */ "./src/images/upload-image.svg");
+/* harmony import */ var _images_close_svg__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./images/close.svg */ "./src/images/close.svg");
 
 
 
@@ -1297,7 +1416,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
+//import "./test.js";
 
 
 
@@ -1330,6 +1449,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "create_preview": () => (/* binding */ create_preview)
 /* harmony export */ });
 /* harmony import */ var _taskdom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./taskdom */ "./src/taskdom.js");
+/* harmony import */ var _empty_period__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./empty_period */ "./src/empty_period.js");
+
 
 
 function create_preview(projectItems, timePeriod) {
@@ -1346,25 +1467,55 @@ function create_preview(projectItems, timePeriod) {
             return false;
         });
         if (tasks.length)
-            preview.append(create_li(tasks, projectItems[i].project.label, projectItems[i].update));
+            preview.append(create_li(tasks, projectItems[i]));
     }
 
-    function is_within_date(one, two) {
-        return true;
+    function is_within_date(duedate, period) {
+        let today, currentPeriod, correctPeriod;
+
+        today = new Date();
+        currentPeriod = [
+            today.getFullYear(),
+            today.getMonth() + 1,
+            today.getDate()
+        ];
+        correctPeriod = duedate.split('-');
+
+        if (period == "today" && currentPeriod[0] == correctPeriod[0] &&
+            currentPeriod[1] == correctPeriod[1] && currentPeriod[2] == correctPeriod[2])
+            return true;
+        else if (period == "this-week") {
+            let dates, dayLength, startOfTheWeek;
+
+            dates = [];
+            dayLength = 24 * 3600 * 1000;
+            startOfTheWeek = new Date(today - today.getDay() * dayLength);
+            for (let i = 0; i < 7; i++)
+                dates.push(new Date(startOfTheWeek.valueOf() + i * dayLength));
+            dates = dates.map(date => `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`);
+            return dates.some(date => date == duedate)
+        }
+        else if (period == "this-month" && currentPeriod[0] == correctPeriod[0] &&
+            currentPeriod[1] == correctPeriod[1])
+            return true;
+        else if (period == "this-year" && currentPeriod[0] == correctPeriod[0])
+            return true;
+        return false;
     }
 
-    function create_li(tasks, label, update) {
+    function create_li(tasks, projectItem) {
         const li = document.createElement("li");
         const period = document.createElement("div");
         const principal = document.createElement("div");
         const img = document.createElement("img");
         const projectLabel = document.createElement("h2");
         const canvas = document.createElement("canvas");
+        const context = canvas.getContext("2d");
         const chevron = document.createElement("input");
         const wrapper = document.createElement("div");
         const lower = document.createElement("div");
-        let checks, expandables;
-        
+        let expandables;
+
         li.append(period);
         period.append(principal);
         principal.append(img);
@@ -1381,32 +1532,40 @@ function create_preview(projectItems, timePeriod) {
         lower.classList.add("lower-section");
 
         img.src = "./project.svg";
-        projectLabel.innerText = label;
+        projectLabel.innerText = projectItem.project.label;
         canvas.width = 50;
         canvas.height = 50;
         chevron.setAttribute("type", "checkbox");
-        checks = [];
         expandables = [];
+        draw_percentage();
 
         for (let task of tasks) {
-            let taskDom;
+            let taskDom, check;
 
-            taskDom = (0,_taskdom__WEBPACK_IMPORTED_MODULE_0__.create_task_dom)(task, { warning : null }).cloneNode(true);
-            checks.push(taskDom.querySelector(".checkmark input[type='checkbox']"));
+            taskDom = (0,_taskdom__WEBPACK_IMPORTED_MODULE_0__.create_task_dom)(task, { warning: null }).cloneNode(true);
             expandables.push(taskDom.querySelector(".expand-contract"));
             lower.append(taskDom);
-        }
 
-        checks.forEach(check => check.addEventListener("click", () => {
-            let task;
-    
-            task = check.parentElement.parentElement.parentElement;
-            lower.removeChild(task);
-            expand_contract();
-            if (!preview.querySelectorAll(".task").length)
-                preview.parentElement.removeChild(preview);
-            //update();
-        }));
+            check = taskDom.querySelector(".checkmark input[type='checkbox']");
+            check.addEventListener("click", () => {
+                lower.removeChild(taskDom);
+                task.checked = true;
+                expand_contract();
+                projectItem.update();
+                draw_percentage();
+
+                if (!li.querySelector(".task"))
+                    preview.removeChild(li);
+
+                if (!preview.querySelectorAll(".task").length) {
+                    let main;
+
+                    main = preview.parentElement;
+                    main.removeChild(preview);
+                    main.append(_empty_period__WEBPACK_IMPORTED_MODULE_1__.emptyObj);
+                }
+            });
+        }
 
         expandables.forEach(expandable => expandable.parentElement.removeChild(expandable));
 
@@ -1414,7 +1573,7 @@ function create_preview(projectItems, timePeriod) {
 
         function expand_contract() {
             let height;
-            
+
             height = window.getComputedStyle(lower).height;
             if (chevron.checked) {
                 wrapper.style.height = height
@@ -1426,9 +1585,26 @@ function create_preview(projectItems, timePeriod) {
             }
         }
 
+        function draw_percentage() {
+            let angle;
+
+            angle = Math.PI * 2 * projectItem.project.tasks.filter(task => task.checked).length / projectItem.project.tasks.length;
+
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            context.beginPath();
+            context.lineWidth = 10;
+            context.strokeStyle = "rgb(225, 200, 255)";
+            context.arc(canvas.width / 2, canvas.height / 2, canvas.width / 2 - 5, 0, Math.PI * 2);
+            context.stroke();
+            context.beginPath();
+            context.strokeStyle = "rgb(100, 150, 1900)";
+            context.arc(canvas.width / 2, canvas.height / 2, canvas.width / 2 - 5, - Math.PI / 2, angle - Math.PI / 2);
+            context.stroke();
+        }
+
         return li;
     }
-    
+
     return preview;
 }
 
@@ -1551,7 +1727,6 @@ function create_project_main_dom(projectObj, extInterface) {
     const warnignControls = document.createElement("div");
     const yes = document.createElement("button");
     const no = document.createElement("button");
-
     const imageModal = document.createElement("div");
     const imageModalContent = document.createElement("div");
     const imageInputWrapper = document.createElement("div");
@@ -1561,11 +1736,9 @@ function create_project_main_dom(projectObj, extInterface) {
     const imageControls = document.createElement("div");
     const imageYes = document.createElement("button");
     const imageNo = document.createElement("button");
-
     let innerInterface, checks, deleteLocal, newCover;
 
     //#region
-
     project.append(imageModal);
     imageModal.append(imageModalContent);
     imageModalContent.append(imageInputWrapper);
@@ -1574,7 +1747,6 @@ function create_project_main_dom(projectObj, extInterface) {
     imageModalContent.append(imageControls);
     imageControls.append(imageYes);
     imageControls.append(imageNo);
-
     project.append(deleteProject);
     project.append(info);
     project.append(tasks);
@@ -1635,7 +1807,6 @@ function create_project_main_dom(projectObj, extInterface) {
     deletion.append(warningMessagePt2);
     warnignControls.append(yes);
     warnignControls.append(no);
-
     //#endregion
 
 
@@ -1647,7 +1818,6 @@ function create_project_main_dom(projectObj, extInterface) {
     imageControls.classList.add("controls");
     imageYes.classList.add("yes");
     imageNo.classList.add("no");
-
     project.classList.add("project-item");
     deleteProject.classList.add("delete-project");
     info.classList.add("info");
@@ -1747,7 +1917,7 @@ function create_project_main_dom(projectObj, extInterface) {
         unchecked,
         array: projectObj.tasks,
         modal: warning,
-        userDataString: null,
+        userDataString: extInterface.userDataString,
         update : () => {
             update();
             update_checks();
@@ -1755,21 +1925,7 @@ function create_project_main_dom(projectObj, extInterface) {
     };
     deleteLocal = false;
     update();
-
-    projectObj.tasks.forEach(task => {
-        let taskDom;
-
-        taskDom = (0,_taskdom__WEBPACK_IMPORTED_MODULE_0__.create_task_dom)(task, innerInterface);
-        if (task.checked) {
-            taskDom.classList.add("checked");
-            checked.append(taskDom);
-        }
-        else {
-            taskDom.classList.add("unchecked");
-            unchecked.append(taskDom);
-        }
-        checks.push(taskDom.querySelector(".checkmark input[type='checkbox']"));
-    });
+    update_tasks();
 
     checks.forEach(check => check.addEventListener("click", update));
 
@@ -1785,13 +1941,29 @@ function create_project_main_dom(projectObj, extInterface) {
         cancelButton.addEventListener("click", hide);
 
         function delete_project() {
-            let index;
+            let pIndex, rIndex;
 
-            index = extInterface.array.findIndex(project => project.id == projectObj.id);
-            extInterface.array.splice(index, 1);
+            pIndex = extInterface.array.findIndex(project => project.id == projectObj.id);
+            rIndex = extInterface.previews.findIndex(projectItem => projectItem.project.id == projectObj.id);
+            extInterface.array.splice(pIndex, 1);
+            extInterface.previews.splice(rIndex, 1);
             extInterface.side.remove();
             project.parentElement.removeChild(project);
+            load_another();
+            localStorage.setItem(extInterface.userDataString, JSON.stringify(extInterface.array));
             hide();
+        }
+
+        function load_another() {
+            let aside, current; 
+
+            aside = document.querySelector("aside");
+            current = aside.querySelectorAll(".project")[0];
+
+            if (current)
+                current.click();
+            else 
+                document.querySelector("aside .today-button").click();
         }
 
         function hide() {
@@ -1819,6 +1991,7 @@ function create_project_main_dom(projectObj, extInterface) {
             extInterface.side.update();
         }
         projectNameInput.replaceWith(projectH2);
+        update();
     });
 
     projectDescription.addEventListener("click", () => {
@@ -1836,6 +2009,7 @@ function create_project_main_dom(projectObj, extInterface) {
             projectObj.description = value;
         }
         projectDescriptionInput.replaceWith(projectDescription);
+        update();
     });
 
     document.addEventListener("keydown", event => {
@@ -1983,7 +2157,7 @@ function create_project_main_dom(projectObj, extInterface) {
     function update_checks() {
         //remove event listeners, is this even necessary?
         checks.forEach(check => check.removeEventListener("click", update));
-        checks = document.querySelectorAll(".project-item .task .checkmark input[type='checkbox']");
+        checks = [...document.querySelectorAll(".project-item .task .checkmark input[type='checkbox']")];
         checks.forEach(check => check.addEventListener("click", update));
     }
 
@@ -1991,6 +2165,7 @@ function create_project_main_dom(projectObj, extInterface) {
         update_per_chan();
         draw_percentage();
         extInterface.side.update();
+        localStorage.setItem(extInterface.userDataString, JSON.stringify(extInterface.array));
     }
 
     function update_per_chan() {
@@ -2023,9 +2198,33 @@ function create_project_main_dom(projectObj, extInterface) {
         context.stroke();
     }
 
+    function flush() {
+        checked.innerHTML = '';
+        unchecked.querySelectorAll(".task").forEach(task => task.parentElement.removeChild(task));
+    }
+
+    function update_tasks() {
+        checks = [];
+        projectObj.tasks.forEach(task => {
+            let taskDom;
+    
+            taskDom = (0,_taskdom__WEBPACK_IMPORTED_MODULE_0__.create_task_dom)(task, innerInterface);
+            if (task.checked) {
+                checked.append(taskDom);
+            }
+            else {
+                unchecked.append(taskDom);
+            }
+            checks.push(taskDom.querySelector(".checkmark input[type='checkbox']"));
+        });
+        checks.forEach(check => check.addEventListener("click", update));
+    }
+
+
     function update_external() {
-        console.log("hi");
-        return 0;
+        flush();
+        update_tasks();
+        update();
     }
 
     return { project, update : update_external };
@@ -2204,7 +2403,7 @@ function create_task_dom(taskObj, extInterface) {
     notes.append(addNote);
 
     task.classList.add("task");
-    task.classList.add("unchecked");
+    task.classList.add(taskObj.checked ? "checked" : "unchecked");
     mainSection.classList.add("main-section");
     checkMark.classList.add("checkmark");
     label.classList.add("label");
@@ -2292,6 +2491,7 @@ function create_task_dom(taskObj, extInterface) {
 
             high.classList.remove("active");
         }
+        extInterface.update();
 
         medium.classList.add("active");
     });
@@ -2311,6 +2511,7 @@ function create_task_dom(taskObj, extInterface) {
             high.classList.remove("active");
             medium.classList.remove("active");
         }
+        extInterface.update();
     });
 
     lowCheck.addEventListener("click", () => {
@@ -2323,6 +2524,7 @@ function create_task_dom(taskObj, extInterface) {
 
         high.classList.remove("active");
         medium.classList.remove("active");
+        extInterface.update();
     });
 
     for (let note of taskObj.notes) {
@@ -2360,6 +2562,7 @@ function create_task_dom(taskObj, extInterface) {
     dateInput.addEventListener("change", () => {
         dueDate.innerText = (0,_utilities_js__WEBPACK_IMPORTED_MODULE_0__.due_date)(dateInput.value);
         taskObj.duedate = dateInput.value;
+        extInterface.update();
     });
 
     addNote.addEventListener("click", () => {
@@ -2378,6 +2581,7 @@ function create_task_dom(taskObj, extInterface) {
             braveNewNote = { text: value, id: (0,_utilities_js__WEBPACK_IMPORTED_MODULE_0__.create_id)(10) };
             notesContainer.append(create_note(braveNewNote));
             taskObj.notes.push(braveNewNote);
+            extInterface.update();
         }
         noteArea.value = '';
         noteArea.parentElement.removeChild(noteArea);
@@ -2405,6 +2609,7 @@ function create_task_dom(taskObj, extInterface) {
             label.innerText = value;
             labelInput.replaceWith(label);
             taskObj.description = value;
+            extInterface.update();
         }
     });
 
@@ -2480,6 +2685,7 @@ function create_task_dom(taskObj, extInterface) {
 
             index = taskObj.notes.findIndex(deathNote => deathNote.id == newNote.id);
             taskObj.notes.splice(index, 1);
+            extInterface.update();
 
             note.parentElement.removeChild(note);
             resize_expanded();
@@ -2489,38 +2695,6 @@ function create_task_dom(taskObj, extInterface) {
 
     return task;
 }
-
-/***/ }),
-
-/***/ "./src/test.js":
-/*!*********************!*\
-  !*** ./src/test.js ***!
-  \*********************/
-/***/ (() => {
-
-//const buttons = document.querySelectorAll(".activity button");
-const active = "active-sidebar-element";
-
-const elems = [
-    ...document.querySelectorAll(".activity button"),
-    ...document.querySelectorAll(".projects .project")
-];
-
-elems.forEach(elem => elem.addEventListener("click", () => {
-    if (elem.id != active) {
-        document.getElementById(active).id = '';
-        elem.id = active;
-
-        if (window.innerWidth < 480) {
-            let aside;
-            
-            if (elem.classList.contains(".activity button"))
-                aside.style.height = "fit-content";   
-            else if (elem.classList.contains(".project"))
-                aside.style.height = "100%";
-        }
-    }
-}));
 
 /***/ }),
 
@@ -2550,7 +2724,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "create_id": () => (/* binding */ create_id),
 /* harmony export */   "due_date": () => (/* binding */ due_date),
 /* harmony export */   "kill_many": () => (/* binding */ kill_many),
-/* harmony export */   "make_cover": () => (/* binding */ make_cover)
+/* harmony export */   "make_cover": () => (/* binding */ make_cover),
+/* harmony export */   "map": () => (/* binding */ map)
 /* harmony export */ });
 function due_date(value) {
     const days = [
@@ -2602,6 +2777,10 @@ function kill_many(array, condition) {
     for (let i = array.length - 1; i >= 0; i--)
         if (condition(array[i]))
             array.splice(i, 1);
+}
+
+function map(value, start1, end1, start2, end2) {
+    return start2 + (end2 - start2) * (value - start1) / (end1 - start1);
 }
 
 //---------------------------------------------------------------------------------
@@ -3066,13 +3245,12 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _imports_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./imports.js */ "./src/imports.js");
-/* harmony import */ var _task_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./task.js */ "./src/task.js");
-/* harmony import */ var _taskdom_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./taskdom.js */ "./src/taskdom.js");
-/* harmony import */ var _utilities_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utilities.js */ "./src/utilities.js");
-/* harmony import */ var _side_project_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./side_project.js */ "./src/side_project.js");
-/* harmony import */ var _project_dom_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./project_dom.js */ "./src/project_dom.js");
-/* harmony import */ var _project_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./project.js */ "./src/project.js");
-/* harmony import */ var _preview_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./preview.js */ "./src/preview.js");
+/* harmony import */ var _utilities_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utilities.js */ "./src/utilities.js");
+/* harmony import */ var _side_project_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./side_project.js */ "./src/side_project.js");
+/* harmony import */ var _empty_period_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./empty_period.js */ "./src/empty_period.js");
+/* harmony import */ var _project_dom_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./project_dom.js */ "./src/project_dom.js");
+/* harmony import */ var _project_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./project.js */ "./src/project.js");
+/* harmony import */ var _preview_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./preview.js */ "./src/preview.js");
 
 
 
@@ -3080,109 +3258,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-//import { emptyObj } from "./empty_period.js";
+
 // import { asideInterface } from "./aside.js";
 
 // asideInterface.resize_aside();
 
-//--------------------------------------------------------------------------------------
-
-// const extras = document.querySelectorAll(".period-project .lower-section");
-// const checks = document.querySelectorAll(".period-project .show-tasks");
-// const tasks = [];
-// const extInterface = {
-//     array: tasks,
-//     warning: null,
-//     checked: null,
-//     unchecked: null,
-//     userDataString: null
-// };
-
-// let priorities = ["low", "medium", "high"];
-
-// extras.forEach(extra => {
-//     for (let i = 0; i < 3; i++) {
-//         let description, checkedBox, priority, duedate, id, notes, task;
-
-//         description = "This is a test task";
-//         checkedBox = false;
-//         priority = priorities[~~(Math.random() * priorities.length)];
-//         duedate = "2022-05-13";
-//         id = create_id(10);
-//         notes = [
-//             {
-//                 text: "This is a string",
-//                 id: create_id(10)
-//             },
-//             {
-//                 text: "This is a test",
-//                 id: create_id(10)
-//             }
-//         ];
-
-//         task = create_task(description, checkedBox, priority, duedate, id, notes);
-//         extra.append(create_task_dom(task, extInterface));
-//     }
-// });
-
-// checks.forEach(check => check.addEventListener("click", () => {
-//     resize_secs(check);
-// }));
-
-// checks.forEach(check => {
-//     let parent, taskChecks, wrapper, lowerSecs;
-//     parent = check.parentElement.parentElement;
-//     taskChecks = parent.querySelectorAll(".task .expand-contract");
-//     wrapper = parent.querySelector(".extra-wrapper");
-//     lowerSecs = parent.querySelector(".lower-section");
-
-//     taskChecks.forEach(task => task.addEventListener("click", () => {
-//         let height;
-
-//         setTimeout(() => {
-//             height = window.getComputedStyle(lowerSecs).height;
-//             wrapper.style.height = height;
-//         }, 330);
-//     }));
-// });
-
-// function resize_secs(check) {
-//     let grandParent, wrapper, lowerSecs, height;
-
-//     grandParent = check.parentElement.parentElement;
-//     wrapper = grandParent.querySelector(".extra-wrapper");
-//     lowerSecs = grandParent.querySelector(".lower-section");
-//     height = window.getComputedStyle(lowerSecs).height;
-
-//     if (check.checked) {
-//         wrapper.style.height = height;
-//         lowerSecs.style.top = 0;
-//     }
-//     else {
-//         wrapper.style.height = 0;
-//         lowerSecs.style.top = `-${height}`;
-//     }
-// }
-
-//--------------------------------------------------------------------------------------
-
-// const main = document.querySelector("main");
-
-// main.append(emptyObj);
-
-//--------------------------------------------------------------------------------------
-
-
-
-
-
 const main = document.querySelector("main");
-const today = document.querySelector(".today-button");
-
 const warning = document.querySelector(".delete-project");
-const projects = [];
-const funs = [];
-const p = [];
 const addNewProject = document.querySelector(".add-project");
 const createProjectModal = document.querySelector(".create-project-modal");
 const createProject = document.querySelector(".create-project-form");
@@ -3192,23 +3274,43 @@ const coverLabel = document.querySelector(".label-cover");
 const imageWrapper = document.querySelector(".image-cover-wrapper");
 const coverImage = document.getElementById("actual-image");
 const removeImage = document.querySelector(".image-cover-wrapper .remove-image");
+const userDataString = "_todo_user_projects_";
+const projects = localStorage.getItem(userDataString) ? JSON.parse(localStorage.getItem(userDataString)) : [];
+const pees = [];
+const today = document.querySelector(".today-button");
+const thisWeek = document.querySelector(".this-week-button");
+const thisMonth = document.querySelector(".this-month-button");
+const thisYear = document.querySelector(".this-year-button");
 let cover;
 
 today.addEventListener("click", () => {
-    let current;
-
-    current = main.querySelector(".project-item");
-
-    if (!current)
-        current = main.querySelector(".period-projects");
-
-    if (current)
-        main.removeChild(current);
-    main.append((0,_preview_js__WEBPACK_IMPORTED_MODULE_7__.create_preview)(p, 100));
+    go_to_preview("today");
+    switch_active(today);
 });
 
+thisWeek.addEventListener("click", () => {
+    go_to_preview("this-week");
+    switch_active(thisWeek);
+});
+
+thisMonth.addEventListener("click", () => {
+    go_to_preview("this-month");
+    switch_active(thisMonth);
+});
+
+thisYear.addEventListener("click", () => {
+    go_to_preview("this-year");
+    switch_active(thisYear);
+});
+
+for (let project of projects) {
+    load_project(project);
+}
+
+today.click();
+
 coverInput.addEventListener("change", () => {
-    (0,_utilities_js__WEBPACK_IMPORTED_MODULE_3__.make_cover)(URL.createObjectURL(coverInput.files[0]), 200, 200).then(res => {
+    (0,_utilities_js__WEBPACK_IMPORTED_MODULE_1__.make_cover)(URL.createObjectURL(coverInput.files[0]), 200, 200).then(res => {
         cover = res;
         coverImage.src = res;
         coverInput.style.display = "none";
@@ -3225,43 +3327,83 @@ addNewProject.addEventListener("click", () => {
 createProject.addEventListener("submit", event => {
     event.preventDefault();
 
-    let project, sideProject, mainProject, retProject, extInterface, li;
+    let project;
 
-    project = (0,_project_js__WEBPACK_IMPORTED_MODULE_6__.create_project)(
+    project = (0,_project_js__WEBPACK_IMPORTED_MODULE_5__.create_project)(
         createProject["project-name"].value,
         createProject["project-description"].value,
         cover,
         [],
-        (0,_utilities_js__WEBPACK_IMPORTED_MODULE_3__.create_id)(10)
+        (0,_utilities_js__WEBPACK_IMPORTED_MODULE_1__.create_id)(10)
     );
     projects.push(project);
-    sideProject = (0,_side_project_js__WEBPACK_IMPORTED_MODULE_4__.create_side_project)(project);
+    localStorage.setItem(userDataString, JSON.stringify(projects));
+    load_project(project);
+});
+
+cancelCreation.addEventListener("click", great_reset)
+
+removeImage.addEventListener("click", reset);
+
+function go_to_preview(period) {
+    let current, preview;
+
+    current = main.querySelector(".project-item");
+    if (!current)
+        current = main.querySelector(".period-projects");
+    if (!current)
+        current = main.querySelector(".empty-period");
+
+    if (current)
+        main.removeChild(current);
+    preview = (0,_preview_js__WEBPACK_IMPORTED_MODULE_6__.create_preview)(pees, period);
+    if (preview.querySelector("li"))
+        main.append((0,_preview_js__WEBPACK_IMPORTED_MODULE_6__.create_preview)(pees, period));
+    else 
+        main.append(_empty_period_js__WEBPACK_IMPORTED_MODULE_3__.emptyObj);
+}
+
+function switch_active(elem) {
+    let current;
+
+    current = document.getElementById("active-sidebar-element");
+    if (current)
+        current.id = '';
+    elem.id = "active-sidebar-element";
+}
+
+function load_project(project) {
+    let sideProject, mainProject, retProject, extInterface, li;
+
+    sideProject = (0,_side_project_js__WEBPACK_IMPORTED_MODULE_2__.create_side_project)(project);
     extInterface = {
         modal: warning,
         array: projects,
-        side: { update: sideProject.update, remove: sideProject.remove }
+        side: { update: sideProject.update, remove: sideProject.remove },
+        previews : pees,
+        userDataString
     };
-    retProject = (0,_project_dom_js__WEBPACK_IMPORTED_MODULE_5__.create_project_main_dom)(project, extInterface);
+    retProject = (0,_project_dom_js__WEBPACK_IMPORTED_MODULE_4__.create_project_main_dom)(project, extInterface);
     mainProject = retProject.project;
 
     //...
-    p.push({ project, udpate : retProject.update });
-
-    funs.push({ update: retProject.update, id: project.id });
+    pees.push({ project, update : retProject.update });
 
     sideProject.side.addEventListener("click", () => {
-        let current, main, active;
+        let current, active;
 
-        main = document.querySelector("main");
         current = main.querySelector(".project-item");
-
         if (!current)
             current = main.querySelector(".period-projects");
+        if (!current)
+            current = main.querySelector(".empty-period");
 
         if (current)
             current.replaceWith(mainProject);
         else
             main.append(mainProject);
+
+        retProject.update();
 
         active = document.getElementById("active-sidebar-element");
         if (active)
@@ -3274,11 +3416,7 @@ createProject.addEventListener("submit", event => {
     document.querySelector("aside .projects ul").append(li);
     great_reset();
     sideProject.side.click();
-});
-
-cancelCreation.addEventListener("click", great_reset)
-
-removeImage.addEventListener("click", reset);
+}
 
 function great_reset() {
     createProject.reset();

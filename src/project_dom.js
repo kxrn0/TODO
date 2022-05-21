@@ -84,7 +84,6 @@ export function create_project_main_dom(projectObj, extInterface) {
     const warnignControls = document.createElement("div");
     const yes = document.createElement("button");
     const no = document.createElement("button");
-
     const imageModal = document.createElement("div");
     const imageModalContent = document.createElement("div");
     const imageInputWrapper = document.createElement("div");
@@ -94,11 +93,9 @@ export function create_project_main_dom(projectObj, extInterface) {
     const imageControls = document.createElement("div");
     const imageYes = document.createElement("button");
     const imageNo = document.createElement("button");
-
     let innerInterface, checks, deleteLocal, newCover;
 
     //#region
-
     project.append(imageModal);
     imageModal.append(imageModalContent);
     imageModalContent.append(imageInputWrapper);
@@ -107,7 +104,6 @@ export function create_project_main_dom(projectObj, extInterface) {
     imageModalContent.append(imageControls);
     imageControls.append(imageYes);
     imageControls.append(imageNo);
-
     project.append(deleteProject);
     project.append(info);
     project.append(tasks);
@@ -168,7 +164,6 @@ export function create_project_main_dom(projectObj, extInterface) {
     deletion.append(warningMessagePt2);
     warnignControls.append(yes);
     warnignControls.append(no);
-
     //#endregion
 
 
@@ -180,7 +175,6 @@ export function create_project_main_dom(projectObj, extInterface) {
     imageControls.classList.add("controls");
     imageYes.classList.add("yes");
     imageNo.classList.add("no");
-
     project.classList.add("project-item");
     deleteProject.classList.add("delete-project");
     info.classList.add("info");
@@ -280,7 +274,7 @@ export function create_project_main_dom(projectObj, extInterface) {
         unchecked,
         array: projectObj.tasks,
         modal: warning,
-        userDataString: null,
+        userDataString: extInterface.userDataString,
         update : () => {
             update();
             update_checks();
@@ -288,21 +282,7 @@ export function create_project_main_dom(projectObj, extInterface) {
     };
     deleteLocal = false;
     update();
-
-    projectObj.tasks.forEach(task => {
-        let taskDom;
-
-        taskDom = create_task_dom(task, innerInterface);
-        if (task.checked) {
-            taskDom.classList.add("checked");
-            checked.append(taskDom);
-        }
-        else {
-            taskDom.classList.add("unchecked");
-            unchecked.append(taskDom);
-        }
-        checks.push(taskDom.querySelector(".checkmark input[type='checkbox']"));
-    });
+    update_tasks();
 
     checks.forEach(check => check.addEventListener("click", update));
 
@@ -318,13 +298,29 @@ export function create_project_main_dom(projectObj, extInterface) {
         cancelButton.addEventListener("click", hide);
 
         function delete_project() {
-            let index;
+            let pIndex, rIndex;
 
-            index = extInterface.array.findIndex(project => project.id == projectObj.id);
-            extInterface.array.splice(index, 1);
+            pIndex = extInterface.array.findIndex(project => project.id == projectObj.id);
+            rIndex = extInterface.previews.findIndex(projectItem => projectItem.project.id == projectObj.id);
+            extInterface.array.splice(pIndex, 1);
+            extInterface.previews.splice(rIndex, 1);
             extInterface.side.remove();
             project.parentElement.removeChild(project);
+            load_another();
+            localStorage.setItem(extInterface.userDataString, JSON.stringify(extInterface.array));
             hide();
+        }
+
+        function load_another() {
+            let aside, current; 
+
+            aside = document.querySelector("aside");
+            current = aside.querySelectorAll(".project")[0];
+
+            if (current)
+                current.click();
+            else 
+                document.querySelector("aside .today-button").click();
         }
 
         function hide() {
@@ -352,6 +348,7 @@ export function create_project_main_dom(projectObj, extInterface) {
             extInterface.side.update();
         }
         projectNameInput.replaceWith(projectH2);
+        update();
     });
 
     projectDescription.addEventListener("click", () => {
@@ -369,6 +366,7 @@ export function create_project_main_dom(projectObj, extInterface) {
             projectObj.description = value;
         }
         projectDescriptionInput.replaceWith(projectDescription);
+        update();
     });
 
     document.addEventListener("keydown", event => {
@@ -516,7 +514,7 @@ export function create_project_main_dom(projectObj, extInterface) {
     function update_checks() {
         //remove event listeners, is this even necessary?
         checks.forEach(check => check.removeEventListener("click", update));
-        checks = document.querySelectorAll(".project-item .task .checkmark input[type='checkbox']");
+        checks = [...document.querySelectorAll(".project-item .task .checkmark input[type='checkbox']")];
         checks.forEach(check => check.addEventListener("click", update));
     }
 
@@ -524,6 +522,7 @@ export function create_project_main_dom(projectObj, extInterface) {
         update_per_chan();
         draw_percentage();
         extInterface.side.update();
+        localStorage.setItem(extInterface.userDataString, JSON.stringify(extInterface.array));
     }
 
     function update_per_chan() {
@@ -556,9 +555,33 @@ export function create_project_main_dom(projectObj, extInterface) {
         context.stroke();
     }
 
+    function flush() {
+        checked.innerHTML = '';
+        unchecked.querySelectorAll(".task").forEach(task => task.parentElement.removeChild(task));
+    }
+
+    function update_tasks() {
+        checks = [];
+        projectObj.tasks.forEach(task => {
+            let taskDom;
+    
+            taskDom = create_task_dom(task, innerInterface);
+            if (task.checked) {
+                checked.append(taskDom);
+            }
+            else {
+                unchecked.append(taskDom);
+            }
+            checks.push(taskDom.querySelector(".checkmark input[type='checkbox']"));
+        });
+        checks.forEach(check => check.addEventListener("click", update));
+    }
+
+
     function update_external() {
-        console.log("hi");
-        return 0;
+        flush();
+        update_tasks();
+        update();
     }
 
     return { project, update : update_external };

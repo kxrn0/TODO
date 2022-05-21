@@ -1,5 +1,5 @@
 :root.light {
-    --empty-color: rgb(149, 217, 246);
+    --empty-color: rgb(149, 207, 246);
     --color: rgb(95, 75, 75);
 }
 
@@ -57,6 +57,23 @@
 
 .empty-period img {
     width: 700px;
+}
+
+.empty-period canvas {
+    background: rgb(52, 39, 59);
+    border-radius: 50%;
+}
+
+.empty-period a {
+    background: rgb(255, 186, 57, .5);
+    color: azure;
+    font-size: .75rem;
+    text-decoration: none;
+    padding: 3px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
 }
 
 @media screen and (max-width: 800px) {

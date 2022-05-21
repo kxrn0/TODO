@@ -76,7 +76,7 @@ export function create_task_dom(taskObj, extInterface) {
     notes.append(addNote);
 
     task.classList.add("task");
-    task.classList.add("unchecked");
+    task.classList.add(taskObj.checked ? "checked" : "unchecked");
     mainSection.classList.add("main-section");
     checkMark.classList.add("checkmark");
     label.classList.add("label");
@@ -164,6 +164,7 @@ export function create_task_dom(taskObj, extInterface) {
 
             high.classList.remove("active");
         }
+        extInterface.update();
 
         medium.classList.add("active");
     });
@@ -183,6 +184,7 @@ export function create_task_dom(taskObj, extInterface) {
             high.classList.remove("active");
             medium.classList.remove("active");
         }
+        extInterface.update();
     });
 
     lowCheck.addEventListener("click", () => {
@@ -195,6 +197,7 @@ export function create_task_dom(taskObj, extInterface) {
 
         high.classList.remove("active");
         medium.classList.remove("active");
+        extInterface.update();
     });
 
     for (let note of taskObj.notes) {
@@ -232,6 +235,7 @@ export function create_task_dom(taskObj, extInterface) {
     dateInput.addEventListener("change", () => {
         dueDate.innerText = due_date(dateInput.value);
         taskObj.duedate = dateInput.value;
+        extInterface.update();
     });
 
     addNote.addEventListener("click", () => {
@@ -250,6 +254,7 @@ export function create_task_dom(taskObj, extInterface) {
             braveNewNote = { text: value, id: create_id(10) };
             notesContainer.append(create_note(braveNewNote));
             taskObj.notes.push(braveNewNote);
+            extInterface.update();
         }
         noteArea.value = '';
         noteArea.parentElement.removeChild(noteArea);
@@ -277,6 +282,7 @@ export function create_task_dom(taskObj, extInterface) {
             label.innerText = value;
             labelInput.replaceWith(label);
             taskObj.description = value;
+            extInterface.update();
         }
     });
 
@@ -352,6 +358,7 @@ export function create_task_dom(taskObj, extInterface) {
 
             index = taskObj.notes.findIndex(deathNote => deathNote.id == newNote.id);
             taskObj.notes.splice(index, 1);
+            extInterface.update();
 
             note.parentElement.removeChild(note);
             resize_expanded();
