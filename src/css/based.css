@@ -311,6 +311,10 @@ main .create-project-modal .label-cover:hover {
     background-color: rgb(170, 115, 115, .5);
 }
 
+main .modal-content li > label, main .modal-content li > p {
+    text-align: start;
+}
+
 @media screen and (max-width: 480px) {
     body {
         display: block;
