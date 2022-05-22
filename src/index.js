@@ -6,10 +6,6 @@ import { create_project_main_dom } from "./project_dom.js";
 import { create_project } from "./project.js";
 import { create_preview } from "./preview.js";
 
-// import { asideInterface } from "./aside.js";
-
-// asideInterface.resize_aside();
-
 const main = document.querySelector("main");
 const warning = document.querySelector(".delete-project");
 const addNewProject = document.querySelector(".add-project");
@@ -86,7 +82,15 @@ createProject.addEventListener("submit", event => {
     projects.push(project);
     localStorage.setItem(userDataString, JSON.stringify(projects));
     load_project(project);
+    close_sidebar();
 });
+
+function close_sidebar() {
+    let check = document.querySelector("nav .burger input[type='checkbox']");
+
+    if (window.innerWidth < 500 && check.checked)
+        check.click();
+}
 
 cancelCreation.addEventListener("click", great_reset)
 
@@ -117,6 +121,7 @@ function switch_active(elem) {
     if (current)
         current.id = '';
     elem.id = "active-sidebar-element";
+    close_sidebar();
 }
 
 function load_project(project) {
@@ -156,6 +161,7 @@ function load_project(project) {
         if (active)
             active.id = '';
         sideProject.side.id = "active-sidebar-element";
+        close_sidebar();
     });
 
     li = document.createElement("li");

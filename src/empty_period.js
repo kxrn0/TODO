@@ -14,7 +14,7 @@ export const emptyObj = (
 
 
         intervals = ["week", "month", "year", "all"];
-        subs = ["earthporn", "TouhouArt", "brutalism", "artporn"];
+        subs = ["earthporn", "TouhouArt", "brutalism", "artporn", "spaceporn"];
         reg = /^https:\/\/i\.redd\.it\/\w+\.(jpg|png|jpeg)/i;
         color = 0;
         dt = 0;

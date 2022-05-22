@@ -43,8 +43,6 @@ export function create_side_project(projectObj, extInterface) {
     function remove() {
         sideProject.parentElement.removeChild(sideProject);
     }
-
-    //sideProject.addEventListener("click", () => document.querySelector("main .project-item").replaceWith(mainProject));
-
+    
     return { side : sideProject, update, remove };
 }

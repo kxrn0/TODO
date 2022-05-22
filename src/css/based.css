@@ -44,6 +44,7 @@ body {
 nav {
     background: var(--nav-bg);
     color: var(--color);
+    height: 100px;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -88,6 +89,7 @@ nav .logo .burger {
 aside {
     background: var(--aside-bg);
     color: var(--color);
+    min-height: calc(100vh - 100px);
     position: relative; 
     padding: 20px;
     grid-row: 2 / 3;
@@ -256,10 +258,6 @@ main .modal-content {
     width: 300px;
 }
 
-/* main .create-project-modal {
-    display: block;
-} */
-
 main .create-project-modal {
     text-align: start;
 }
@@ -344,7 +342,7 @@ main .create-project-modal .label-cover:hover {
 
     aside {
         width: 90%;
-        height: 100%;
+        min-height: 100%;
         position: absolute;
         transform: translateX(-100%);
         z-index: 1;
