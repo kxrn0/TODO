@@ -61,25 +61,6 @@ nav .logo h1 {
     margin-left: 20px;
 }
 
-nav .config .settings {
-    margin-right: 20px;
-    width: 30px;
-    height: 30px;
-    background-color: transparent;
-    border: none;
-    background-image: url("../images/cog-outline.svg");
-    background-size: cover;
-    filter: var(--cog-filter);
-}
-
-nav .config .settings:hover {
-    filter: var(--cog-hover-filter);
-}
-
-nav .config .settings:hover {
-    transform: rotate(90deg);
-}
-
 nav .logo .burger {
     display: none;
 }

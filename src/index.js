@@ -5,6 +5,7 @@ import { emptyObj } from "./empty_period.js";
 import { create_project_main_dom } from "./project_dom.js";
 import { create_project } from "./project.js";
 import { create_preview } from "./preview.js";
+import { chaos } from "./generative/chaos.js";
 
 const main = document.querySelector("main");
 const warning = document.querySelector(".delete-project");
@@ -72,6 +73,8 @@ createProject.addEventListener("submit", event => {
 
     let project;
 
+    if (!cover)
+        cover = chaos(200, 200);
     project = create_project(
         createProject["project-name"].value,
         createProject["project-description"].value,

@@ -3,6 +3,7 @@ import { create_task } from "./task";
 import { create_id } from "./utilities";
 import { kill_many } from "./utilities";
 import { make_cover } from "./utilities";
+import { generate_cover } from "./generative/generate";
 
 /**
  * todo;
@@ -483,8 +484,11 @@ export function create_project_main_dom(projectObj, extInterface) {
     });
 
     imageYes.addEventListener("click", () => {
-        projectObj.img = newCover ? newCover : "./pepe.jpg";
-        logo.src = newCover ? newCover : "./pepe.jpg";
+        if (!newCover)
+            newCover = generate_cover(200, 200);
+        projectObj.img = newCover;
+        logo.src = newCover
+        localStorage.setItem(extInterface.userDataString, JSON.stringify(extInterface.array));
         hide_cover();
     });
 

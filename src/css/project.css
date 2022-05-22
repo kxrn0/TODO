@@ -375,10 +375,6 @@
     background: var(--create-hover);
 }
 
-/* .project-item .image-modal {
-    display: block;
-} */
-
 .project-item .image-modal input[type="file"] {
     width: 0;
     height: 0;
